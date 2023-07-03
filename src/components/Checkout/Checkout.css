@@ -1,0 +1,50 @@
+.checkout-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.checkout-accordion {
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background-color: #989592cf;
+  color: white;
+  /* padding: 10px; */
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion .accordion-header{
+  margin-bottom: 10px;
+}
+
+.accordion-header:hover {
+  background: linear-gradient(135deg, rgb(255, 88, 88), rgb(240, 152, 25));
+  /* color: #111010; */
+}
+
+.accordion-header.active {
+  background-color: #111010;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+}
+
+.accordion-content.show {
+  display: block;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+}

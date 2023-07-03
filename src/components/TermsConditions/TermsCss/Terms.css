@@ -1,0 +1,419 @@
+/* Terms Conditions css  */
+.terms-container h4{
+  font-size: 20px !important;  
+}
+.terms-container ol li {
+  font-size: 16px;
+}
+
+.table-contents ol li{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+.table-contents ol li ol li{
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+/* Terms 1 css  */
+.outer-ol {
+    counter-reset: outer-item;
+    list-style-type: none;
+  }
+  
+  .outer-ol > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+
+  /* Terms 2 css  */
+  .outer-ol2 {
+    counter-reset: outer-item 1;
+    list-style-type: none;
+  }
+  
+  .outer-ol2 > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol2 {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol2 > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+
+  /* Terms 3 css  */
+  .outer-ol3 {
+    counter-reset: outer-item 2;
+    list-style-type: none;
+  }
+  
+  .outer-ol3 > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol3 {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol3 > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+
+  /* Terms 4 css  */
+  .outer-ol4 {
+    counter-reset: outer-item 3;
+    list-style-type: none;
+  }
+  
+  .outer-ol4 > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol4 {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol4 > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+ 
+  /* Terms 5 css  */
+  .outer-ol5 {
+    counter-reset: outer-item 4;
+    list-style-type: none;
+  }
+  
+  .outer-ol5 > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol5 {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol5 > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+
+  /* Terms 6 css  */
+  .outer-ol6 {
+    counter-reset: outer-item 5;
+    list-style-type: none;
+  }
+  
+  .outer-ol6 > li:before {
+    content: counter(outer-item) " ";
+    counter-increment: outer-item;
+    font-weight: 600;
+  }
+  
+  .inner-ol6 {
+    counter-reset: inner-item;
+    list-style-type: none;
+  }
+  
+  .inner-ol6 > li:before {
+    content: counter(outer-item) "." counter(inner-item) " ";
+    counter-increment: inner-item;
+  }
+
+  /* Terms 7 CSS */
+.outer-ol7 {
+  counter-reset: outer-item 6;
+  list-style-type: none;
+}
+
+.outer-ol7 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol7 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol7 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 8 CSS */
+.outer-ol8 {
+  counter-reset: outer-item 7;
+  list-style-type: none;
+}
+
+.outer-ol8 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol8 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol8 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 9 CSS */
+.outer-ol9 {
+  counter-reset: outer-item 8;
+  list-style-type: none;
+}
+
+.outer-ol9 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol9 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol9 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+/* Terms 10 CSS */
+.outer-ol10 {
+  counter-reset: outer-item 9;
+  list-style-type: none;
+}
+
+.outer-ol10 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol10 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol10 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 11 CSS */
+.outer-ol11 {
+  counter-reset: outer-item 10;
+  list-style-type: none;
+}
+
+.outer-ol11 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol11 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol11 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 12 CSS */
+.outer-ol12 {
+  counter-reset: outer-item 11;
+  list-style-type: none;
+}
+
+.outer-ol12 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol12 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol12 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 13 CSS */
+.outer-ol13 {
+  counter-reset: outer-item 12;
+  list-style-type: none;
+}
+
+.outer-ol13 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol13 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol13 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 14 CSS */
+.outer-ol14 {
+  counter-reset: outer-item 13;
+  list-style-type: none;
+}
+
+.outer-ol14 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol14 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol14 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 15 CSS */
+.outer-ol15 {
+  counter-reset: outer-item 14;
+  list-style-type: none;
+}
+
+.outer-ol15 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol15 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol15 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 16 CSS */
+.outer-ol16 {
+  counter-reset: outer-item 15;
+  list-style-type: none;
+}
+
+.outer-ol16 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol16 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol16 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+/* Terms 17 CSS */
+.outer-ol17 {
+  counter-reset: outer-item 16;
+  list-style-type: none;
+}
+
+.outer-ol17 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol17 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol17 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+/* Terms 18 CSS */
+.outer-ol18 {
+  counter-reset: outer-item 17;
+  list-style-type: none;
+}
+
+.outer-ol18 > li:before {
+  content: counter(outer-item) " ";
+  counter-increment: outer-item;
+  font-weight: 600;
+}
+
+.inner-ol18 {
+  counter-reset: inner-item;
+  list-style-type: none;
+}
+
+.inner-ol18 > li:before {
+  content: counter(outer-item) "." counter(inner-item) " ";
+  counter-increment: inner-item;
+}
+
+
+
+  
+  
+  
+  

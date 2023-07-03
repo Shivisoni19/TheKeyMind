@@ -1,0 +1,54 @@
+.privacy-top-heading h2{
+    font-weight: bold;
+    font-size: 23px;
+}
+.privacy-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+   
+}
+.privacy-mid-content h3{
+    /* margin-top: 25px; */
+   font-size: 20px;
+    font-weight: bold;
+    line-height: 21px;
+    /* padding-top: 21px; */
+}
+
+.icon-privacy-content{
+    font-size: 45px;
+    padding: 18px;
+    color: #f1602b;
+}
+.privacy-analytics p{
+    font-weight: 600;
+    font-size: 14px;
+}
+.privacy-analytics span{
+    margin-top: 0px;
+    font-size: 16px;
+}
+.left-side-content{
+    display: flex;
+}
+.right-side-content{
+    display: flex;
+}
+.lower-privacy-content h2{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 21px;
+    padding-top: 21px;
+}
+.lower-privacy-content p{
+    margin-top: 35px;
+    font-size: 16px;
+}
+.lower-privacy-content ul{
+    list-style: none;
+}
+.privacy-mid-content p{
+    font-size: 14px;
+}

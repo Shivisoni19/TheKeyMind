@@ -1,0 +1,42 @@
+.top-content-cookie h2{
+    font-weight: bold;
+    font-size: 23px;
+}
+.top-content-cookie p{
+    font-size: 14px;
+    color: black;
+    font-style: normal;
+}
+.cookie-policy{
+  padding: 10px;
+}
+
+/*------------ Accordian Css  ------------*/
+
+/* Accordion item */
+.accordion-item1 {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Accordion header */
+.accordion-header1 {
+  background-color: #989592cf;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-header1:hover {
+  background: linear-gradient(135deg, rgb(255, 88, 88), rgb(240, 152, 25));
+}
+
+/* Accordion header text */
+.accordion-header1 h4 {
+  margin: 0;
+}
+
+/* Accordion content */
+.accordion-content1 {
+  padding: 10px;
+}
