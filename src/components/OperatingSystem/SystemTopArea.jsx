@@ -5,7 +5,7 @@ const SystemTopArea = () => {
   return (
     <div>
       {/* <!--  head text --> */}
-        <div class="blog" id="category">
+        <div class="blog mb50" id="category">
 			<div class="container">
 			  <div class="title block-category-top">
 				<h1>
@@ -15,19 +15,7 @@ const SystemTopArea = () => {
 			  </div>
 			  <div class="call-to-action">
 				<p>
-				  The Microsoft Operating System Catalog is available for any PC model or device on which installation is supported. We aim to always offer our customers the very best market prices on Microsoft licenses. All our software products have a lifetime license, and our customer service is always prepared to assist you in choosing the product that best suits your needs.
-				<Link class="text-orange" href="#"> [click for more info]</Link></p>
-				<p>
-				  <span class="f-900"
-					>Competitive prices, instant delivery, secure payments, and
-					our free specialized support in ENGLISH </span
-				  >are our key strengths and source of pride across our team.
-				</p>
-				{/* <!-- <p>Check our great offers and help us make the world Greener</p>
-				<p>
-				  Enjoy your shopping on
-				  <a href="#" class="text-orange"> mrkeyshop.com</a>
-				</p> --> */}
+				The Microsoft Operating System Catalogue is accessible for installation on a wide range of PC models and devices. Our commitment is to consistently provide our customers with the most competitive market prices for Microsoft licenses. Rest assured, all our software products come with lifetime licenses, and our dedicated customer service team is readily available to help you select the ideal product to meet your requirements.</p>
 			  </div>
 			</div>
 		  </div>

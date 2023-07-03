@@ -9,37 +9,37 @@ const HomeSlider = () => {
       title: 'OPERATING SYSTEMS',
       description: 'Windows 11, Win 10, Win 8, Win 7',
       image: 'img/products/product-1.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
     {
       title: 'MICROSOFT OFFICE',
       description: 'Microsoft Office Suite 2021, 2019, 2016, 2013, 2010',
       image: 'img/products/product-2.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
     {
       title: 'ANTIVIRUS',
       description: 'Kaspersy, ESET, Avast, Bitdefender, Norton, McAfee',
       image: 'img/products/product-3.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
     {
       title: 'VPN',
       description: 'Avast, HMA',
       image: 'img/products/product-4.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
     {
       title: 'MICROSOFT SERVER',
       description: 'Windows Server, Server CAL, Server RDS CAL, SQL Server',
       image: 'img/products/product-5.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
     {
       title: 'BACKUP & RECOVERY',
       description: 'AOMEI, EaseUS',
       image: 'img/products/product-6.png',
-      btnText: 'Buy now from €19.99',
+      btnText: 'Buy now from $19.99',
     },
   ];
 

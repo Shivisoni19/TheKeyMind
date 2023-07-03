@@ -10,32 +10,32 @@ const ProductTabs = () => {
       products: [
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: {product1},
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: {product2},
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
       ],
@@ -45,27 +45,27 @@ const ProductTabs = () => {
       products: [
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
       ],
@@ -75,22 +75,22 @@ const ProductTabs = () => {
       products: [
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "url('../../images/products/p-1.jpg')",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: { product1 },
         },
       ],

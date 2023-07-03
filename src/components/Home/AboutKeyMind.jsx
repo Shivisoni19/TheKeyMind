@@ -9,7 +9,7 @@ const AboutKeyMind = () => {
             <div class="container">
               <div class="title">
                 <h1>
-                  <i class="fa fa-star"></i> MR KEY SHOP<i
+                  <i class="fa fa-star"></i>The Key Mind<i
                     class="fa fa-star"
                   ></i>
                 </h1>

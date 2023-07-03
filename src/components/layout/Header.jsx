@@ -34,7 +34,7 @@ const Header = () => {
                 <ul className='curr clearfix'>
                   <li>
                     <span>Currency: </span>
-                    <Link href='#'>EUR €</Link>
+                    <Link href='#'>Dollar $</Link>
                   </li>
                 </ul>
               </div>
@@ -176,22 +176,33 @@ const Header = () => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <img src='./images/products/p-1.jpg' alt='' />
-                          </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                            <header>Windows 11</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link href='#'>Windows 11 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
+                                <Link href='#'>Windows 11 Home</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business cards</Link>
+                                <Link href='#'>Windows 11 Enterprise</Link>
                               </li>
                               <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link href='#'>Upgrade to Windows 11 Professional</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Windows 10</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Windows 10 Professional</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Windows 10 Home</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Upgrade to Windows 10 Professional</Link>
                               </li>
                             </ul>
                           </div>

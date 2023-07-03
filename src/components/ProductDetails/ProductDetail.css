@@ -10,7 +10,7 @@
   
   .img-display {
     overflow: hidden;
-    width: 80%;
+    width: 67%;
   }
   
   .img-showcase {
@@ -25,6 +25,7 @@
   
   .img-select {
     display: flex;
+    /* justify-content: center; */
   }
   
   .img-item {
@@ -224,4 +225,11 @@
       justify-content: center;
     }
   }
+  @media screen and (max-width: 1199px) {
+    .img-display {
+      overflow: hidden;
+      width: 100%;
+    }
+  }
+  
   

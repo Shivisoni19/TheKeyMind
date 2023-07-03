@@ -16,103 +16,61 @@ const AntivirusMain = () => {
           </div>
           <div class="text-to-action">
             <h3 class="text-uppercase-none mb30 f-900">
-              Buy Microsoft Operating Systems from Mr Key Shop at very
-              competitive prices. 100% genuine digital licenses, tracked and
-              secure payments with a full money-back warranty. Instant digital
-              delivery after purchase, with free English-speaking Customer
-              Service.
+              Purchase and Download Antivirus Software for Comprehensive Protection
             </h3>
-            <h4 class="f-900">Buy Windows Operating Systems</h4>
+            {/* <h4 class="f-900">Buy Windows Operating Systems</h4> */}
             <p>
-              Mr Key Shop offers the best Microsoft Windows Operating Systems
-              for all your needs and at very competitive price points. Order
-              your new Windows OS and save, with instant inbox delivery. Mr Key
-              Shop’s catalog is complete with the most popular Windows editions.
-              If you have an older PC, buy and download
-              <Link href="#" class="text-orange">
-                Windows 7
-              </Link>
-              or
-              <Link href="#" class="text-orange">
-                Windows 8.1
-              </Link>
-              , both are excellent OSs if your machine is not too up-to-date.
+            Protecting your devices from cyber threats is crucial in today's interconnected world. At TheKeymind, we offer a wide selection of top-notch antivirus solutions to safeguard your computer, PCs, Macs, tablets, and smartphones. Our digital catalog includes trusted brands like ESET, AVAST, Norton, Bit Defender, Kaspersky, and McAfee.
             </p>
             <p>
-              Speaking of more modern Microsoft Operating Systems, we also offer
-              Windows 10, one of the best Microsoft Products ever, with an
-              overhauled UI and advanced features for multi-device operation,
-              even for touch screens, like 2-in-1s. Only Windows 10 allows you
-              to upgrade to Windows 11 for free! Our catalog also includes this
-              new Microsoft Operating System. Purchase Windows 10 OS and save
-              twice: you’ll pay way less than the MSRP and you can upgrade to
-              Microsoft Windows 11 spending zero! Furthermore, Windows 10 is
-              specifically designed to get the most ouf ot Microsoft Office
-              2019, one of the best productivity suites from Microsoft.
+            With our affordable prices and diverse subscription plans, you can find the perfect antivirus software for your specific needs. Whether you're looking for protection on Windows, Mac, iOS, or Android, we have you covered. Rest easy knowing that you can browse, work, and connect online with confidence, thanks to the best antivirus options available.
             </p>
             <p>
-              If you need the latest OS, Microsoft Windows 11 is already
-              available from Mr Key Shop! Buy your Home or Professional license
-              and if you match your order with Microsoft Office 2021, you’ll be
-              able to get the most out of both software and save money! Hardware
-              optimization, security and collaboration, as well as co-authoring
-              and native Android app support (with a later update) are just some
-              reasons to go and buy Windows 11 from Mr Key Shop! We always
-              recommend protecting your devices by also installing a valid and
-              effective Antivirus against cyber attacks
+            Don't compromise your digital security. Purchase your antivirus from TheKeymind today and enjoy peace of mind knowing that your devices are protected from evolving cyber threats.
             </p>
-            <h4>Download Windows Operating Systems</h4>
+            <h4>Secure Your Devices with Instant Antivirus Downloads</h4>
             <p>
-              Buy and download Windows Operating Systems from Mr Key Shop: this
-              is how you will save on the price list, and, above all, receive
-              your 100% genuine and guaranteed product key within a few seconds
-              from your purchase, with an official ISO download link and full
-              instructions on how to install Windows quickly and easily. Mr Key
-              Shop only offers secure and tracked payment methods, with a full
-              money-back warranty: at the end of your transaction, you’ll
-              receive everything you need in your inbox. You’ll be able to
-              download and install Windows with no external help. Enjoy your new
-              OS in a breeze!
+            Experience hassle-free shopping when you buy and download your antivirus software from our store. We offer top-notch antivirus brands for both Windows and Mac, ensuring compatibility with the latest operating systems like Windows 11 and macOS 12 Monterey. Rest assured knowing your payment is secure and your product will be swiftly delivered to your inbox, minimizing any environmental impact. Safeguard your devices in a matter of seconds and enjoy peace of mind with our efficient antivirus solutions.
             </p>
-            <h4>Install Windows operating systems with digital licenses</h4>
+            <h4>Secure Your Devices with Digital Antivirus Purchases</h4>
             <p>
-              With Digital Delivery we can offer our professional service,
-              together with cheap prices from our 100% authorized store. We can
-              also help save the environment: by sending your order to your
-              inbox, we can reduce the impact of physical good transport
-              systems, lowering the related emissions and waste. Together, we
-              can make the world greener because we are an Eco-Friendly Company!
+            At TheKeymind, we prioritize sustainability and environmental responsibility. By delivering our products digitally, we minimize packaging waste and reduce pollution associated with traditional shipping methods. As a 100% Eco-Friendly Company, we are committed to preserving the planet for future generations.
             </p>
+            <p>Rest assured that your system's protection is our top priority. With our full money-back warranty, you can purchase with confidence, knowing that we stand behind the quality of our products. Should you have any questions, concerns, or issues, our dedicated English-speaking customer service team is available to provide free assistance and ensure your complete satisfaction.</p>
+            <p>Experience the convenience of eco-friendly shopping and outstanding customer support when you choose TheKeymind for your antivirus needs. Join us in protecting your devices and the environment today.</p>
             <h4>
-              The licenses for Windows Operating Systems are perpetual. What
-              does it mean?
+            Will my Antivirus subscription be lost if I format my devices?
             </h4>
             <p>
-              Mr Key Shop’s catalog only includes perpetual licenses for Windows
-              Operating Systems. Such licenses are bound to a Microsoft Account
-              and not a given machine. Whenever you need to format your PC or
-              replace something in your hardware, just reuse your product key.
-              You’ll deactivate the previous license and will be able to reuse
-              it to install your Windows OS again without buying a new product
-              key.
+            When you buy a subscription for one of the top Antivirus Services from TheKeymind for your Windows or Mac computer, your license is tied to your account, not a specific device. So, if you format or replace your device, you don't lose your Antivirus subscription. 
             </p>
-            <h4>When I buy a new Windows Operating System, what will I get?</h4>
+            <p>Simply reinstall the product and activate it using your account credentials. And remember, our friendly English-speaking support team is always here to assist you, free of charge!</p>
+            <h4>What's included in my Antivirus order from TheKeymind?</h4>
             <p>
-              Buy Microsoft Windows from Mr Key Shop and you’ll save on the
-              price list and, most importantly, you’ll receive your order in
-              your inbox within a few seconds from purchase. Check your email,
-              we’ll send you the following:
+            After successfully placing your order for an Antivirus subscription from TheKeymind, you can expect to receive an email with the following components:
             </p>
             <ol>
-              <li>Your Windows Operating System (1 user license)</li>
-              <li>Official Windows ISO download link</li>
-              <li>Your Windows Operating System (1 user license)</li>
-              <li>Official Windows ISO download link</li>
+              <li><strong>Activation code: </strong>This unique code is essential for activating your Antivirus subscription and unlocking its full features and functionality.</li>
+              <li><strong>Official download link: </strong>You will receive a secure and authorized download link, enabling you to easily access the Antivirus software and initiate the installation process.</li>
+              <li><strong>Installation and activation instructions:  </strong>Clear and detailed instructions will be provided to guide you through the seamless installation and activation of your Antivirus subscription, ensuring a hassle-free experience.</li>
+              <li><strong>Free English-speaking customer support:  </strong>Should you have any questions, or concerns, or require assistance at any point, our dedicated customer support team is readily available to provide you with friendly and knowledgeable assistance.</li>
+              <li><strong>Invoice: </strong>Along with the other components, we will include an invoice as proof of your purchase. This ensures transparency and allows you to keep a record of your transaction.</li>
             </ol>
+            <p>Rest assured that TheKeymind is committed to delivering a streamlined and convenient experience, providing you with all the necessary resources to protect your devices effectively and enjoy a worry-free online experience.</p>
+            <h4>Discover a wide range of top-quality products in the TheKeymind catalog:</h4>
+            <ol>
+              <li><strong>Windows Operating Systems: </strong>Windows 11, Windows 10, Windows 8, Windows 7.</li>
+              <li><strong>Microsoft Office Suites available:</strong>: Office 2021, Office 2019, Office 2016, Office 2013, Office 2010, and Office for Mac. Find the perfect suite to meet your specific needs and elevate your work to new heights.</li>
+              <li><strong>Antivirus:</strong>Kaspersky, ESET, McAfee, Avast, Bitdefender, Norton.</li>
+              <li><strong>VPN: </strong>: VPN for PC, VPN for Mac, VPN for Mobile.</li>
+              <li><strong>Microsoft Server:</strong>Windows Server, Windows Server CAL, Windows Server RDS CAL, Microsoft SQL Server.</li>
+              <li><strong>Backup and Recovery Software: </strong>AOMEI, EaseUS.</li>
+            </ol>
+            <p>Explore these exceptional products and more at TheKeymind to meet your technological needs.</p>
             <p>
               Enjoy your shopping on
-              <Link href="#" class="text-orange">
-                mrkeyshop.com
+              <Link href="#" class="text-orange" style={{marginLeft:"10px"}}>
+                thekeymind.com
               </Link>
             </p>
           </div>

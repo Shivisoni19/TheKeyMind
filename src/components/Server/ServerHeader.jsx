@@ -7,7 +7,7 @@ const ServerHeader = () => {
       <div class="lateralnav">
 			<Link href=""><u> Home </u></Link>
 			<span><i>|</i></span>
-			<Link class="active" href=""><u> Server  </u></Link>
+			<Link class="active" href=""><u>Microsoft Server  </u></Link>
 		</div>
     </>
   )

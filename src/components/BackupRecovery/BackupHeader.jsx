@@ -7,7 +7,7 @@ const BackupHeader = () => {
       <div class="lateralnav">
 			<Link href=""><u> Home </u></Link>
 			<span><i>|</i></span>
-			<Link class="active" href=""><u> Backup  </u></Link>
+			<Link class="active" href=""><u> Backup and Recovery </u></Link>
 		</div>
     </>
   )

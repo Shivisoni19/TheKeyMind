@@ -12,42 +12,42 @@ const VPNProducts = () => {
       const vpnProducts = [
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "€39.99",
+          description: "$39.99",
           product_img: "img/products/product-4.png",
         },
       ];

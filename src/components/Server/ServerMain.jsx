@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SoftwareInstallSteps from "../Home/SoftwareInstallSteps";
+import ProductCatalog from '../ProductCatalog'
 
 const ServerMain = () => {
   return (
@@ -16,103 +17,190 @@ const ServerMain = () => {
           </div>
           <div class="text-to-action">
             <h3 class="text-uppercase-none mb30 f-900">
-              Buy Microsoft Operating Systems from Mr Key Shop at very
-              competitive prices. 100% genuine digital licenses, tracked and
-              secure payments with a full money-back warranty. Instant digital
-              delivery after purchase, with free English-speaking Customer
-              Service.
+              Elevate your business infrastructure with Microsoft Server from
+              TheKeymind.
             </h3>
-            <h4 class="f-900">Buy Windows Operating Systems</h4>
-            <p>
-              Mr Key Shop offers the best Microsoft Windows Operating Systems
-              for all your needs and at very competitive price points. Order
-              your new Windows OS and save, with instant inbox delivery. Mr Key
-              Shop’s catalog is complete with the most popular Windows editions.
-              If you have an older PC, buy and download
-              <Link href="#" class="text-orange">
-                Windows 7
-              </Link>
-              or
-              <Link href="#" class="text-orange">
-                Windows 8.1
-              </Link>
-              , both are excellent OSs if your machine is not too up-to-date.
-            </p>
-            <p>
-              Speaking of more modern Microsoft Operating Systems, we also offer
-              Windows 10, one of the best Microsoft Products ever, with an
-              overhauled UI and advanced features for multi-device operation,
-              even for touch screens, like 2-in-1s. Only Windows 10 allows you
-              to upgrade to Windows 11 for free! Our catalog also includes this
-              new Microsoft Operating System. Purchase Windows 10 OS and save
-              twice: you’ll pay way less than the MSRP and you can upgrade to
-              Microsoft Windows 11 spending zero! Furthermore, Windows 10 is
-              specifically designed to get the most ouf ot Microsoft Office
-              2019, one of the best productivity suites from Microsoft.
-            </p>
-            <p>
-              If you need the latest OS, Microsoft Windows 11 is already
-              available from Mr Key Shop! Buy your Home or Professional license
-              and if you match your order with Microsoft Office 2021, you’ll be
-              able to get the most out of both software and save money! Hardware
-              optimization, security and collaboration, as well as co-authoring
-              and native Android app support (with a later update) are just some
-              reasons to go and buy Windows 11 from Mr Key Shop! We always
-              recommend protecting your devices by also installing a valid and
-              effective Antivirus against cyber attacks
-            </p>
-            <h4>Download Windows Operating Systems</h4>
-            <p>
-              Buy and download Windows Operating Systems from Mr Key Shop: this
-              is how you will save on the price list, and, above all, receive
-              your 100% genuine and guaranteed product key within a few seconds
-              from your purchase, with an official ISO download link and full
-              instructions on how to install Windows quickly and easily. Mr Key
-              Shop only offers secure and tracked payment methods, with a full
-              money-back warranty: at the end of your transaction, you’ll
-              receive everything you need in your inbox. You’ll be able to
-              download and install Windows with no external help. Enjoy your new
-              OS in a breeze!
-            </p>
-            <h4>Install Windows operating systems with digital licenses</h4>
-            <p>
-              With Digital Delivery we can offer our professional service,
-              together with cheap prices from our 100% authorized store. We can
-              also help save the environment: by sending your order to your
-              inbox, we can reduce the impact of physical good transport
-              systems, lowering the related emissions and waste. Together, we
-              can make the world greener because we are an Eco-Friendly Company!
-            </p>
-            <h4>
-              The licenses for Windows Operating Systems are perpetual. What
-              does it mean?
+            <h4 class="f-900">
+              Our platform offers the best solutions at competitive prices,
+              ensuring your business operates smoothly and efficiently. With
+              secure payment options and a full money-back warranty, you can
+              make your purchase with complete peace of mind.
             </h4>
             <p>
-              Mr Key Shop’s catalog only includes perpetual licenses for Windows
-              Operating Systems. Such licenses are bound to a Microsoft Account
-              and not a given machine. Whenever you need to format your PC or
-              replace something in your hardware, just reuse your product key.
-              You’ll deactivate the previous license and will be able to reuse
-              it to install your Windows OS again without buying a new product
-              key.
+              Experience the convenience of our digital processing system,
+              delivering your order within seconds of purchase. Say goodbye to
+              lengthy shipping times and enjoy immediate access to your
+              Microsoft Server software. Our dedicated English-speaking Customer
+              Support team is also available to assist you, ensuring a seamless
+              experience from start to finish.
             </p>
-            <h4>When I buy a new Windows Operating System, what will I get?</h4>
             <p>
-              Buy Microsoft Windows from Mr Key Shop and you’ll save on the
-              price list and, most importantly, you’ll receive your order in
-              your inbox within a few seconds from purchase. Check your email,
-              we’ll send you the following:
+              Choose TheKeymind as your trusted partner for Microsoft Server
+              solutions and unlock the full potential of your business. Upgrade
+              with confidence and propel your organization to new heights of
+              productivity and success.
+            </p>
+            <h4>Unlock Efficiency and Savings with Microsoft Server</h4>
+            <p>
+              Discover a wide selection of Microsoft Server products at
+              unbeatable prices from TheKeymind. Our catalog features everything
+              you need to effectively manage servers, databases, and storage
+              appliances. Choose from various versions of Microsoft Windows
+              Server, including Standard, Essentials, and Datacentre Editions,
+              such as the latest Microsoft Windows Server 2022 Datacentre or the
+              reliable Microsoft Windows Server 2019 Essentials.
+            </p>
+            <p>
+              Experience the convenience of immediate digital delivery, allowing
+              you to download, install, and activate your chosen Microsoft
+              Server product in minutes. Additionally, our user-friendly
+              instructions ensure a seamless setup process, even for storage
+              appliances like Windows Storage Server 2016. Maximize efficiency
+              and savings for your business with TheKeymind's cost-effective
+              Microsoft Server solutions.
+            </p>
+            <h4>
+              Enhance Your Business Infrastructure with Microsoft Server
+              Solutions from TheKeymind
+            </h4>
+            <h4>
+              "Unlock the Power of Microsoft Server Solutions for Your Business
+              with TheKeymind"
+            </h4>
+            <p>
+              Choose from a wide range of Microsoft Server solutions tailored to
+              meet your organization's needs. Whether you require robust
+              database management with Microsoft SQL Server 2019 or seamless
+              integration across various application platforms and operating
+              systems, including Linux, we have you covered. Benefit from the
+              advanced capabilities, scalability, and machine learning
+              capabilities offered by Microsoft Server solutions.
+            </p>
+            <p>
+              Rest assured knowing that our dedicated English-speaking Customer
+              Care team is available to assist you every step of the way. With
+              secure SSL-secured payments and tracked systems like PayPal, your
+              order is processed with the utmost security. Additionally, our
+              full money-back warranty ensures your satisfaction.
+            </p>
+            <p>
+              Experience the convenience and reliability of digital solutions by
+              shopping confidently at TheKeymind for all your Microsoft Server
+              needs.
+            </p>
+            <h4>
+              Instantly Download Microsoft Server for Fast and Effortless Setup
+              in Digital Format
+            </h4>
+            <h4>Instant Access to Microsoft Server with TheKeymind</h4>
+            <p>
+              Get immediate access to Microsoft Server products with
+              TheKeymind's seamless digital delivery. No more waiting for
+              physical shipments or installation discs—simply purchase and start
+              using them right away.
+            </p>
+            <p>
+              Our efficient digital delivery system ensures that you receive all
+              the necessary files and instructions via email immediately after
+              purchase. You'll find an official download link and
+              straightforward installation guidelines, making the process quick
+              and hassle-free.
+            </p>
+            <p>
+              At TheKeymind, we prioritize customer satisfaction. Our dedicated
+              Customer Support team is available to assist you, free of charge,
+              should you have any questions or need further assistance.
+            </p>
+            <p>
+              Trust TheKeymind's track record of providing 100% genuine and
+              guaranteed software. Our satisfied customers have rated us highly
+              on TrustPilot, reflecting our commitment to quality and service.
+            </p>
+            <p>
+              By choosing TheKeymind, you're not only gaining instant access to
+              Microsoft Server, but you're also making a positive impact on the
+              environment. Our digital delivery approach reduces waste and
+              carbon emissions associated with traditional shipping methods.
+            </p>
+            <p>
+              Don't wait any longer. Unlock the power of Microsoft Server
+              instantly with TheKeymind. Purchase today and experience the
+              convenience and reliability of our digital delivery system.
+            </p>
+            <h4>TheKeymind's Microsoft Server License Options</h4>
+            <h4>Perpetual Licenses for Microsoft Server from TheKeymind</h4>
+            <p>
+              At TheKeymind, we offer perpetual licenses for all our Microsoft
+              Server products. This means that your license is not tied to a
+              specific machine but to a set of credentials. If you ever need to
+              reinstall or restore your software, you won't have to purchase a
+              new license. Simply use your credentials to deactivate the
+              previous setup and proceed with the new one. Enjoy the flexibility
+              and convenience of perpetual licensing with TheKeymind.
+            </p>
+            <h4>
+              What features can you expect from purchasing a Microsoft Server
+              product from TheKeymind?
+            </h4>
+            <p>
+              Upon completing your purchase of a Microsoft Server product from
+              TheKeymind, you can look forward to receiving a comprehensive
+              package of essential resources and support directly to your inbox:
             </p>
             <ol>
-              <li>Your Windows Operating System (1 user license)</li>
-              <li>Official Windows ISO download link</li>
-              <li>Your Windows Operating System (1 user license)</li>
-              <li>Official Windows ISO download link</li>
+              <li>
+                <strong>Official License(s): </strong>You will receive the
+                necessary license(s) for the Microsoft Server product you
+                ordered. These licenses will grant you legal access and usage
+                rights for the software.
+              </li>
+              <li>
+                <strong>ISO File Official Download Link: </strong>To facilitate
+                the installation process, you will be provided with an official
+                download link for the ISO file of the Microsoft Server product.
+                This will allow you to acquire the software package swiftly and
+                securely.
+              </li>
+              <li>
+                <strong>Installation and Activation Instructions: </strong>To
+                ensure a smooth and hassle-free setup, clear and accurate
+                instructions will be included. These instructions will guide you
+                through the process of downloading, installing, and activating
+                your Microsoft Server product, enabling you to get up and
+                running quickly.
+              </li>
+              <li>
+                <strong>Invoice: </strong>A detailed invoice will be sent to
+                you, providing a record of your purchase. This document will
+                contain information such as product details, pricing, and
+                payment confirmation, helping you keep track of your
+                transaction.
+              </li>
+              <li>
+                <strong>Customer Support: </strong>TheKeymind values your
+                satisfaction and offers complimentary customer support services.
+                If you encounter any issues or have questions during the
+                installation or activation process, their support team will be
+                readily available to assist you, ensuring a seamless experience.
+              </li>
             </ol>
             <p>
+              By delivering these resources and support, TheKeymind aims to
+              provide a comprehensive and user-friendly experience, allowing you
+              to swiftly access and utilize your purchased Microsoft Server
+              product.
+            </p>
+            <h4>
+              Explore the diverse range of products available in TheKeymind's
+              extensive catalog:
+            </h4>
+            <ProductCatalog/>
+            <p>For detailed information on the specific system requirements for each product, kindly refer to the respective product pages. The system requirements section will outline the minimum specifications needed to ensure compatibility and optimal performance.</p>
+            <p>TheKeymind offers a wide selection of software solutions to cater to various needs, providing reliable products that meet your operating system, office productivity, security, networking, and data management requirements.</p>
+            <p>
               Enjoy your shopping on
-              <Link href="#" class="text-orange">
-                mrkeyshop.com
+              <Link href="#" class="text-orange" style={{ marginLeft: "10px" }}>
+                thkeymind.com
               </Link>
             </p>
           </div>

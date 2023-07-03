@@ -1,9 +1,4 @@
 import "./App.css";
-// import './utils/Color.css'
-// import "./utils/font.css";
-// import "./utils/gayatri.css";
-// import "./utils/shivani.css";
-// import "./utils/yash.css";
 import './css/bootstrap.css'
 import './css/style.css'
 import './css/classic.css'
@@ -24,7 +19,6 @@ import './css/fonts/fontawesome-webfontba72.woff'
 import './css/fonts/fontawesome-webfontd41d.eot'
 
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-// import HomePage from './pages/HomePage';
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import HomePage from "./pages/HomePage";
@@ -68,9 +62,6 @@ function App() {
     <div>
       <Router>
         <Header/>
-        {/* <div
-          className="fluid-container Background-dark-blue main-page"
-        > */}
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/about" element={<About/>} />
@@ -108,7 +99,6 @@ function App() {
             <Route exact path="/returnrefund" element={<ReturnRefund/>}/>
 
           </Routes>
-        {/* </div> */}
         <Footer />
       </Router>
     </div>

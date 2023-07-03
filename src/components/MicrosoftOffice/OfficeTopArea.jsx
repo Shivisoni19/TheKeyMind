@@ -5,7 +5,7 @@ const OfficeTopArea = () => {
   return (
     <div>
       {/* <!--  head text --> */}
-        <div class="blog" id="category">
+        <div class="blog mb50" id="category">
 			<div class="container">
 			  <div class="title block-category-top">
 				<h1>
@@ -15,19 +15,9 @@ const OfficeTopArea = () => {
 			  </div>
 			  <div class="call-to-action">
 				<p>
-				  he Microsoft Operating System Catalog is available for any PC model or device on which installation is supported. We aim to always offer our customers the very best market prices on Microsoft licenses. All our software products have a lifetime license, and our customer service is always prepared to assist you in choosing the product that best suits your needs.
-				<Link class="text-orange" href="#"> [click for more info]</Link></p>
-				<p>
-				  <span class="f-900"
-					>Competitive prices, instant delivery, secure payments, and
-					our free specialized support in ENGLISH </span
-				  >are our key strengths and source of pride across our team.
+				  Purchase Microsoft Office and benefit from genuine and guaranteed digital licenses, ensuring a seamless and reliable software experience. Our secure payment options offer added peace of mind, and in the rare event of any concerns, rest assured our comprehensive refund policy has you covered. Experience instant delivery of your order straight to your inbox, enabling you to swiftly access and utilize Microsoft Office. Should you encounter any issues or require assistance, our dedicated Customer Service team is just a message away, ready to provide prompt support and guidance.
+				{/* <Link class="text-orange" href="#"> [click for more info]</Link> */}
 				</p>
-				{/* <!-- <p>Check our great offers and help us make the world Greener</p>
-				<p>
-				  Enjoy your shopping on
-				  <a href="#" class="text-orange"> mrkeyshop.com</a>
-				</p> --> */}
 			  </div>
 			</div>
 		  </div>
