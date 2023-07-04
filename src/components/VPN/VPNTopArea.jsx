@@ -5,7 +5,7 @@ const VPNTopArea = () => {
   return (
     <div>
       {/* <!--  head text --> */}
-        <div class="blog" id="category">
+        <div class="blog mb40" id="category">
 			<div class="container">
 			  <div class="title block-category-top">
 				<h1>

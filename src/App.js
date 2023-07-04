@@ -55,6 +55,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import Shipping from "./pages/Shipping";
 import ReturnRefund from "./pages/ReturnRefund";
+import ProductSubPage from './pages/ProductSubPage.jsx'
 
 
 function App() { 
@@ -97,6 +98,7 @@ function App() {
             <Route exact path="/cookiepolicy" element={<CookiePolicy/>}/>
             <Route exact path="/shipping" element={<Shipping/>}/>
             <Route exact path="/returnrefund" element={<ReturnRefund/>}/>
+            <Route exact path="/productsubpage" element={<ProductSubPage/>}/>
 
           </Routes>
         <Footer />

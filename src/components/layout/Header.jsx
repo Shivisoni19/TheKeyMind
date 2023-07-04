@@ -163,10 +163,10 @@ const Header = () => {
                       <Link to="/" >Home</Link>
                     </li>
                     <li>
-                      <Link to="about" >About</Link>
+                      <Link to="/about" >About</Link>
                     </li>
                     <li>
-                      <Link to="operatingsystem" className='desktop-item'>
+                      <Link to="/operatingsystem" className='desktop-item'>
                         Operating System
                       </Link>
                       <input type='checkbox' id='showMega' />
@@ -207,36 +207,24 @@ const Header = () => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>Windows 7</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>Windows 7 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
+                                <Link href='#'>Windows 7 Ultimate</Link>
                               </li>
                               <li>
-                                <Link href='#'>Mobile Email</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Web Marketing</Link>
+                                <Link href='#'>Windows 7 Home & Premium</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Security services</header>
+                            <header>Windows 8</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Site Seal</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>VPS Hosting</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Privacy Seal</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>Windows 8.1 Professional</Link>
                               </li>
                             </ul>
                           </div>
@@ -244,69 +232,127 @@ const Header = () => {
                       </div>
                     </li>
                     <li>
-                      <Link to="microsoftoffice" className='desktop-item'>
+                      <Link to="/microsoftoffice" className='desktop-item'>
                         Microsoft Office
                       </Link>
-                      <input type='checkbox' id='showMega' />
-                      <label for='showMega' className='mobile-item'>
+                      <input type='checkbox' id='showMega1' />
+                      <label for='showMega1' className='mobile-item'>
                         Microsoft Office
                       </label>
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <img
-                              src='https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg'
-                              alt=''
-                            />
-                          </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                            <header>Office 2021</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link href='#'>Office 2021 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
+                                <Link href='#'>Office 2021 Home & Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business cards</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link href='#'>Office 2021 Home & Student</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>Office 2019</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>Office 2019 Professional Plus</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
+                                <Link href='#'>Office 2019 Home & Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Mobile Email</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Web Marketing</Link>
+                                <Link href='#'>Office 2019 Home & Student</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Security services</header>
+                            <header>Office 2016</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Site Seal</Link>
+                                <Link href='#'>Office 2016 Professional Plus</Link>
                               </li>
                               <li>
-                                <Link href='#'>VPS Hosting</Link>
+                                <Link href='#'>Office 2016 Home & Student</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Office 2013</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Office 2013 Professional Plus</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Office 2010</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Office 2010 Professional Plus</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Microsoft 365</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Microsoft 365 Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Privacy Seal</Link>
+                                <Link href='#'>Microsoft 365 Personal</Link>
                               </li>
                               <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>Microsoft 365 Family</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Office for MAC</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Office 2021 Home & Student for Mac</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Office 2021 Home & Business for Mac</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Office 2019 Home & Business for MAC</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Office 2016 Home & Business for MAC</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Microsoft Office App</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Microsoft Access</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Project</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Visio</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Visual Studio</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Outlook</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft OneNote</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Word</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft Excel</Link>
                               </li>
                             </ul>
                           </div>
@@ -317,66 +363,105 @@ const Header = () => {
                       <Link to="antivirus" className='desktop-item'>
                         Antivirus
                       </Link>
-                      <input type='checkbox' id='showMega' />
-                      <label for='showMega' className='mobile-item'>
+                      <input type='checkbox' id='showMega2' />
+                      <label for='showMega2' className='mobile-item'>
                         Antivirus
                       </label>
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <img
-                              src='https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg'
-                              alt=''
-                            />
-                          </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                            <header>Kaspersky</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link href='#'>Kaspersky AntiVirus for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
+                                <Link href='#'>Kaspersky Internet Security (Kaspersky Standard) for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business cards</Link>
+                                <Link href='#'>Kaspersky Total Security (Kaspersky Plus) for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link href='#'>Kaspersky Internet Security for ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>ESET</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>Eset Internet Security for PC - MAC - ANDROID</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
+                                <Link href='#'>Eset NOD32 Antivirus for PC - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Mobile Email</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Web Marketing</Link>
+                                <Link href='#'>ESET Mobile Security for ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Security services</header>
+                            <header>McAfee</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Site Seal</Link>
+                                <Link href='#'>McAfee Total Protection for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>VPS Hosting</Link>
+                                <Link href='#'>McAfee Internet Security for PC - MAC - ANDROID</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Bitdefender</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Bitdefender Total Security for PC - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Privacy Seal</Link>
+                                <Link href='#'>Bitdefender Internet Security for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>Bitdefender Antivirus Plus for PC</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Bitdefender Antivirus for MAC</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Bitdefender Mobile Security for ANDROID</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>AVAST</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>AVAST Premium Security for PC</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>AVAST Premium Security for PC - MAC - ANDROID - IOS</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>AVAST Ultimate for PC</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>AVAST SecureLine VPN for PC - MAC - ANDROID - IOS</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>AVAST Driver Update for PC</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Norton</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Norton 360 Deluxe for PC - MAC - ANDROID - IOS</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Norton 360 Premium for PC - MAC - ANDROID - IOS</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Norton 360 Standard for PC - MAC - ANDROID - IOS</Link>
                               </li>
                             </ul>
                           </div>
@@ -387,66 +472,58 @@ const Header = () => {
                       <Link to="vpn" className='desktop-item'>
                         VPN
                       </Link>
-                      <input type='checkbox' id='showMega' />
-                      <label for='showMega' className='mobile-item'>
+                      <input type='checkbox' id='showMega3' />
+                      <label for='showMega3' className='mobile-item'>
                         VPN
                       </label>
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <img
-                              src='https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg'
-                              alt=''
-                            />
-                          </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                            <header>VPN for PC</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link href='#'>HMA VPN - PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Business cards</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link href='#'>AVAST SecureLine VPN - PC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>VPN for MAC</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>HMA VPN - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Mobile Email</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Web Marketing</Link>
+                                <Link href='#'>AVAST SecureLine VPN - MAC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Security services</header>
+                            <header>VPN for MOBILE</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Site Seal</Link>
+                                <Link href='#'>HMA VPN - ANDROID / IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>VPS Hosting</Link>
+                                <Link href='#'>AVAST SecureLine VPN - ANDROID / IOS</Link>
                               </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>HMA VPN</header>
+                            <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Privacy Seal</Link>
+                                <Link href='#'>HMA VPNl</Link>
                               </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Avast VPN</header>
+                            <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>AVAST SecureLine VPN</Link>
                               </li>
                             </ul>
                           </div>
@@ -457,66 +534,86 @@ const Header = () => {
                       <Link to="server" className='desktop-item'>
                         Server
                       </Link>
-                      <input type='checkbox' id='showMega' />
-                      <label for='showMega' className='mobile-item'>
+                      <input type='checkbox' id='showMega4' />
+                      <label for='showMega4' className='mobile-item'>
                         Server
                       </label>
                       <div className='mega-box'>
                         <div className='content'>
-                          <div className='row'>
-                            <img
-                              src='https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg'
-                              alt=''
-                            />
-                          </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                           <div className='row'>
+                            <header>Windows Server</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link to="/productsubpage">Windows Server 2022</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
+                                <Link to="/productsubpage">Windows Server 2019</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business cards</Link>
+                                <Link to="/productsubpage">Windows Server 2016</Link>
                               </li>
                               <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link to="/productsubpage">Windows Server 2012</Link>
+                              </li>
+                              <li>
+                                <Link to="/productsubpage">Windows Storage Server 2016</Link>
+                              </li>
+                              <li>
+                                <Link to="/productsubpage">Windows Storage Server 2012</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>Windows Server CAL</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>Windows Server 2022 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
+                                <Link href='#'>Windows Server 2019 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Mobile Email</Link>
+                                <Link href='#'>Windows Server 2016 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Web Marketing</Link>
+                                <Link href='#'>Windows Server 2012 CAL</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Security services</header>
+                            <header>Windows Server RDS CAL</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Site Seal</Link>
+                                <Link href='#'>Windows Server 2022 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>VPS Hosting</Link>
+                                <Link href='#'>Windows Server 2019 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Privacy Seal</Link>
+                                <Link href='#'>Windows Server 2016 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>Windows Server 2012 RDS CAL</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                            <header>Microsoft SQL Server</header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link href='#'>Microsoft SQL Server 2019 Standard</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft SQL Server 2017 Standard</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft SQL Server 2016 Standard</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft SQL Server 2014 Standard</Link>
+                              </li>
+                              <li>
+                                <Link href='#'>Microsoft SQL Server 2012 Standard</Link>
                               </li>
                             </ul>
                           </div>
@@ -527,66 +624,48 @@ const Header = () => {
                       <Link to="backuprecovery" className='desktop-item'>
                         Backup & Recovery
                       </Link>
-                      <input type='checkbox' id='showMega' />
-                      <label for='showMega' className='mobile-item'>
+                      <input type='checkbox' id='showMega5' />
+                      <label for='showMega5' className='mobile-item'>
                         Backup & Recovery
                       </label>
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <img
-                              src='https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg'
-                              alt=''
-                            />
+                            <div>
+                              <img src='img/products/product-6.png'/>
+                            </div>
                           </div>
-                          <div className='row'>
-                            <header>Design Services</header>
+                         <div className='row'>
+                            <header>AOMEI</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Graphics</Link>
+                                <Link href='#'>AOMEI Backupper</Link>
                               </li>
                               <li>
-                                <Link href='#'>Vectors</Link>
+                                <Link href='#'>AOMEI Partition Assistant</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business cards</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Custom logo</Link>
+                                <Link href='#'>AOMEI OneKey Recovery</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Email Services</header>
+                            <header>EaseUS</header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Personal Email</Link>
+                                <Link href='#'>EaseUS Data Recovery</Link>
                               </li>
                               <li>
-                                <Link href='#'>Business Email</Link>
+                                <Link href='#'>EaseUS Todo Backup</Link>
                               </li>
                               <li>
-                                <Link href='#'>Mobile Email</Link>
+                                <Link href='#'>EaseUS Partition Master</Link>
                               </li>
                               <li>
-                                <Link href='#'>Web Marketing</Link>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className='row'>
-                            <header>Security services</header>
-                            <ul className='mega-links'>
-                              <li>
-                                <Link href='#'>Site Seal</Link>
+                                <Link href='#'>EaseUS MobiSaver</Link>
                               </li>
                               <li>
-                                <Link href='#'>VPS Hosting</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Privacy Seal</Link>
-                              </li>
-                              <li>
-                                <Link href='#'>Website design</Link>
+                                <Link href='#'>EaseUS Deploy Manager</Link>
                               </li>
                             </ul>
                           </div>
