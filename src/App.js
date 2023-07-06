@@ -56,9 +56,33 @@ import CookiePolicy from "./pages/CookiePolicy";
 import Shipping from "./pages/Shipping";
 import ReturnRefund from "./pages/ReturnRefund";
 import ProductSubPage from './pages/ProductSubPage.jsx'
-
+// import { useEffect } from "react";
+// import firebase from "./firebase";
 
 function App() { 
+
+//   let mydata = {
+//     userId: "userData.id",
+//     userName: "userData.name",
+//     userImg: "userData.img",
+//     caption: "caption",
+//     location: "location",
+//     postImage: "base64imageUrl",
+//     emailId: "userData.emailId",
+//     roomId: "roomId",
+// }
+
+  // useEffect(() => {
+  //   const db = firebase.ref("/tutorials");
+  //   db
+  //           .set(mydata)
+  //           .then(snapshot => {
+  //               console.log(snapshot.val())
+  //           })
+  //           .catch((error) => { 
+  //           });
+  // }, [])
+
   return (
     <div>
       <Router>

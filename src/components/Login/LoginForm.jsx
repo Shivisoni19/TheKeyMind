@@ -5,6 +5,14 @@ import { Link } from 'react-router-dom';
 import LoginFooter from './LoginFooter';
 
 const LoginForm = () => {
+  // const [user, setUser] = useState(
+  //   {
+  //     email:"",
+  //     password:"",
+  //   }
+  // );
+
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);

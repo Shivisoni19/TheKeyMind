@@ -5,6 +5,19 @@ import { Link } from "react-router-dom";
 import SignupFooter from "./SignupFooter";
 
 const SignupForm = () => {
+  const [values, setValues] = useState(
+    {
+      firstname:"",
+      lastname:"",
+      email:"",
+      password:"",
+    }
+  );
+
+  const handleSubmission = () => {
+    console.log(values)
+  }
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -69,45 +82,57 @@ const SignupForm = () => {
           {/* <h2>Login</h2> */}
           <form onSubmit={handleSubmit}>
             <div className="form-row">
-              <label htmlFor="email">First Name:</label>
+              <label>First Name:</label>
               <input
                 type="text"
                 id="text"
-                value={firstname}
-                onChange={handleText1Change}
+                value={values.firstname}
+                // onChange={handleText1Change}
+                onChange={(event) => 
+                  setValues((prev) => ({ ...prev,firstname: event.target.value}))
+                }
                 required
               />
               {errors.text && <p className="error">{errors.text}</p>}
             </div>
             <div className="form-row">
-              <label htmlFor="email">Last Name:</label>
+              <label>Last Name:</label>
               <input
                 type="text"
                 id="text"
-                value={lastname}
-                onChange={handleText2Change}
+                value={values.lastname}
+                // onChange={handleText2Change}
+                onChange={(event) => 
+                  setValues((prev) => ({ ...prev,lastname: event.target.value}))
+                }
                 required
               />
               {errors.text && <p className="error">{errors.text}</p>}
             </div>
             <div className="form-row">
-              <label htmlFor="email">Email:</label>
+              <label>Email:</label>
               <input
                 type="email"
                 id="email"
-                value={email}
-                onChange={handleEmailChange}
+                value={values.email}
+                // onChange={handleEmailChange}
+                onChange={(event) => 
+                  setValues((prev) => ({ ...prev,email: event.target.value}))
+                }
                 required
               />
               {errors.email && <p className="error">{errors.email}</p>}
             </div>
             <div className="form-row">
-              <label htmlFor="password">Password:</label>
+              <label>Password:</label>
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
-                value={password}
-                onChange={handlePasswordChange}
+                value={values.password}
+                // onChange={handlePasswordChange}
+                onChange={(event) => 
+                  setValues((prev) => ({ ...prev,password: event.target.value}))
+                }
                 required
               />
               <button type="button" onClick={toggleShowPassword}>
@@ -120,7 +145,7 @@ const SignupForm = () => {
               {errors.password && <p className="error">{errors.password}</p>}
             </div>
             <div className="form-row btn-center">
-              <button type="submit">Register</button>
+              <button type="submit" onClick={handleSubmission}>Signup</button>
             </div>
             <SignupFooter />
           </form>

@@ -1,7 +1,63 @@
-import React from "react";
+import { event } from "jquery";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  let name, value;
+
+  const getUserData = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+
+    setUser({ ...user, [name]: value });
+  };
+
+  // connection with firebase
+  const submitData = async (event) => {
+    event.preventDefault();
+    const { name, email, phone, message } = user;
+
+    if(name && email && phone && message ){
+    const res = fetch(
+      "https://thekeymind-d8d3e-default-rtdb.firebaseio.com/userDataRecords.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          message,
+        }),
+      }
+    );
+
+    if (res) {
+      setUser({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+      alert("Data Stored");
+    } else {
+      alert("Plz fill the Data");
+     }
+    }
+    else {
+      alert("Plz fill the Data");
+     }
+  };
+
   return (
     <>
       <div className="contact-content">
@@ -9,7 +65,7 @@ const Contact = () => {
           <div className="container">
             <div className="title">
               <h1>
-                <i className="fa fa-star"></i> Get in Touch{" "}
+                <i className="fa fa-star"></i> Get in Touch
                 <i className="fa fa-star"></i>
               </h1>
               <div className="title-border"></div>
@@ -31,26 +87,34 @@ const Contact = () => {
                     id="name"
                     type="text"
                     placeholder="Name*"
+                    value={user.name}
+                    onChange={getUserData}
                   />
 
                   <input
-                    name="mail"
-                    id="mail"
+                    name="email"
+                    id="email"
                     type="text"
                     placeholder="Email*"
+                    value={user.email}
+                    onChange={getUserData}
                   />
 
                   <input
-                    name="subject"
-                    id="subject"
+                    name="phone"
+                    id="phone"
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Phone"
+                    value={user.phone}
+                    onChange={getUserData}
                   />
 
                   <textarea
-                    name="comment"
-                    id="comment"
+                    name="message"
+                    id="message"
                     placeholder="Your Message*"
+                    value={user.message}
+                    onChange={getUserData}
                   ></textarea>
 
                   <input
@@ -58,6 +122,7 @@ const Contact = () => {
                     value="Send"
                     id="submit_contact"
                     className="medium-button button-red"
+                    onClick={submitData}
                   />
                   <div id="msg" className="message"></div>
                 </form>

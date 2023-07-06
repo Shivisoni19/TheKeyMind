@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Login from '../../pages/Login';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <div id='container'>
@@ -13,7 +13,7 @@ const Header = () => {
             <div className='container'>
               <div className='left-line'>
                 <div className='mobile-a'>
-                  <Link href='#login-box' className='login-window'>
+                  <Link to="/login" className='login-window'>
                     <i className='fa fa-user'></i>
                   </Link>
                   <Link href='#'>
@@ -76,8 +76,9 @@ const Header = () => {
               </div>
               {/* <!-- Login/Registration & My Account form  --> */}
               <div className='register-login d-block d-sm-none'>
-                {/* <!-- <i className="fa fa-user font-color fa-lg" aria-hidden="true"></i>
-                    <Link href="my-account.html" className="login-window">My Account</Link> --> */}
+                {/* <span>{props.name ? `Welcome - ${props.name}` : "Login Please"}</span> */}
+                {/* <i className="fa fa-user font-color fa-lg" aria-hidden="true"></i>
+                <Link to="/myaccount" className="login-window">User Account</Link> */}
                 <Link to="/signup" className='login-window'>
                   Register
                 </Link>
