@@ -62,6 +62,9 @@ import Windows7 from './pages/Windows7'
 import Windows8 from './pages/Windows8'
 import Windows10 from './pages/Windows10'
 import Windows11 from './pages/Windows11'
+import AOMEI from './pages/AOMEI'
+import EaseUs from './pages/EaseUs'
+import MicrosoftOfficeApp from './pages/MicrosoftOfficeApp'
 
 function App () {
 
@@ -109,6 +112,9 @@ function App () {
           <Route exact path='/windows8' element={<Windows8 />} />
           <Route exact path='/windows10' element={<Windows10 />} />
           <Route exact path='/windows11' element={<Windows11 />} />
+          <Route exact path='/aomei' element={<AOMEI/>} />
+          <Route exact path='/easeus' element={<EaseUs />} />
+          <Route exact path='/microsoftofficeapp' element={<MicrosoftOfficeApp />} />
         </Routes>
         <Footer />
       </Router>
