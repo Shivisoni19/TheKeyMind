@@ -2,36 +2,36 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import product from 'img/product/product-1.png'
 
-const WinProducts = () => {
+const Win10Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     // Simulating data fetching from an API or data source
     // Replace this with your actual data fetching logic
     const fetchData = () => {
-      const win7products = [
+      const win10products = [
         {
-          name: "Microsoft Windows 7 Ultimate 32/64 Bit - Product Key",
-          description: "$26.99",
-          delprice:"$117.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-ultimate-32-64-bit-product-key.jpg",
+          name: "Upgrade To Windows 10 Professional - Product Key",
+          description: "$45.99",
+          delprice:"$155.99",
+          product_img: "img/subpages/windows10/upgrade-to-windows-10-professional-product-key.jpg",
         },
         {
-          name: "Microsoft Windows 7 Home & Premium 32/64 Bit - Product Keyy",
-          description: "$21.99",
-          delprice:"$117.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-home-premium-32-64-bit-product-key.jpg",
+          name: "Windows 10 Professional 32/64 Bit - Product Key",
+          description: "$42.99",
+          delprice:"$160.99",
+          product_img: "img/subpages/windows10/windows-10-professional-32-64-bit-microsoft-product-key.jpg",
         },
         {
-          name: "Microsoft Windows 7 Professional 32/64 Bit - Product Key",
-          description: "$26.99",
-          delprice:"$123.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-professional-32-64-bit-product-key.jpg",
+          name: "Microsoft Windows 10 Home 32/64 Bit - Product Key",
+          description: "$37.99",
+          delprice:"$112.99",
+          product_img: "img/subpages/windows10/microsoft-windows-10-home-32-64-bit-product-key.jpg",
         },
         
       ];
 
-      setProducts(win7products);
+      setProducts(win10products);
     };
 
     fetchData();
@@ -40,7 +40,7 @@ const WinProducts = () => {
   const renderProducts = () => {
     return products.map((product, index) => (
       <div key={index} className="col-lg-3 col-md-6 col-sm-6">
-        <div className="container-fadeInTop">
+        <div className="container-fadeInTop mt30">
           <div className="office-content">
             <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
@@ -78,4 +78,4 @@ const WinProducts = () => {
   );
 };
 
-export default WinProducts;
+export default Win10Products;

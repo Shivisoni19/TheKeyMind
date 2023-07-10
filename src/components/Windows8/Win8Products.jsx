@@ -2,36 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import product from 'img/product/product-1.png'
 
-const WinProducts = () => {
+const Win8Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     // Simulating data fetching from an API or data source
     // Replace this with your actual data fetching logic
     const fetchData = () => {
-      const win7products = [
+      const win8products = [
         {
-          name: "Microsoft Windows 7 Ultimate 32/64 Bit - Product Key",
+          name: "Microsoft Windows 8.1 Professional 32/64 Bit - Product Key",
           description: "$26.99",
-          delprice:"$117.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-ultimate-32-64-bit-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows 7 Home & Premium 32/64 Bit - Product Keyy",
-          description: "$21.99",
-          delprice:"$117.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-home-premium-32-64-bit-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows 7 Professional 32/64 Bit - Product Key",
-          description: "$26.99",
-          delprice:"$123.99",
-          product_img: "img/subpages/windows7/microsoft-windows-7-professional-32-64-bit-product-key.jpg",
+          delprice:"$96.99",
+          product_img: "img/subpages/windows8/microsoft-windows-8-1-professional-32-64-bit-product-key.jpg",
         },
         
       ];
 
-      setProducts(win7products);
+      setProducts(win8products);
     };
 
     fetchData();
@@ -78,4 +66,4 @@ const WinProducts = () => {
   );
 };
 
-export default WinProducts;
+export default Win8Products;

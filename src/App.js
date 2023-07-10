@@ -58,8 +58,10 @@ import ReturnRefund from './pages/ReturnRefund'
 import ProductSubPage from './pages/ProductSubPage.jsx'
 import { useEffect, useState } from 'react'
 import { auth } from './firebase'
-import Windows11 from './pages/Windows11'
 import Windows7 from './pages/Windows7'
+import Windows8 from './pages/Windows8'
+import Windows10 from './pages/Windows10'
+import Windows11 from './pages/Windows11'
 
 function App () {
 
@@ -104,6 +106,8 @@ function App () {
           <Route exact path='/returnrefund' element={<ReturnRefund />} />
           <Route exact path='/productsubpage' element={<ProductSubPage />} />
           <Route exact path='/windows7' element={<Windows7 />} />
+          <Route exact path='/windows8' element={<Windows8 />} />
+          <Route exact path='/windows10' element={<Windows10 />} />
           <Route exact path='/windows11' element={<Windows11 />} />
         </Routes>
         <Footer />

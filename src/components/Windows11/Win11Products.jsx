@@ -11,44 +11,28 @@ const PageProducts = () => {
     const fetchData = () => {
       const pageProducts = [
         {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
+          name: "Upgrade To Windows 11 Professional - Product Key",
+          description: "$64.99",
+          delprice:"$192.99",
+          product_img: "img/subpages/windows11/upgrade-to-windows-11-product-key.jpg",
+        },
+        {
+          name: "Windows 11 Enterprise 64 Bit - Product Key",
+          description: "$85.99",
+          delprice:"$246.99",
+          product_img: "img/subpages/windows11/windows-11-enterprise-32-64-bit-product-key.jpg",
+        },
+        {
+          name: "Windows 11 Home 64 Bit - Product Key",
+          description: "$53.99",
+          delprice:"$182.99",
+          product_img: "img/subpages/windows11/windows-11-home-32-64-bit-product-key.jpg",
         },
         {
           name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$39.99",
-          product_img: "img/products/product-4.png",
+          description: "$64.99",
+          delprice:"$192.99",
+          product_img: "img/subpages/windows11/windows-11-professional-32-64-bit-product-key.jpg",
         },
       ];
 
@@ -61,7 +45,7 @@ const PageProducts = () => {
   const renderProducts = () => {
     return products.map((product, index) => (
       <div key={index} className="col-lg-3 col-md-6 col-sm-6">
-        <div className="container-fadeInTop">
+        <div className="container-fadeInTop mt30">
           <div className="office-content">
             <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
@@ -81,7 +65,7 @@ const PageProducts = () => {
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.description}</del>
+                  <del className="delete-price">{product.delprice}</del>
                   <span className="low-price">{product.description}</span>
                 </span>
               </li>

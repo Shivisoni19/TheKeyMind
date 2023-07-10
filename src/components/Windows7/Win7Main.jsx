@@ -9,9 +9,9 @@ const Win7Main = () => {
       {/* <!--about content --> */}
       <div class="blog">
         <div class="container">
-          <div class="title">
+          <div class="title mt0">
             <h1>
-              <img src="img/subpages/Windows11.jpg" style={{ width: "20%" }} />
+              <img src="img/subpages/Windows-7.jpg" style={{ width: "70%" }} />
             </h1>
           </div>
           <div class="text-to-action">
@@ -96,13 +96,13 @@ const Win7Main = () => {
             </p>
             <ol>
               <li>
-                • One product key for Windows 7 Operating Systems (one key per
+                One product key for Windows 7 Operating Systems (one key per
                 device, perpetual)
               </li>
-              <li>• Step-by-step instructions.</li>
-              <li>• Download the link to the ISO file.</li>
-              <li>• Supportive Customer Service</li>
-              <li>• Invoice</li>
+              <li>Step-by-step instructions.</li>
+              <li>Download the link to the ISO file.</li>
+              <li>Supportive Customer Service</li>
+              <li>Invoice</li>
             </ol>
 
             <h4>
@@ -142,7 +142,7 @@ const Win7Main = () => {
 
             <p>
               Enjoy your shopping on
-              <Link href="#" class="text-orange">
+              <Link href="#" class="text-orange" style={{marginLeft:"8px"}}>
                 thekeymind.com
               </Link>
             </p>

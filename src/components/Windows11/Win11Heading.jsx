@@ -14,7 +14,7 @@ const PageHeading = () => {
 			  </div>
 			  <div class="call-to-action">
 				<p>
-				Buy and download Windows 7 Operating Systems from TheKeymind at the best price. You'll receive a 100% original Microsoft license, secure payment options, and a guaranteed purchase. Immediate delivery will be provided via email, including a download link for the Windows 7 ISO file and detailed activation instructions. Enjoy the convenience of a fast and secure process.</p>
+				Upgrade to Windows 11 from TheKeymind and enjoy a genuine license, secure payment options, and exceptional customer service. Instantly receive your license via email and rely on our dedicated support team for assistance. Discover the exciting features of Windows 11 with confidence.</p>
 			  </div>
 			</div>
 		  </div>
