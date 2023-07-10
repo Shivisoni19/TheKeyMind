@@ -1,8 +1,23 @@
 import { event } from "jquery";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
+  const meta = {
+    title: 'Contact',
+    description: 'I am a description, and I can create multiple tags',
+    canonical: 'http://example.com/path/to/page',
+    meta: {
+      charset: 'utf-8',
+      name: {
+        keywords: 'react,meta,document,html,tags'
+      },
+      robots: 'index,follow', // Add the robots meta tag
+      googlebot: 'index,follow' // Add the googlebot meta tag
+    }
+  };
+
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -60,6 +75,15 @@ const Contact = () => {
 
   return (
     <>
+    <Helmet>
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <link rel="canonical" href={meta.canonical} />
+        <meta charSet={meta.meta.charset} />
+        <meta name="keywords" content={meta.meta.name.keywords} />
+        <meta name="robots" content={meta.meta.robots} /> {/* Add robots meta tag */}
+        <meta name="googlebot" content={meta.meta.googlebot} /> {/* Add googlebot meta tag */}
+      </Helmet>
       <div className="contact-content">
         <div className="contact">
           <div className="container">
@@ -81,7 +105,7 @@ const Contact = () => {
             <div className="row">
               <div className="col-md-8">
                 <h2>Contact Us</h2>
-                <form id="contact-form" action="#">
+                <form id="contact-form" action="#" method="POST">
                   <input
                     name="name"
                     id="name"

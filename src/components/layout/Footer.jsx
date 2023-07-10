@@ -18,7 +18,7 @@ const Footer = () => {
             <div class="row">
               <div class="col-md-3">
                 <div class="f-about">
-                  <h1>ABOUT KEY SHOP</h1>
+                  <h1>ABOUT KEY MIIND</h1>
                   <p class="mb20">
                     We possess within us two minds. So far I have written only
                     of the conscious mind.We further know that the subconscious
@@ -33,15 +33,14 @@ const Footer = () => {
               </div>
               <div class="col-md-3">
                 <div class="infos">
-                  <h1>BUY ONLINE</h1>
+                  <h1>Services</h1>
                   <ul>
-                    <li><Link to="/shipping">• Shipping</Link></li>
-                    <li><Link to="/returnrefund">• Returns And Refunds</Link></li>
-                    <li><Link to="/payment">• Payments</Link></li>
-                    <li><Link to="/">• Become Affiliate</Link></li>
-                    <li><Link to="/privacypolicy">• Privacy Policy</Link></li>
-                    <li><Link to="/myaccount">• My Account</Link></li>
-                    {/* <!-- <li><Link href="#">• Returns</Link></li> --> */}
+                    <li><Link to="/shipping">• Operating System</Link></li>
+                    <li><Link to="/returnrefund">• Microsoft Office</Link></li>
+                    <li><Link to="/payment">• Antivirus</Link></li>
+                    <li><Link to="/">• VPN</Link></li>
+                    <li><Link to="/privacypolicy">• Server</Link></li>
+                    <li><Link to="/myaccount">• Backup & Recovery</Link></li>
                   </ul>
                 </div>
               </div>
@@ -51,8 +50,8 @@ const Footer = () => {
                   <ul>
                     <li><Link to="/about">• About Us</Link></li>
                     <li><Link to="/termsconditions">• Terms And Conditions</Link></li>
-                    <li><Link to="/">• Sitemap</Link></li>
-                    {/* <li><Link href="#">• Sitemap</Link></li> */}
+                    <li><Link to="/">• Return Refund</Link></li>
+                    <li><Link href="#">• Shipping</Link></li>
                     {/* <!-- <li><Link href="#">• Contact Us</Link></li> --> */}
                     <li><Link to="/privacypolicy">• Privacy Policy</Link></li>
                     <li><Link to="/cookiepolicy">• Cookie Policy</Link></li>

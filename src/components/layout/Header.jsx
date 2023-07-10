@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Login from '../../pages/Login';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <>
       <div id='container'>
@@ -13,10 +13,10 @@ const Header = (props) => {
             <div className='container'>
               <div className='left-line'>
                 <div className='mobile-a'>
-                  <Link to="/login" className='login-window'>
-                    <i className='fa fa-user'></i>
+                  <Link to={`tel:${91873268445}`} className='login-window'>
+                    <i className="fa fa-phone"></i>
                   </Link>
-                  <Link href='#'>
+                  <Link to="/">
                     <i className='fa fa-heart'></i>
                   </Link>
                 </div>
@@ -76,16 +76,20 @@ const Header = (props) => {
               </div>
               {/* <!-- Login/Registration & My Account form  --> */}
               <div className='register-login d-block d-sm-none'>
-                {/* <span>{props.name ? `Welcome - ${props.name}` : "Login Please"}</span> */}
-                {/* <i className="fa fa-user font-color fa-lg" aria-hidden="true"></i>
-                <Link to="/myaccount" className="login-window">User Account</Link> */}
-                <Link to="/signup" className='login-window'>
+                <Link to={`tel:${98562125212}`} className='login-window'>
+                  {98562125212}
+                </Link>
+                {/* <Link to="/signup" className='login-window'>
                   Register
                 </Link>
                 <span>/</span>
                 <Link to="/login" className='login-window'>
                   Login
-                </Link>
+                </Link> */}
+                {/* <h2>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2> */}
+
+                {/* <i className="fa fa-user font-color fa-lg" aria-hidden="true"></i>
+                <Link to="/myaccount" className="login-window">User Account</Link> */}
               </div>
 
               {/* <!-- cart  --> */}
@@ -177,7 +181,7 @@ const Header = (props) => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <header>Windows 11</header>
+                            <header className='mega-box-heading'><Link>Windows 11</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows 11 Professional</Link>
@@ -194,7 +198,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Windows 10</header>
+                          <header className='mega-box-heading'><Link>Windows 10</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows 10 Professional</Link>
@@ -208,7 +212,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Windows 7</header>
+                          <header className='mega-box-heading'><Link>Windows 7</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows 7 Professional</Link>
@@ -222,7 +226,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Windows 8</header>
+                          <header className='mega-box-heading'><Link>Windows 8</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows 8.1 Professional</Link>
@@ -243,7 +247,7 @@ const Header = (props) => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <header>Office 2021</header>
+                          <header className='mega-box-heading'><Link>Office 2021</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2021 Professional</Link>
@@ -257,7 +261,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Office 2019</header>
+                          <header className='mega-box-heading'><Link>Office 2019</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2019 Professional Plus</Link>
@@ -271,7 +275,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Office 2016</header>
+                          <header className='mega-box-heading'><Link>Office 2016</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2016 Professional Plus</Link>
@@ -282,7 +286,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Office 2013</header>
+                          <header className='mega-box-heading'><Link>Office 2013</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2013 Professional Plus</Link>
@@ -290,7 +294,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Office 2010</header>
+                          <header className='mega-box-heading'><Link>Office 2010</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2010 Professional Plus</Link>
@@ -298,7 +302,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Microsoft 365</header>
+                          <header className='mega-box-heading'><Link>Microsoft 365</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Microsoft 365 Business</Link>
@@ -312,7 +316,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Office for MAC</header>
+                          <header className='mega-box-heading'><Link>Office for MAC</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Office 2021 Home & Student for Mac</Link>
@@ -329,7 +333,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Microsoft Office App</header>
+                          <header className='mega-box-heading'><Link>Microsoft Office App</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Microsoft Access</Link>
@@ -371,7 +375,7 @@ const Header = (props) => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <header>Kaspersky</header>
+                          <header className='mega-box-heading'><Link>Kaspersky</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Kaspersky AntiVirus for PC</Link>
@@ -388,7 +392,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>ESET</header>
+                          <header className='mega-box-heading'><Link>ESET</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Eset Internet Security for PC - MAC - ANDROID</Link>
@@ -402,7 +406,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>McAfee</header>
+                          <header className='mega-box-heading'><Link>McAfee</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>McAfee Total Protection for PC - MAC - ANDROID - IOS</Link>
@@ -413,7 +417,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Bitdefender</header>
+                          <header className='mega-box-heading'><Link>Bitdefender</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Bitdefender Total Security for PC - MAC</Link>
@@ -433,7 +437,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>AVAST</header>
+                          <header className='mega-box-heading'><Link>AVAST</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>AVAST Premium Security for PC</Link>
@@ -453,7 +457,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Norton</header>
+                          <header className='mega-box-heading'><Link>Norton</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Norton 360 Deluxe for PC - MAC - ANDROID - IOS</Link>
@@ -480,7 +484,7 @@ const Header = (props) => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <header>VPN for PC</header>
+                          <header className='mega-box-heading'><Link>VPN for PC</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>HMA VPN - PC</Link>
@@ -491,7 +495,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>VPN for MAC</header>
+                          <header className='mega-box-heading'><Link>VPN for MAC</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>HMA VPN - MAC</Link>
@@ -502,7 +506,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>VPN for MOBILE</header>
+                          <header className='mega-box-heading'><Link>VPN for MOBILE</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>HMA VPN - ANDROID / IOS</Link>
@@ -513,7 +517,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>HMA VPN</header>
+                          <header className='mega-box-heading'><Link>HMA VPN </Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>HMA VPNl</Link>
@@ -521,7 +525,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Avast VPN</header>
+                          <header className='mega-box-heading'><Link>Avast VPN</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>AVAST SecureLine VPN</Link>
@@ -542,7 +546,7 @@ const Header = (props) => {
                       <div className='mega-box'>
                         <div className='content'>
                            <div className='row'>
-                            <header>Windows Server</header>
+                           <header className='mega-box-heading'><Link>Windows Server</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link to="/productsubpage">Windows Server 2022</Link>
@@ -565,7 +569,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Windows Server CAL</header>
+                          <header className='mega-box-heading'><Link>Windows Server CAL</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows Server 2022 CAL</Link>
@@ -582,7 +586,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Windows Server RDS CAL</header>
+                          <header className='mega-box-heading'><Link>Windows Server RDS CAL</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Windows Server 2022 RDS CAL</Link>
@@ -599,7 +603,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>Microsoft SQL Server</header>
+                          <header className='mega-box-heading'><Link>Microsoft SQL Server</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>Microsoft SQL Server 2019 Standard</Link>
@@ -637,7 +641,7 @@ const Header = (props) => {
                             </div>
                           </div>
                          <div className='row'>
-                            <header>AOMEI</header>
+                         <header className='mega-box-heading'><Link>AOMEI</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>AOMEI Backupper</Link>
@@ -651,7 +655,7 @@ const Header = (props) => {
                             </ul>
                           </div>
                           <div className='row'>
-                            <header>EaseUS</header>
+                          <header className='mega-box-heading'><Link>EaseUS</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link href='#'>EaseUS Data Recovery</Link>

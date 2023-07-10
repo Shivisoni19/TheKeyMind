@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import SignupFooter from "./SignupFooter";
 
 const SignupForm = () => {
-  const [values, setValues] = useState(
-    {
-      firstname:"",
-      lastname:"",
-      email:"",
-      password:"",
-    }
-  );
-
-  const handleSubmission = () => {
-    console.log(values)
-  }
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState({});
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
+
+  const validateForm = () => {
+    const errors = {};
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      errors.email = "Please enter a valid email address.";
+    }
+
+    if (password.length < 6) {
+      errors.password = "Password must be at least 6 characters long.";
+    }
+
+    return errors;
+  };
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -39,7 +40,7 @@ const SignupForm = () => {
 
   const handleText2Change = (e) => {
     setLastName(e.target.value);
-  }
+  };
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
@@ -57,21 +58,6 @@ const SignupForm = () => {
     }
   };
 
-  const validateForm = () => {
-    const errors = {};
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(email)) {
-      errors.email = "Please enter a valid email address.";
-    }
-
-    if (password.length < 6) {
-      errors.password = "Password must be at least 6 characters long.";
-    }
-
-    return errors;
-  };
-
   return (
     <>
       <div className="sign-up-head">
@@ -86,11 +72,8 @@ const SignupForm = () => {
               <input
                 type="text"
                 id="text"
-                value={values.firstname}
-                // onChange={handleText1Change}
-                onChange={(event) => 
-                  setValues((prev) => ({ ...prev,firstname: event.target.value}))
-                }
+                value={firstname}
+                onChange={handleText1Change}
                 required
               />
               {errors.text && <p className="error">{errors.text}</p>}
@@ -100,11 +83,8 @@ const SignupForm = () => {
               <input
                 type="text"
                 id="text"
-                value={values.lastname}
-                // onChange={handleText2Change}
-                onChange={(event) => 
-                  setValues((prev) => ({ ...prev,lastname: event.target.value}))
-                }
+                value={lastname}
+                onChange={handleText2Change}
                 required
               />
               {errors.text && <p className="error">{errors.text}</p>}
@@ -114,11 +94,8 @@ const SignupForm = () => {
               <input
                 type="email"
                 id="email"
-                value={values.email}
-                // onChange={handleEmailChange}
-                onChange={(event) => 
-                  setValues((prev) => ({ ...prev,email: event.target.value}))
-                }
+                value={email}
+                onChange={handleEmailChange}
                 required
               />
               {errors.email && <p className="error">{errors.email}</p>}
@@ -128,11 +105,8 @@ const SignupForm = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
-                value={values.password}
-                // onChange={handlePasswordChange}
-                onChange={(event) => 
-                  setValues((prev) => ({ ...prev,password: event.target.value}))
-                }
+                value={password}
+                onChange={handlePasswordChange}
                 required
               />
               <button type="button" onClick={toggleShowPassword}>
@@ -144,8 +118,12 @@ const SignupForm = () => {
               </button>
               {errors.password && <p className="error">{errors.password}</p>}
             </div>
-            <div className="form-row btn-center">
-              <button type="submit" onClick={handleSubmission}>Signup</button>
+            <div className="form-row btn-center signup-btn">
+              <button
+                type="submit"
+              >
+                Signup
+              </button>
             </div>
             <SignupFooter />
           </form>
