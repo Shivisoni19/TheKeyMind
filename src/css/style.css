@@ -6899,7 +6899,7 @@ nav input{
 .slide-container{
   display: flex;
   justify-content: space-evenly;
-  margin-top: -4vw;
+  /* margin-top: -4vw; */
 }
 
 .slide-bg img{

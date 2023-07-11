@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 
 const ProductDetails = () => {
   const meta = {
-    title: 'Product',
+    title: 'ProductDetails/ID',
     description: 'I am a description, and I can create multiple tags',
     canonical: 'http://example.com/path/to/page',
     meta: {

@@ -65,6 +65,8 @@ import Windows11 from './pages/Windows11'
 import AOMEI from './pages/AOMEI'
 import EaseUs from './pages/EaseUs'
 import MicrosoftOfficeApp from './pages/MicrosoftOfficeApp'
+import MicrosoftOfc2021 from './pages/MicrosoftOfc2021'
+import MicrosoftOfc2019 from './pages/MicrosoftOfc2019'
 
 function App () {
 
@@ -115,6 +117,8 @@ function App () {
           <Route exact path='/aomei' element={<AOMEI/>} />
           <Route exact path='/easeus' element={<EaseUs />} />
           <Route exact path='/microsoftofficeapp' element={<MicrosoftOfficeApp />} />
+          <Route exact path='/microsoftoffice2021' element={<MicrosoftOfc2021/>} />
+          <Route exact path='/microsoftoffice2019' element={<MicrosoftOfc2019/>} />
         </Routes>
         <Footer />
       </Router>
