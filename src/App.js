@@ -67,6 +67,17 @@ import EaseUs from './pages/EaseUs'
 import MicrosoftOfficeApp from './pages/MicrosoftOfficeApp'
 import MicrosoftOfc2021 from './pages/MicrosoftOfc2021'
 import MicrosoftOfc2019 from './pages/MicrosoftOfc2019'
+import MicrosoftOfc2016 from './pages/MicrosoftOfc2016'
+import MicrosoftOfc2013 from './pages/MicrosoftOfc2013'
+import MicrosoftOfc2010 from './pages/MicrosoftOfc2010'
+import Microsoft365 from './pages/Microsoft365'
+import MicrosoftOfcMac from './pages/MicrosoftOfcMac'
+import Kaspersky from './pages/Kaspersky'
+import ESET from './pages/ESET'
+import McAfee from './pages/McAfee'
+import Bitdefender from './pages/Bitdefender'
+import AVAST from './pages/AVAST'
+import Norton from './pages/Norton'
 
 function App () {
 
@@ -119,6 +130,17 @@ function App () {
           <Route exact path='/microsoftofficeapp' element={<MicrosoftOfficeApp />} />
           <Route exact path='/microsoftoffice2021' element={<MicrosoftOfc2021/>} />
           <Route exact path='/microsoftoffice2019' element={<MicrosoftOfc2019/>} />
+          <Route exact path='/microsoftoffice2016' element={<MicrosoftOfc2016/>} />
+          <Route exact path='/microsoftoffice2013' element={<MicrosoftOfc2013/>} />
+          <Route exact path='/microsoftoffice2010' element={<MicrosoftOfc2010/>} />
+          <Route exact path='/microsoft365' element={<Microsoft365/>} />
+          <Route exact path='/microsoftofficemac' element={<MicrosoftOfcMac/>} />
+          <Route exact path='/kaspersky' element={<Kaspersky/>} />          
+          <Route exact path='/eset' element={<ESET/>} />
+          <Route exact path='/mcafee' element={<McAfee/>} />
+          <Route exact path='/bitdefender' element={<Bitdefender/>} />
+          <Route exact path='/avast' element={<AVAST/>} />
+          <Route exact path='/norton' element={<Norton/>} />
         </Routes>
         <Footer />
       </Router>

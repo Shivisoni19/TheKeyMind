@@ -16,7 +16,7 @@ const Header = () => {
                   <Link to={`tel:${91873268445}`} className='login-window'>
                     <i className="fa fa-phone"></i>
                   </Link>
-                  <Link to="/">
+                  <Link to="/wishlist">
                     <i className='fa fa-heart'></i>
                   </Link>
                 </div>
@@ -24,7 +24,7 @@ const Header = () => {
               <div className='right-line'>
                 <div className='mobile-version'>
                   <div className='cart-icon'>
-                    <Link href='#'>
+                    <Link to="/cart">
                       <i className='fa fa-cart-plus fa-lg'></i>
                       <span className='f-600'>8 Items</span>
                     </Link>
@@ -34,20 +34,20 @@ const Header = () => {
                 <ul className='curr clearfix'>
                   <li>
                     <span>Currency: </span>
-                    <Link href='#'>Dollar $</Link>
+                    <Link to="/">Dollar $</Link>
                   </li>
                 </ul>
               </div>
               <div className='right-line'>
                 <ul>
                   <li>
-                    <Link href='#'>Shipping In Seconds</Link>
+                    <Link to="/">Shipping In Seconds</Link>
                   </li>
                   <li>
-                    <Link href='#'>Secure Payment:SSL</Link>
+                    <Link to="/">Secure Payment:SSL</Link>
                   </li>
                   <li>
-                    <Link href='#'>
+                    <Link to="/">
                       Free Support E-mail/Chat (Mon.-Fri. 10-13 14-17)
                     </Link>
                   </li>
@@ -60,7 +60,7 @@ const Header = () => {
           <div className='upper-header'>
             <div className='container'>
               <div className='main-logo'>
-                <Link href='index.html'>
+                <Link to="/">
                   <img src="img/logo/logo.png" alt=''/>
                 </Link>
               </div>
@@ -99,11 +99,11 @@ const Header = () => {
                     className='fa fa-shopping-cart fa-2x font-color'
                     aria-hidden='true'
                   ></i>
-                  <div className='shop-items'>10</div>
+                  {/* <div className='shop-items'>10</div> */}
                 </div>
                 <div className='hover-cart'>
                   <div className='hover-box'>
-                    <Link href='#'>
+                    <Link to="/cart">
                       <img src='images/hover1.png' alt='' className='left-hover' />
                     </Link>
                     <div className='hover-details'>
@@ -112,7 +112,7 @@ const Header = () => {
                       <div className='quantity'>Quantity: 1</div>
                     </div>
 
-                    <Link href='#' className='right-hover'>
+                    <Link to="/cart" className='right-hover'>
                       <img src='images/delete.png' alt='' />
                     </Link>
 
@@ -127,7 +127,7 @@ const Header = () => {
                       <div className='quantity'>Quantity: 1</div>
                     </div>
 
-                    <Link href='#' className='right-hover'>
+                    <Link to="/cart" className='right-hover'>
                       <img src='images/delete.png' alt='' />
                     </Link>
 
@@ -181,55 +181,55 @@ const Header = () => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                            <header className='mega-box-heading'><Link>Windows 11</Link></header>
+                            <header className='mega-box-heading'><Link to="/windows11">Windows 11</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows 11 Professional</Link>
+                                <Link to="/windows11">Windows 11 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows 11 Home</Link>
+                                <Link to="/windows11">Windows 11 Home</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows 11 Enterprise</Link>
+                                <Link to="/windows11">Windows 11 Enterprise</Link>
                               </li>
                               <li>
-                                <Link href='#'>Upgrade to Windows 11 Professional</Link>
+                                <Link to="/windows11">Upgrade to Windows 11 Professional</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Windows 10</Link></header>
+                          <header className='mega-box-heading'><Link to="/windows10">Windows 10</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows 10 Professional</Link>
+                                <Link to="/windows10">Windows 10 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows 10 Home</Link>
+                                <Link to="/windows10">Windows 10 Home</Link>
                               </li>
                               <li>
-                                <Link href='#'>Upgrade to Windows 10 Professional</Link>
+                                <Link to="/windows10">Upgrade to Windows 10 Professional</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Windows 7</Link></header>
+                          <header className='mega-box-heading'><Link to="/windows7">Windows 7</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows 7 Professional</Link>
+                                <Link to="/windows7">Windows 7 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows 7 Ultimate</Link>
+                                <Link to="/windows7">Windows 7 Ultimate</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows 7 Home & Premium</Link>
+                                <Link to="/windows7">Windows 7 Home & Premium</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Windows 8</Link></header>
+                          <header className='mega-box-heading'><Link to="/windows8">Windows 8</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows 8.1 Professional</Link>
+                                <Link to="/windows8">Windows 8.1 Professional</Link>
                               </li>
                             </ul>
                           </div>
@@ -247,117 +247,117 @@ const Header = () => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office 2021</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftoffice2021">Office 2021</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2021 Professional</Link>
+                                <Link to="/microsoftoffice2021">Office 2021 Professional</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2021 Home & Business</Link>
+                                <Link to="/microsoftoffice2021">Office 2021 Home & Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2021 Home & Student</Link>
+                                <Link to="/microsoftoffice2021">Office 2021 Home & Student</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office 2019</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftoffice2019">Office 2019</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2019 Professional Plus</Link>
+                                <Link to="/microsoftoffice2019">Office 2019 Professional Plus</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2019 Home & Business</Link>
+                                <Link to="/microsoftoffice2019">Office 2019 Home & Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2019 Home & Student</Link>
+                                <Link to="/microsoftoffice2019">Office 2019 Home & Student</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office 2016</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftoffice2016">Office 2016</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2016 Professional Plus</Link>
+                                <Link to="/microsoftoffice2016">Office 2016 Professional Plus</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2016 Home & Student</Link>
+                                <Link to="/microsoftoffice2016">Office 2016 Home & Student</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office 2013</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftoffice2013">Office 2013</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2013 Professional Plus</Link>
+                                <Link to="/microsoftoffice2013">Office 2013 Professional Plus</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office 2010</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftoffice2010">Office 2010</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2010 Professional Plus</Link>
+                                <Link to="/microsoftoffice2010">Office 2010 Professional Plus</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Microsoft 365</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoft365">Microsoft 365</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Microsoft 365 Business</Link>
+                                <Link to="/microsoft365">Microsoft 365 Business</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft 365 Personal</Link>
+                                <Link to="/microsoft365">Microsoft 365 Personal</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft 365 Family</Link>
+                                <Link to="/microsoft365">Microsoft 365 Family</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Office for MAC</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftofficemac">Office for MAC</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Office 2021 Home & Student for Mac</Link>
+                                <Link to="/microsoftofficemac">Office 2021 Home & Student for Mac</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2021 Home & Business for Mac</Link>
+                                <Link to="/microsoftofficemac">Office 2021 Home & Business for Mac</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2019 Home & Business for MAC</Link>
+                                <Link to="/microsoftofficemac">Office 2019 Home & Business for MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Office 2016 Home & Business for MAC</Link>
+                                <Link to="/microsoftofficemac">Office 2016 Home & Business for MAC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Microsoft Office App</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftofficeapp">Microsoft Office App</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Microsoft Access</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Access</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Project</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Project</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Visio</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Visio</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Visual Studio</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Visual Studio</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Outlook</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Outlook</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft OneNote</Link>
+                                <Link to="/microsoftofficeapp">Microsoft OneNote</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Word</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Word</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft Excel</Link>
+                                <Link to="/microsoftofficeapp">Microsoft Excel</Link>
                               </li>
                             </ul>
                           </div>
@@ -365,7 +365,7 @@ const Header = () => {
                       </div>
                     </li>
                     <li>
-                      <Link to="antivirus" className='desktop-item'>
+                      <Link to="/antivirus" className='desktop-item'>
                         Antivirus
                       </Link>
                       <input type='checkbox' id='showMega2' />
@@ -375,98 +375,98 @@ const Header = () => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Kaspersky</Link></header>
+                          <header className='mega-box-heading'><Link to="/kaspersky">Kaspersky</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Kaspersky AntiVirus for PC</Link>
+                                <Link to="/kaspersky">Kaspersky AntiVirus for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Kaspersky Internet Security (Kaspersky Standard) for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/kaspersky">Kaspersky Internet Security (Kaspersky Standard) for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Kaspersky Total Security (Kaspersky Plus) for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/kaspersky">Kaspersky Total Security (Kaspersky Plus) for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Kaspersky Internet Security for ANDROID</Link>
+                                <Link to="/kaspersky">Kaspersky Internet Security for ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>ESET</Link></header>
+                          <header className='mega-box-heading'><Link to="/eset">ESET</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Eset Internet Security for PC - MAC - ANDROID</Link>
+                                <Link to="/eset">Eset Internet Security for PC - MAC - ANDROID</Link>
                               </li>
                               <li>
-                                <Link href='#'>Eset NOD32 Antivirus for PC - MAC</Link>
+                                <Link to="/eset">Eset NOD32 Antivirus for PC - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>ESET Mobile Security for ANDROID</Link>
+                                <Link to="/eset">ESET Mobile Security for ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>McAfee</Link></header>
+                          <header className='mega-box-heading'><Link to="/mcafee">McAfee</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>McAfee Total Protection for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/mcafee">McAfee Total Protection for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>McAfee Internet Security for PC - MAC - ANDROID</Link>
+                                <Link to="/mcafee">McAfee Internet Security for PC - MAC - ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Bitdefender</Link></header>
+                          <header className='mega-box-heading'><Link to="/bitdefender">Bitdefender</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Bitdefender Total Security for PC - MAC</Link>
+                                <Link to="/bitdefender">Bitdefender Total Security for PC - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Bitdefender Internet Security for PC</Link>
+                                <Link to="/bitdefender">Bitdefender Internet Security for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Bitdefender Antivirus Plus for PC</Link>
+                                <Link to="/bitdefender">Bitdefender Antivirus Plus for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Bitdefender Antivirus for MAC</Link>
+                                <Link to="/bitdefender">Bitdefender Antivirus for MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>Bitdefender Mobile Security for ANDROID</Link>
+                                <Link to="/bitdefender">Bitdefender Mobile Security for ANDROID</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>AVAST</Link></header>
+                          <header className='mega-box-heading'><Link to="/avast">AVAST</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>AVAST Premium Security for PC</Link>
+                                <Link to="/avast">AVAST Premium Security for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST Premium Security for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/avast">AVAST Premium Security for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST Ultimate for PC</Link>
+                                <Link to="/avast">AVAST Ultimate for PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST SecureLine VPN for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/avast">AVAST SecureLine VPN for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST Driver Update for PC</Link>
+                                <Link to="/avast">AVAST Driver Update for PC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Norton</Link></header>
+                          <header className='mega-box-heading'><Link to="/norton">Norton</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Norton 360 Deluxe for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/norton">Norton 360 Deluxe for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Norton 360 Premium for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/norton">Norton 360 Premium for PC - MAC - ANDROID - IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>Norton 360 Standard for PC - MAC - ANDROID - IOS</Link>
+                                <Link to="/norton">Norton 360 Standard for PC - MAC - ANDROID - IOS</Link>
                               </li>
                             </ul>
                           </div>
@@ -474,7 +474,7 @@ const Header = () => {
                       </div>
                     </li>
                     <li>
-                      <Link to="vpn" className='desktop-item'>
+                      <Link to="/vpn" className='desktop-item'>
                         VPN
                       </Link>
                       <input type='checkbox' id='showMega3' />

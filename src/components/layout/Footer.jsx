@@ -35,12 +35,12 @@ const Footer = () => {
                 <div class="infos">
                   <h1>Services</h1>
                   <ul>
-                    <li><Link to="/shipping">• Operating System</Link></li>
-                    <li><Link to="/returnrefund">• Microsoft Office</Link></li>
-                    <li><Link to="/payment">• Antivirus</Link></li>
-                    <li><Link to="/">• VPN</Link></li>
-                    <li><Link to="/privacypolicy">• Server</Link></li>
-                    <li><Link to="/myaccount">• Backup & Recovery</Link></li>
+                    <li><Link to="/operatingsystem">• Operating System</Link></li>
+                    <li><Link to="/microsoftoffice">• Microsoft Office</Link></li>
+                    <li><Link to="/antivirus">• Antivirus</Link></li>
+                    <li><Link to="/vpn">• VPN</Link></li>
+                    <li><Link to="/server">• Server</Link></li>
+                    <li><Link to="/backuprecovery">• Backup & Recovery</Link></li>
                   </ul>
                 </div>
               </div>
@@ -50,8 +50,8 @@ const Footer = () => {
                   <ul>
                     <li><Link to="/about">• About Us</Link></li>
                     <li><Link to="/termsconditions">• Terms And Conditions</Link></li>
-                    <li><Link to="/">• Return Refund</Link></li>
-                    <li><Link href="#">• Shipping</Link></li>
+                    <li><Link to="/returnrefund">• Return Refund</Link></li>
+                    <li><Link to="/shipping">• Shipping</Link></li>
                     {/* <!-- <li><Link href="#">• Contact Us</Link></li> --> */}
                     <li><Link to="/privacypolicy">• Privacy Policy</Link></li>
                     <li><Link to="/cookiepolicy">• Cookie Policy</Link></li>
@@ -72,22 +72,22 @@ const Footer = () => {
                   <h1>FIND US ON</h1>
                   <ul class="footer-socials">
                     <li>
-                      <Link href="#"><i class="fa fa-facebook"></i></Link>
+                      <Link to="/"><i class="fa fa-facebook"></i></Link>
                     </li>
                     <li>
-                      <Link href="#"><i class="fa fa-twitter"></i></Link>
+                      <Link to="/"><i class="fa fa-twitter"></i></Link>
                     </li>
                     <li>
-                      <Link href="#"><i class="fa fa-pinterest"></i></Link>
+                      <Link to="/"><i class="fa fa-pinterest"></i></Link>
                     </li>
                     <li>
-                      <Link href="#"><i class="fa fa-linkedin"></i></Link>
+                      <Link to="/"><i class="fa fa-linkedin"></i></Link>
                     </li>
                     <li>
-                      <Link href="#"><i class="fa fa-google-plus"></i></Link>
+                      <Link to="/"><i class="fa fa-google-plus"></i></Link>
                     </li>
                     <li>
-                      <Link href="#"><i class="fa fa-youtube"></i></Link>
+                      <Link to="/"><i class="fa fa-youtube"></i></Link>
                     </li>
                   </ul>
                 </div>
@@ -133,10 +133,10 @@ const Footer = () => {
             <div class="row">
               <div class="copyright">
                 © 2023 - All rights reserved |
-                <Link href="#"> UK Soft LTD VAT: GB364289273</Link>
+                <Link to="/"> UK Soft LTD VAT: GB364289273</Link>
               </div>
               <div class="payment">
-                <Link href="#"><img src="upload/payments.png" alt="" /></Link>
+                <Link to="/"><img src="upload/payments.png" alt="" /></Link>
               </div>
               <div class="clear"></div>
             </div>
