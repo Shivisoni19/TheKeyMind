@@ -78,6 +78,7 @@ import McAfee from './pages/McAfee'
 import Bitdefender from './pages/Bitdefender'
 import AVAST from './pages/AVAST'
 import Norton from './pages/Norton'
+import Blog from './pages/Blog'
 
 function App () {
 
@@ -141,6 +142,7 @@ function App () {
           <Route exact path='/bitdefender' element={<Bitdefender/>} />
           <Route exact path='/avast' element={<AVAST/>} />
           <Route exact path='/norton' element={<Norton/>} />
+          <Route exact path='/blog' element={<Blog/>} />
         </Routes>
         <Footer />
       </Router>

@@ -49,6 +49,7 @@ const Footer = () => {
                   <h1>USEFUL LINKS</h1>
                   <ul>
                     <li><Link to="/about">• About Us</Link></li>
+                    <li><Link to="/blog">• Blog</Link></li>
                     <li><Link to="/termsconditions">• Terms And Conditions</Link></li>
                     <li><Link to="/returnrefund">• Return Refund</Link></li>
                     <li><Link to="/shipping">• Shipping</Link></li>
