@@ -1,22 +1,70 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+import { getStorage } from 'firebase/storage';
 
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"
-
-
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAOaePfNJGMuOn9-uLTgqKUcwR4m3ThwSs",
-  authDomain: "thekeymind-d8d3e.firebaseapp.com",
-  databaseURL: "https://thekeymind-d8d3e-default-rtdb.firebaseio.com",
-  projectId: "thekeymind-d8d3e",
-  storageBucket: "thekeymind-d8d3e.appspot.com",
-  messagingSenderId: "74551672960",
-  appId: "1:74551672960:web:2a9c2e2d3186c6441da665",
-  measurementId: "G-0RR57WP68D"
+  apiKey: "AIzaSyCMsUlOnzPRrvcN8mZUWhAxAiHAclvKcTU",
+  authDomain: "thekeymind2023-f4c36.firebaseapp.com",
+  projectId: "thekeymind2023-f4c36",
+  storageBucket: "thekeymind2023-f4c36.appspot.com",
+  messagingSenderId: "463992006622",
+  appId: "1:463992006622:web:352d24bba167cfb38d5f4f",
+  measurementId: "G-YMK9CY3GH5"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
 
-const auth = getAuth();
+export { auth, db, storage };
 
-export { app, auth };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCMsUlOnzPRrvcN8mZUWhAxAiHAclvKcTU",
+//   authDomain: "thekeymind2023-f4c36.firebaseapp.com",
+//   projectId: "thekeymind2023-f4c36",
+//   storageBucket: "thekeymind2023-f4c36.appspot.com",
+//   messagingSenderId: "463992006622",
+//   appId: "1:463992006622:web:352d24bba167cfb38d5f4f",
+//   measurementId: "G-YMK9CY3GH5"
+// };
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
