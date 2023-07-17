@@ -79,6 +79,15 @@ import Bitdefender from './pages/Bitdefender'
 import AVAST from './pages/AVAST'
 import Norton from './pages/Norton'
 import Blog from './pages/Blog'
+import VPNforPC from './pages/VPNforPC'
+import VPNforMac from './pages/VPNforMac'
+import VPNforMobile from './pages/VPNforMobile'
+import HMA_VPN from './pages/HMA_VPN'
+import AvastVPN from './pages/AvastVPN'
+import MicrosoftSQLServer from './pages/MicrosoftSQLServer'
+import WindowsServer from './pages/WindowsServer'
+import WindowsServerCal from './pages/WindowsServerCal'
+import WindowsServerRdsCal from './pages/WindowsServerRdsCal'
 
 function App () {
 
@@ -143,6 +152,15 @@ function App () {
           <Route exact path='/avast' element={<AVAST/>} />
           <Route exact path='/norton' element={<Norton/>} />
           <Route exact path='/blog' element={<Blog/>} />
+          <Route exact path="/vpnforpc" element={<VPNforPC/>} />
+          <Route exact path="/vpnformobile" element={<VPNforMobile/>} />
+          <Route exact path="/vpnformac" element={<VPNforMac/>} />
+          <Route exact path="/hmavpn" element={<HMA_VPN/>} />
+          <Route exact path="/avastvpn" element={<AvastVPN/>} />
+          <Route exact path="/microsoftsqlserver" element={<MicrosoftSQLServer/>} />
+          <Route exact path="/windowsserver" element={<WindowsServer/>}/>
+          <Route exact path="/windowsservercal" element={<WindowsServerCal/>}/>
+          <Route exact path="/windowsserverrdscal" element={<WindowsServerRdsCal/>}/>
         </Routes>
         <Footer />
       </Router>
