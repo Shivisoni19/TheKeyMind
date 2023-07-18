@@ -162,7 +162,7 @@ function App () {
           <Route exact path="/windowsserver" element={<WindowsServer/>}/>
           <Route exact path="/windowsservercal" element={<WindowsServerCal/>}/>
           <Route exact path="/windowsserverrdscal" element={<WindowsServerRdsCal/>}/>
-          <Route exact path="/addproduct" element={<AddProducts/>}/>
+          <Route exact path="/addproducts" element={<AddProducts/>}/>
         </Routes>
         <Footer />
       </Router>

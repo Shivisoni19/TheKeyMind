@@ -42,8 +42,10 @@ input[type="number"] {
     color: #fff;
 }
 
-/* Optional: Style for error messages (customize as needed) */
-.add-product .error-message {
+.add-product .error{
+    font-size: 12px;
     color: red;
-    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5px;
 }
