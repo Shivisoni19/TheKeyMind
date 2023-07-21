@@ -154,7 +154,7 @@ body img {
 h1 {
   color: #000;
   font-size: 28px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -162,7 +162,7 @@ h1 {
 h2 {
   color: #000;
   font-size: 24px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -170,7 +170,7 @@ h2 {
 h3 {
   color: #000;
   font-size: 20px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -178,7 +178,7 @@ h3 {
 h4 {
   color: #000;
   font-size: 18px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -186,7 +186,7 @@ h4 {
 h5 {
   color: #000;
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -194,7 +194,7 @@ h5 {
 h6 {
   color: #000;
   font-size: 15px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -639,7 +639,7 @@ form.example::after {
 }
 
 .cartmain {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #555555;
   font-weight: 700;
   font-size: 16px;
@@ -686,7 +686,7 @@ form.example::after {
   position: absolute;
   /* left: 50%; */
   /* margin-left: -60px; */
-  width: 200px;
+  width: 200px !important;
 }
 
 .cart:hover .hover-cart {
@@ -739,7 +739,7 @@ form.example::after {
 }
 
 .hover-cart span {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #000;
   font-size: 15px;
   margin-bottom: 5px;
@@ -758,7 +758,7 @@ form.example::after {
 .subtotal  span{
   font-size: 16px;
   display: inline;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
 }
 
   .viewcard {
@@ -853,7 +853,7 @@ ul#navlist li a {
   -webkit-transition: all 0.17s ease-in-out;
   -o-transition: all 0.17s ease-in-out;
   color: #fff;
-  font-family: 'Noticia Text', serif;
+  font-family: 'Poppins', serif;
   font-weight: 900;
   font-size: 15px;
   text-transform: uppercase;
@@ -1040,8 +1040,8 @@ ul#navlist > li:last-child a{
 .title h1 {
   color: #000;
   font-size: 28px;
-  font-family: 'Noticia Text';
-  font-weight: bold;
+  font-family: 'Poppins';
+  font-weight: 600;
   text-transform: uppercase;
   display: table;
   padding: 10px;
@@ -1171,7 +1171,7 @@ text-align: center;
 }
 
 .coll-text a {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #000;
   text-transform: uppercase;
   font-size: 18px;
@@ -1228,7 +1228,7 @@ margin-top: -30px;
 .filter a {
   color: #919191;
   font-size: 20px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   display: block;
@@ -1350,7 +1350,7 @@ margin-bottom: 0;
   display: block;
   margin:  0 0 5px;
   color: #7f7f7f;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-align: center;
   text-decoration: line-through;
@@ -1362,7 +1362,7 @@ margin-bottom: 0;
   display: block;
   margin:  0 0 5px 10px;
   color: #f16b34;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-align: center;
 }
@@ -1466,7 +1466,7 @@ margin-bottom: 0;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0 0;
   text-align: center;
 }
@@ -1480,14 +1480,14 @@ margin-bottom: 0;
   font-size: 12px;
   text-align: center;
   font-weight: bold;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0 0px;
   text-transform: uppercase;
 }
 
 .blog-img h3 {
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #323232;
   text-transform: uppercase;
   text-align: center;
@@ -1661,7 +1661,7 @@ padding: 30px 10px;
 .serv-box h4 {
   /* text-transform: uppercase; */
   color: #000;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 20px 0;
 }
 
@@ -1734,7 +1734,7 @@ padding: 30px 10px;
 }
 
 .feat-items h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1796,7 +1796,7 @@ padding: 30px 10px;
 }
 
 .middle-content2 a {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
@@ -1827,7 +1827,7 @@ padding: 30px 10px;
 }
 
 .feat-items2 h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1970,7 +1970,7 @@ padding: 0;
   }
 
   .fprod-item h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1997,7 +1997,7 @@ padding: 0;
     display: block;
     margin: 0 0 7px;
     color: #f16b34;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-weight: bold;
   }
 
@@ -2105,7 +2105,7 @@ ul.drop-down li a {
   display: block;
   text-decoration: none;
   color: #555555;
-  font-family: 'Noticia Text', serif;
+  font-family: 'Poppins', serif;
   font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
@@ -2231,7 +2231,7 @@ left: 17px;
 }
 
 .vertical-cart .cart a {
-font-family: 'Noticia Text';
+font-family: 'Poppins';
 color: #555555;
 font-weight: 700;
 font-size: 16px;
@@ -2378,7 +2378,7 @@ font-size: 22px;
 display: block;
 margin: 0 0 55px;
 color: #f16b34;
-font-family: 'Noticia Text';
+font-family: 'Poppins';
 font-weight: bold;
 text-align: center;
 }
@@ -2414,7 +2414,7 @@ a.load-more {
   text-align: center;
   display: block;
   font-size: 16px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #fff;
   text-transform: uppercase;
   background-color: #f16b34;
@@ -2501,7 +2501,7 @@ a.load-more:hover {
   text-align: center;
   display: block;
   font-size: 13px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #fff;
   text-transform: uppercase;
   background: transparent;
@@ -2522,7 +2522,7 @@ a.load-more:hover {
 }
 
 .bannerfull-item h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 50px;
   font-weight: bold;
   color: #fff;
@@ -2567,7 +2567,7 @@ a.load-more:hover {
 }
 
 .black-color h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 50px;
   font-weight: bold;
   color: #000;
@@ -2615,7 +2615,7 @@ a.load-more:hover {
 
 .call-to-action p{
   /* padding: 60px 0; */
-  font-family:'Noticia Text';
+  font-family:'Poppins';
   font-size: 16px!important;
     font-weight: normal;
     line-height: 1.7!important;
@@ -2627,10 +2627,11 @@ a.load-more:hover {
 
 .call-to-action h1 {
   text-align: center;
-  font-size: 32px;
-  font-family: 'Noticia Text';
+  font-size: 28px;
+  font-family: 'Poppins';
   margin: 0 0 20px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .call-to-action p {
@@ -2641,6 +2642,38 @@ a.load-more:hover {
 .call-to-action a {
   margin: 0 auto;
 }
+
+/* --------------- */
+.call-to-action1 p{
+  /* padding: 60px 0; */
+  font-family:'Poppins';
+  font-size: 16px!important;
+    font-weight: normal;
+    line-height: 1.7!important;
+    color: #000!important;
+}
+.call-to-action1 span p{
+  font-weight: 800 !important;
+}
+
+.call-to-action1 h1 {
+  /* text-align: center; */
+  font-size: 28px;
+  font-family: 'Poppins';
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.call-to-action1 p {
+  /* text-align: center; */
+  margin: 0 0 20px;
+}
+
+.call-to-action1 a {
+  margin: 0 auto;
+}
+/* --------------------- */
 
 .delivery li {
   display: inline-block;
@@ -2735,7 +2768,7 @@ outline: 0 !important;
 
 .banner-footer h1 {
 font-size: 18px;
-font-family: 'Noticia Text';
+font-family: 'Poppins';
 text-transform: uppercase;
 border-bottom: 1px solid #d4d4d4;
 padding-bottom: 18px;
@@ -2941,7 +2974,7 @@ color: #969696;
   }
 
   .asidetitle {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -3222,7 +3255,7 @@ color: #969696;
         height: 35px;
         line-height: 35px;
         text-align: center;
-        font-family: 'Noticia Text';
+        font-family: 'Poppins';
     }
 
     .blog-pagenation li a {
@@ -3248,7 +3281,7 @@ color: #969696;
     }
 
     .list-content h1 {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 24px;
       font-weight: bold;
       text-transform: uppercase;
@@ -3272,7 +3305,7 @@ color: #969696;
     }
 
     .list-midrow .high-price {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 20px;
       font-weight: bold;
       text-decoration: line-through;
@@ -3280,7 +3313,7 @@ color: #969696;
     }
 
     .list-midrow .low-price {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 20px;
       font-weight: bold;
       color: #f16b34;
@@ -3521,7 +3554,7 @@ color: #969696;
    }
 
    .middle-single h1 {
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -3551,7 +3584,7 @@ color: #969696;
     }
 
     .single-price .high-price {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 20px;
       font-weight: bold;
       text-decoration: line-through;
@@ -3559,7 +3592,7 @@ color: #969696;
     }
 
     .single-price .low-price {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 20px;
       font-weight: bold;
       color: #F16B34;
@@ -3658,7 +3691,7 @@ color: #969696;
 
      .share span {
       display: block;
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 16px;
       font-weight: bold;
       color: #000;
@@ -3724,7 +3757,7 @@ color: #969696;
     .check-anchor a {
       color: #919191;
       font-size: 20px;
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-weight: bold;
       text-transform: uppercase;
       display: block;
@@ -3747,7 +3780,7 @@ color: #969696;
      }
 
     .check-details tr th{
-      font-family: 'Noticia Text'!important;
+      font-family: 'Poppins'!important;
       font-size: 12px!important;
       font-weight: bold!important;
       text-transform: uppercase!important;
@@ -3777,7 +3810,7 @@ color: #969696;
 
 
     .check-body td {
-      font-family: 'Noticia Text' !important;
+      font-family: 'Poppins' !important;
       font-size: 15px !important;
       color: #000 !important;
     }
@@ -3910,7 +3943,7 @@ color: #969696;
 
      .orders span {
       float: right;
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 15px;
       font-weight: normal;
       color: #000;
@@ -4178,7 +4211,7 @@ color: #969696;
     }
 
     .blog-content h1{
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
@@ -4230,7 +4263,7 @@ color: #969696;
     }
 
     .blog-content blockquote {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 19px;
       font-style: italic;
       color: #6e6e6e;
@@ -4240,7 +4273,7 @@ color: #969696;
     }
 
     .block-user {
-      font-family: 'Noticia Text';
+      font-family: 'Poppins';
       font-size: 13px;
       font-style: italic;
       color: #000;
@@ -4325,7 +4358,7 @@ color: #969696;
   font-size: 28px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 35px 0 20px;
   text-transform: uppercase;
 }
@@ -4342,7 +4375,7 @@ color: #969696;
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 35px 0 20px;
   text-transform: uppercase;
 }
@@ -4362,7 +4395,7 @@ margin-left: 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #f16b34;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 19px;
   font-style: italic;
   color: #6e6e6e;
@@ -4409,7 +4442,7 @@ font-family: 'Merriweather';
 
 .blog-share p {
   display: inline;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: 700;
   font-size: 16px;
   color: #000;
@@ -4466,7 +4499,7 @@ font-style: italic;
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0px 0 20px;
   text-transform: none;
 }
@@ -4480,7 +4513,7 @@ font-style: italic;
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0 0 20px;
 }
 
@@ -4500,7 +4533,7 @@ font-style: italic;
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -4522,7 +4555,7 @@ font-style: italic;
 
 .user-spec h5 {
   float: left;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 14px;
   color: #000;
   font-weight: normal;
@@ -4582,7 +4615,7 @@ font-style: italic;
   font-size: 18px;
   color: #000;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -4656,7 +4689,7 @@ font-style: italic;
 /*Introduction*/
 
 .introduction h1 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -4678,7 +4711,7 @@ font-style: italic;
 }
 
 .intro-content h4 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: bold;
   color: #454545;
@@ -4692,7 +4725,7 @@ font-style: italic;
   }
 
   .skills-progress p {
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -4701,7 +4734,7 @@ font-style: italic;
   }
 
   .skills-progress p span {
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
@@ -4731,7 +4764,7 @@ font-style: italic;
   }
 
  .testimonials2  h4 {
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
@@ -4943,7 +4976,7 @@ padding: 0;
 }
 
 .contact h2 {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 18px;
   font-weight: bold;
   color: #000;
@@ -5064,7 +5097,7 @@ padding: 0;
     outline: 0 !important;
     padding: 15px;
     border-bottom: 3px solid transparent;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
   }
 
   #tabs li.ui-tabs-active a {
@@ -5126,7 +5159,7 @@ padding: 0;
 
 
 .tabs-widget .tab-links li a {
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-weight: 700;
     color: #000;
     font-size: 16px;
@@ -5213,7 +5246,7 @@ padding: 0;
     border:1px solid #e5e5e5;
     border-right: 0;
     padding: 20px;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     font-weight: 700;
     color: #000;
     font-size: 16px;
@@ -5273,7 +5306,7 @@ padding: 0;
   padding: 15px 15px 15px 40px;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #000;
   border: 1px solid #e5e5e5;
   text-transform: uppercase;
@@ -5307,7 +5340,7 @@ padding: 0;
   padding: 15px 15px 15px 55px;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   color: #000;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -5489,7 +5522,7 @@ padding: 0;
     font-weight: 700;
     color: #000;
     font-size: 28px;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
   }
 
   .percent:after {
@@ -5502,7 +5535,7 @@ padding: 0;
     color: #000;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     text-align: center;
   }
 
@@ -5511,7 +5544,7 @@ padding: 0;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'Noticia Text';
+    font-family: 'Poppins';
     padding: 15px !important;
     border-right: 1px solid #3e3e3e !important;
   }
@@ -5644,7 +5677,7 @@ padding: 0;
 .ready h1 {
   color: #000;
   font-size: 24px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-weight: bold;
   text-transform: uppercase;
   margin: 0 0 10px;
@@ -5794,7 +5827,7 @@ padding: 0;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #f16b34;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 19px;
   font-style: italic;
   color: #6e6e6e;
@@ -5843,7 +5876,7 @@ padding: 0;
 }
 
 .cart404 p {
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   font-size: 53px;
   text-transform: uppercase;
   color: #444;
@@ -5900,7 +5933,7 @@ footer {
 
 footer h1 {
   font-size: 18px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   text-transform: uppercase;
   border-bottom: 1px solid #2a2a2a;
   padding-bottom: 18px;
@@ -6441,7 +6474,7 @@ opacity: 0.8;
 
 .text-to-action p{
   /* padding: 60px 0; */
-  font-family:'Noticia Text';
+  font-family:'Poppins';
   font-size: 16px!important;
     font-weight: normal;
     line-height: 1.7!important;
@@ -6454,7 +6487,7 @@ opacity: 0.8;
 .text-to-action h1 {
   /* text-align: center; */
   font-size: 32px;
-  font-family: 'Noticia Text';
+  font-family: 'Poppins';
   margin: 0 0 20px;
   text-transform: uppercase;
 }
@@ -6512,6 +6545,23 @@ justify-content: center;
 }
 
 /* product details css  */
+.office-content-details button {
+    padding: 6px 13px 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    /* height: 30px; */
+    cursor: pointer;
+    color: #fff !important;
+    text-shadow: none !important;
+    font-size: 13px !important;
+    line-height: normal !important;
+    /* background: url(../images/gradient/g30.html) repeat-x top; */
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    /* letter-spacing: -1px; */
+}
+
 .prod-end #quantity_wanted {
     border: 1px solid #c7c2c2;
     background-color: #fff;
@@ -6924,15 +6974,18 @@ nav input{
 }
 
 .slide-content h1{
- font-size: 4vw;
- font-style: italic;
+  font-weight: 600;
+ font-size: 3vw;
+ /* font-style: italic; */
+ font-family: 'Poppins';
  margin-top: 1em;
 }
 
 .slide-content p{
   margin-top: 1em;
-  font-size: 2vw;
-  font-style: italic;
+  font-size: 1.5vw;
+  color: #000;
+  font-family: 'Poppins';
  }
 
  .slide-image img{
@@ -7225,14 +7278,14 @@ nav input{
 .tab-button {
   border: none;
   background: transparent;
-  color: #333;
-  font-size: 16px;
+  color: #000;
+  font-size: 20px;
   font-weight: 600;
   padding: 10px 25px;
   margin-right: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: inherit;
+  font-family: "Poppins";
 }
 
 .tab-button:hover {

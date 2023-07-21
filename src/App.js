@@ -108,7 +108,8 @@ function App () {
           <Route exact path='/vpn' element={<VPN />} />
           <Route exact path='/antivirus' element={<Antivirus />} />
           <Route exact path='/backuprecovery' element={<BackupRecovery />} />
-          <Route exact path='/productdetails' element={<ProductDetails />} />
+          {/* <Route exact path='/productdetails' element={<ProductDetails />} /> */}
+          <Route path="/productdetails/:id" element={<ProductDetails />} />
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />
           <Route exact path='/myaccount' element={<MyAccount />} />

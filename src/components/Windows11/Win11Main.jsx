@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import SoftwareInstallSteps from "../Home/SoftwareInstallSteps";
 import ProductCatalog from "../ProductCatalog";
 
-const PageMain = () => {
+const Win11Main = () => {
   return (
     <>
       {/* <!--about content --> */}
@@ -86,4 +86,4 @@ const PageMain = () => {
   );
 };
 
-export default PageMain;
+export default Win11Main;

@@ -1,72 +1,97 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
-const PageProducts = () => {
+const Win11Products = () => {
   const [products, setProducts] = useState([]);
 
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
+
   useEffect(() => {
-    // Simulating data fetching from an API or data source
-    // Replace this with your actual data fetching logic
-    const fetchData = () => {
-      const pageProducts = [
-        {
-          name: "Upgrade To Windows 11 Professional - Product Key",
-          description: "$64.99",
-          delprice:"$192.99",
-          product_img: "img/subpages/windows11/upgrade-to-windows-11-product-key.jpg",
-        },
-        {
-          name: "Windows 11 Enterprise 64 Bit - Product Key",
-          description: "$85.99",
-          delprice:"$246.99",
-          product_img: "img/subpages/windows11/windows-11-enterprise-32-64-bit-product-key.jpg",
-        },
-        {
-          name: "Windows 11 Home 64 Bit - Product Key",
-          description: "$53.99",
-          delprice:"$182.99",
-          product_img: "img/subpages/windows11/windows-11-home-32-64-bit-product-key.jpg",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$64.99",
-          delprice:"$192.99",
-          product_img: "img/subpages/windows11/windows-11-professional-32-64-bit-product-key.jpg",
-        },
-      ];
+     setLoading(true);
+     const unsub = onSnapshot(collection(db, "users"), (snapshot) => {
+         let list = [];
+         snapshot.docs.forEach((doc) => {
+             list.push({id: doc.id, ...doc.data()})
+         });
+         setUsers(list)
+         setLoading(false);
+     },
+      (error) => {
+        console.log(error);
+      } 
+     );
+     return () => {
+      unsub();
+     }
+  },[])
 
-      setProducts(pageProducts);
-    };
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     const Win11Products = [
+  //       {
+  //         name: "Upgrade To Windows 11 Professional - Product Key",
+  //         description: "$64.99",
+  //         delprice:"$192.99",
+  //         product_img: "img/subpages/windows11/upgrade-to-windows-11-product-key.jpg",
+  //       },
+  //       {
+  //         name: "Windows 11 Enterprise 64 Bit - Product Key",
+  //         description: "$85.99",
+  //         delprice:"$246.99",
+  //         product_img: "img/subpages/windows11/windows-11-enterprise-32-64-bit-product-key.jpg",
+  //       },
+  //       {
+  //         name: "Windows 11 Home 64 Bit - Product Key",
+  //         description: "$53.99",
+  //         delprice:"$182.99",
+  //         product_img: "img/subpages/windows11/windows-11-home-32-64-bit-product-key.jpg",
+  //       },
+  //       {
+  //         name: "Windows 10 Professional 32/64 Bit - Product Key",
+  //         description: "$64.99",
+  //         delprice:"$192.99",
+  //         product_img: "img/subpages/windows11/windows-11-professional-32-64-bit-product-key.jpg",
+  //       },
+  //     ];
 
-    fetchData();
-  }, []);
+  //     setProducts(Win11Products);
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   const renderProducts = () => {
-    return products.map((product, index) => (
-      <div key={index} className="col-lg-3 col-md-6 col-sm-6">
+    return users && users.map((item) => (
+      <div key={item.id} className="col-lg-3 col-md-6 col-sm-6">
         <div className="container-fadeInTop mt30">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Button href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                <i className="fa fa-heart"></i> Add to Wishlist
-              </Link>
+              </Button> */}
+              <Button onClick={() => navigate(`/productdetails/${item.id}`,{
+                state:{productId: item.id}
+              })} className="wishlist go-to-product-btn">
+                 Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">${item.rprice}</del>
+                  <span className="low-price">${item.nprice}</span>
                 </span>
               </li>
             </ul>
@@ -83,4 +108,4 @@ const PageProducts = () => {
   );
 };
 
-export default PageProducts;
+export default Win11Products;

@@ -4,7 +4,7 @@ import { useParams, useNavigate, Navigate } from "react-router-dom";
 import { Loader } from "semantic-ui-react";
 import "./AddProducts.css";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { addDoc, collection, doc, getDoc, serverTimestamp } from "firebase/firestore";
 // import { error } from "jquery";
 // import { Default } from "react-toastify/dist/utils";
 
@@ -22,7 +22,24 @@ const AddProducts = () => {
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const navigate = useNavigate();
- 
+  // For Navigate product details by id 
+  const {id} = useParams();
+
+   
+useEffect(() => {
+   id && getSingleUser();
+},[id]) 
+
+const getSingleUser = async () => {
+  const docRef = doc(db, "users", id);
+  const snapshot = await getDoc(docRef);
+  if(snapshot.exists()){
+    setData({...snapshot.data() })
+  }
+};
+
+// For Navigate Product Details by id End
+
 useEffect(() => {
     const uploadFile = () => {
       const name = new Date().getTime() + file.name;
@@ -83,7 +100,7 @@ const handleSubmit = async (e) => {
        ...data,
        timestamp: serverTimestamp()
    })
-   navigate("/");
+   navigate("/windows11");
 };
 
   return (
@@ -101,7 +118,7 @@ const handleSubmit = async (e) => {
                   type="file"
                   // value={file}
                   onChange={(e) => setFile(e.target.files[0] )}
-                  name="name"
+                  name="img"
                   autoFocus
                   required
                 />
@@ -114,7 +131,6 @@ const handleSubmit = async (e) => {
                   value={name}
                   onChange={handleChange}
                   name="name"
-                  autoFocus
                 />
                 {errors.name ? <span className="error">{errors.name}</span> : null}
               </label>

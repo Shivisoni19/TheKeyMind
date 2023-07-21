@@ -1,16 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ProductDetailLeft from "./ProductDetailLeft";
+import { Link , useParams } from "react-router-dom";
+// import ProductDetailLeft from "./ProductDetailLeft";
 
-const ProductDetailsMain = () => {
-  const images = [
-    "img/products/p-1.jpg",
-    "img/products/p-2.jpg",
-    "img/products/p-3.jpg",
-    "img/products/p-4.jpg",
-    "img/products/p-5.jpg",
-    "img/products/p-6.jpg",
-  ];
+const ProductDetailsMain = ({ name, img, rprice, nprice, id }) => {
 
   const [activeTab, setActiveTab] = React.useState(0);
 
@@ -22,21 +14,22 @@ const ProductDetailsMain = () => {
     <div className="product-page container mb40">
       <div className="row">
         <div className="col-md-6">
-          <ProductDetailLeft/>
+          {/* <ProductDetailLeft/> */}
+          <img src={img} />
         </div>
         <div className="col-md-6">
           <div className="single-desc">
             <div className="middle-single">
-              <h1>Microsoft Windows 10 Home 32/64 Bit - Product Key</h1>
+              <h1>{name}</h1>
             </div>
 
             <div className="single-price">
               <ul>
                 <li>
-                  <span className="high-price">$1 899.00</span>
+                  <span className="high-price">${rprice}</span>
                 </li>
                 <li>
-                  <span className="low-price">$1 299.00</span>
+                  <span className="low-price">${nprice}</span>
                 </li>
               </ul>
             </div>

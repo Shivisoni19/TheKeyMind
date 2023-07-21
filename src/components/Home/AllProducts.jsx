@@ -1,9 +1,34 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import product1 from "../../images/products/product-1.png";
-import product2 from "../../images/products/product-2.png";
+import { Link} from "react-router-dom";
+// import { db } from "../../firebase";
+// import { useEffect } from "react";
+// import { collection, onSnapshot } from "firebase/firestore";
+
 
 const AllProducts = () => {
+  // const [users, setUsers] = useState([]);
+  // const [loading, setLoading] = useState([]);
+  // const navigate = useNavigate();
+
+  // useEffect(() => {
+  //    setLoading(true);
+  //    const unsub = onSnapshot(collection(db, "users"), (snapshot) => {
+  //        let list = [];
+  //        snapshot.docs.forEach((doc) => {
+  //            list.push({id: doc.id, ...doc.data()})
+  //        });
+  //        setUsers(list)
+  //        setLoading(false);
+  //    },
+  //     (error) => {
+  //       console.log(error);
+  //     }
+  //    );
+  //    return () => {
+  //     unsub();
+  //    }
+  // },[])
+
   const tabs = [
     {
       title: "NEW ARRIVALS",

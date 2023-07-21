@@ -2,6 +2,7 @@ import React from 'react'
 import AboutHeader from '../components/About/AboutHeader'
 import AboutContent from '../components/About/AboutContent'
 import { Helmet } from "react-helmet";
+import AboutHeading from '../components/About/AboutHeading';
 
 const About = () => {
   const meta = {
@@ -30,6 +31,7 @@ const About = () => {
         <meta name="googlebot" content={meta.meta.googlebot} /> {/* Add googlebot meta tag */}
       </Helmet>
       <AboutHeader/>
+      <AboutHeading/>
       <AboutContent/>
     </>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PageHeading = () => {
+const Win11Heading = () => {
   return (
     <div>
        {/* <!--  head text --> */}
@@ -23,4 +23,4 @@ const PageHeading = () => {
   )
 }
 
-export default PageHeading
+export default Win11Heading
