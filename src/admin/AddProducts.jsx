@@ -11,7 +11,7 @@ import {
   getDoc,
   serverTimestamp,
 } from "firebase/firestore";
-// import { error } from "jquery";
+import { error } from "jquery";
 // import { Default } from "react-toastify/dist/utils";
 
 const initialState = {
@@ -992,7 +992,7 @@ const AddProducts = () => {
               </label> */}
               <button
                 type="submit"
-                disabled={progress !== null && progress < 100}
+               
               >
                 Add Product
               </button>

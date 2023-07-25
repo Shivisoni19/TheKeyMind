@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 const VPN = () => {
   const meta = {
-    title: 'About Us',
+    title: 'VPN',
     description: 'I am a description, and I can create multiple tags',
     canonical: 'http://example.com/path/to/page',
     meta: {

@@ -89,6 +89,7 @@ import WindowsServer from './pages/WindowsServer'
 import WindowsServerCal from './pages/WindowsServerCal'
 import WindowsServerRdsCal from './pages/WindowsServerRdsCal'
 import AddProducts from './admin/AddProducts'
+// import AddBestSellers from './admin/AddBestSellers'
 
 function App () {
 
@@ -164,6 +165,8 @@ function App () {
           <Route exact path="/windowsservercal" element={<WindowsServerCal/>}/>
           <Route exact path="/windowsserverrdscal" element={<WindowsServerRdsCal/>}/>
           <Route exact path="/addproducts" element={<AddProducts/>}/>
+          {/* <Route exact path="/addbestsellers" element={<AddBestSellers/>}/> */}
+
         </Routes>
         <Footer />
       </Router>

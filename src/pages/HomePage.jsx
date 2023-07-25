@@ -2,12 +2,12 @@ import React from 'react'
 import HomeSlider from '../components/Home/HomeSlider'
 import ShippingSection from '../components/Home/ShippingSection'
 import SoftwareInstallSteps from '../components/Home/SoftwareInstallSteps'
-import AllProducts from '../components/Home/AllProducts'
 import AboutKeyMind from '../components/Home/AboutKeyMind'
 import { Helmet } from "react-helmet";
+import BestsellerProducts from '../components/Home/BestsellerProducts'
 
 const meta = {
-  title: 'Home',
+  title: 'The Key Mind',
   description: 'I am a description, and I can create multiple tags',
   canonical: 'http://example.com/path/to/page',
   meta: {
@@ -23,7 +23,7 @@ const meta = {
 const HomePage = () => {
   return (
     <> 
-    <Helmet>
+      <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={meta.canonical} />
@@ -36,7 +36,7 @@ const HomePage = () => {
       <HomeSlider/>
       <ShippingSection/>
       <SoftwareInstallSteps/>
-      <AllProducts/>
+      <BestsellerProducts/>
       <AboutKeyMind/>
         
     </>

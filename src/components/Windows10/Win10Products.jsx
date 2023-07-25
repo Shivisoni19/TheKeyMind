@@ -6,8 +6,6 @@ const Win10Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Simulating data fetching from an API or data source
-    // Replace this with your actual data fetching logic
     const fetchData = () => {
       const win10products = [
         {

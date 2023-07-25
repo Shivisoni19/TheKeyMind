@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 
 const BackupRecovery = () => {
   const meta = {
-    title: 'Backup Recovery',
+    title: 'Backup and Recovery',
     description: 'I am a description, and I can create multiple tags',
     canonical: 'http://example.com/path/to/page',
     meta: {

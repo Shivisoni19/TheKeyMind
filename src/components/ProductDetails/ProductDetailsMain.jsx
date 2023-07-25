@@ -4,11 +4,11 @@ import { Link , useParams } from "react-router-dom";
 
 const ProductDetailsMain = ({ name, img, rprice, nprice, id }) => {
 
-  // const [activeTab, setActiveTab] = React.useState(0);
+  const [activeTab, setActiveTab] = React.useState(0);
 
-  // const handleTabClick = (index) => {
-  //   setActiveTab(index);
-  // };
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
 
   return (
     <div className="product-page container">
