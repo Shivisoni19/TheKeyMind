@@ -53,9 +53,9 @@ const ProductDetails = () => {
         <meta name="googlebot" content={meta.meta.googlebot} />
         {/* Add googlebot meta tag */}
       </Helmet>
-      <ProductsHeader />
+      <ProductsHeader {...productData}/>
       <ProductDetailsMain {...productData} />
-      <ProductDescription />
+      <ProductDescription {...productData} />
       <SoftwareInstallSteps />
     </>
   );

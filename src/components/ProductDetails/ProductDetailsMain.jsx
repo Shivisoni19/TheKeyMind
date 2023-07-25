@@ -4,14 +4,14 @@ import { Link , useParams } from "react-router-dom";
 
 const ProductDetailsMain = ({ name, img, rprice, nprice, id }) => {
 
-  const [activeTab, setActiveTab] = React.useState(0);
+  // const [activeTab, setActiveTab] = React.useState(0);
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
+  // const handleTabClick = (index) => {
+  //   setActiveTab(index);
+  // };
 
   return (
-    <div className="product-page container mb40">
+    <div className="product-page container">
       <div className="row">
         <div className="col-md-6">
           {/* <ProductDetailLeft/> */}
@@ -66,14 +66,14 @@ const ProductDetailsMain = ({ name, img, rprice, nprice, id }) => {
               <div className="clear"></div>
             </div>
 
-            <div className="single-descript">
+            {/* <div className="single-descript">
               <p>
                 Buying Windows 10 Home you will receive a 100% Original
                 Microsoft license that can be activated directly on the official
                 Microsoft website. Our secure payment methods give you a total
                 guarantee..
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

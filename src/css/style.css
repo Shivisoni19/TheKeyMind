@@ -155,15 +155,15 @@ h1 {
   color: #000;
   font-size: 28px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
 h2 {
   color: #000;
-  font-size: 24px;
+  font-size: 30px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
@@ -171,7 +171,7 @@ h3 {
   color: #000;
   font-size: 20px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
@@ -179,7 +179,7 @@ h4 {
   color: #000;
   font-size: 18px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
@@ -187,7 +187,7 @@ h5 {
   color: #000;
   font-size: 16px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
@@ -195,17 +195,17 @@ h6 {
   color: #000;
   font-size: 15px;
   font-family: 'Poppins';
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
 
 p{
   font-size: 16px;
-  color: #6b6b6b;
+  color: #000;
   margin: 0;
   line-height: 22px;
-  font-family: 'Merriweather';
+  font-family: 'Poppins';
 }
 
 
@@ -3556,7 +3556,7 @@ color: #969696;
    .middle-single h1 {
     font-family: 'Poppins';
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     color: #323232;
     margin: 20px 0 5px;
@@ -6469,7 +6469,7 @@ opacity: 0.8;
   
 }
 .text-uppercase-none{
- text-transform: none;
+ text-transform: none !important;
 }
 
 .text-to-action p{

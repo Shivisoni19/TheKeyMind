@@ -9,7 +9,7 @@ const AboutKeyMind = () => {
             <div class="container">
               <div class="title">
                 <h1>
-                  <i class="fa fa-star"></i>The Key Mind<i
+                  <i class="fa fa-star"></i>Welcome to TheKeymind - Your Trusted IT Partner!<i
                     class="fa fa-star"
                   ></i>
                 </h1>
@@ -17,31 +17,15 @@ const AboutKeyMind = () => {
               </div>
               <div class="call-to-action">
                 <p>
-                  <span class="f-900">Mr Key Shop</span> is a brand owned by UK
-                  Soft LTD, London, with offices dedicated to our free
-                  <span class="f-900">English-speaking Customer Service</span>.
-                  We've been operating in the IT market for over 18 years, with
-                  350k+ customers served by our team of experts. Mr Key Shop is
-                  among the digital market leaders in the global software retail
-                  segment. We work hard to offer efficiency, professional
-                  service, and protect the environment. Our business model is
-                  100% digitalized and our products are only delivered via email
-                  to cut pollution and packaging waste.
-                  <span class="f-900"
-                    >Mr Key Shop is an Eco-Friendly Company!
-                  </span>
+                We are committed to providing comprehensive customer support and have been serving satisfied customers nationwide for years. Being at the forefront of the digital software retail segment, we strive for excellence, efficiency, and environmental responsibility.
                 </p>
                 <p>
-                  <span class="f-900"
-                    >Competitive prices, instant delivery, secure payments, and
-                    our free specialized support in ENGLISH </span
-                  >are our key strengths and source of pride across our team.
+                Our business is centered on digitalization, ensuring rapid product delivery straight to your email. By embracing digital methods, we reduce pollution and minimize packaging waste, proudly establishing ourselves as an eco-friendly company.
                 </p>
-                <p>Check our great offers and help us make the world Greener</p>
-                <p>
-                  Enjoy your shopping on
-                  <Link href="#" class="text-orange"> mrkeyshop.com</Link>
-                </p>
+                <p>At TheKeymind, we believe that top-quality services should be accessible to all. That's why we offer competitive prices in the IT market, making excellence affordable. Enjoy the convenience of instant email delivery, just seconds after your purchase, and rest assured, our dedicated technical support team is always ready to assist you. </p>
+                <p>Discover a world of IT possibilities at your fingertips! Our vast selection of cutting-edge products empowers you to stay ahead in the digital landscape with the help of various servers and <strong>Operating systems</strong>.</p>
+                <p>Elevate your productivity with the latest <strong>Microsoft Office versions</strong>, offering a suite of powerful tools for every business need. Safeguard your data with our top-notch <strong>Antivirus</strong> and <strong>VPN</strong> solutions, ensuring ironclad protection against cyber threats.</p>
+                <p>But that's not all - we put the power of <strong>Backup and Recovery </strong>in your hands. Take control of your data's destiny with our comprehensive backup solutions.</p>
               </div>
             </div>
           </div>
