@@ -2,7 +2,7 @@ import React from "react";
 import ProductCatalog from "../ProductCatalog";
 // import SystemRequirements from "./SystemRequirements";
 
-const ProductDescription = ({
+const Windows10Description = ({
   description,
   desc1heading,
   desc2heading,
@@ -163,4 +163,4 @@ const ProductDescription = ({
   );
 };
 
-export default ProductDescription;
+export default Windows10Description;

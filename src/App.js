@@ -89,7 +89,13 @@ import WindowsServer from './pages/WindowsServer'
 import WindowsServerCal from './pages/WindowsServerCal'
 import WindowsServerRdsCal from './pages/WindowsServerRdsCal'
 import AddProducts from './admin/AddProducts'
-// import AddBestSellers from './admin/AddBestSellers'
+import AddBestSellers from './admin/AddBestSellers'
+import AddWindows10 from './admin/AddWindows10'
+import AddWindows7 from './admin/AddWindows7'
+import AddWindows8 from './admin/AddWindows8'
+import Windows10Details from './pages/GetProductDetails/Windows10Details'
+import Windows7Details from './pages/GetProductDetails/Windows7Details'
+import Windows8Details from './pages/GetProductDetails/Windows8Details'
 
 function App () {
 
@@ -111,6 +117,9 @@ function App () {
           <Route exact path='/backuprecovery' element={<BackupRecovery />} />
           {/* <Route exact path='/productdetails' element={<ProductDetails />} /> */}
           <Route path="/productdetails/:id" element={<ProductDetails />} />
+          <Route path="/windows10data/:id" element={<Windows10Details />} />
+          <Route path="/windows7data/:id" element={<Windows7Details/>} />
+          <Route path="/windows8data/:id" element={<Windows8Details/>} />
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />
           <Route exact path='/myaccount' element={<MyAccount />} />
@@ -165,7 +174,10 @@ function App () {
           <Route exact path="/windowsservercal" element={<WindowsServerCal/>}/>
           <Route exact path="/windowsserverrdscal" element={<WindowsServerRdsCal/>}/>
           <Route exact path="/addproducts" element={<AddProducts/>}/>
-          {/* <Route exact path="/addbestsellers" element={<AddBestSellers/>}/> */}
+          <Route exact path="/addbestsellers" element={<AddBestSellers/>}/>
+          <Route exact path="/addwindows10" element={<AddWindows10/>}/>
+          <Route exact path="/addwindows7" element={<AddWindows7/>}/>
+          <Route exact path="/addwindows8" element={<AddWindows8/>}/>
 
         </Routes>
         <Footer />

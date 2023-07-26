@@ -5,7 +5,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { Button } from "semantic-ui-react";
 
 const Win11Products = () => {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
 
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState([]);
@@ -78,7 +78,7 @@ const Win11Products = () => {
               </Button> */}
               <Button onClick={() => navigate(`/productdetails/${item.id}`,{
                 state:{productId: item.id}
-              })} className="wishlist go-to-product-btn">
+              })} className="wishlist">
                  Go To Product
               </Button>
             </div>

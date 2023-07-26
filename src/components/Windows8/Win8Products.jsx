@@ -1,55 +1,83 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const Win8Products = () => {
-  const [products, setProducts] = useState([]);
+
+  const [windows8, setwindows8] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Simulating data fetching from an API or data source
-    // Replace this with your actual data fetching logic
-    const fetchData = () => {
-      const win8products = [
-        {
-          name: "Microsoft Windows 8.1 Professional 32/64 Bit - Product Key",
-          description: "$26.99",
-          delprice:"$96.99",
-          product_img: "img/subpages/windows8/microsoft-windows-8-1-professional-32-64-bit-product-key.jpg",
-        },
+     setLoading(true);
+     const unsub = onSnapshot(collection(db, "windows8db"), (snapshot) => {
+         let list = [];
+         snapshot.docs.forEach((doc) => {
+             list.push({id: doc.id, ...doc.data()})
+         });
+         setwindows8(list)
+         setLoading(false);
+     },
+      (error) => {
+        console.log(error);
+      } 
+     );
+     return () => {
+      unsub();
+     }
+  },[])
+
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     const win8products = [
+  //       {
+  //         name: "Microsoft Windows 8.1 Professional 32/64 Bit - Product Key",
+  //         description: "$26.99",
+  //         delprice:"$96.99",
+  //         product_img: "img/subpages/windows8/microsoft-windows-8-1-professional-32-64-bit-product-key.jpg",
+  //       },
         
-      ];
+  //     ];
 
-      setProducts(win8products);
-    };
+  //     setProducts(win8products);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   const renderProducts = () => {
-    return products.map((product, index) => (
-      <div key={index} className="col-lg-3 col-md-6 col-sm-6">
+    return windows8 && windows8.map((item) => (
+      <div key={item.id} className="col-lg-3 col-md-6 col-sm-6">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
+              </Link> */}
+              {/* <Button  href="#" className="wishlist go-to-product-btn">
                  Go to Product
-              </Link>
+              </Button > */}
+              <Button onClick={() => navigate(`/windows8data/${item.id}`,{
+                state:{windows8productId: item.id}
+              })} className="wishlist">
+                 Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">${item.rprice}</del>
+                  <span className="low-price">${item.nprice}</span>
                 </span>
               </li>
             </ul>

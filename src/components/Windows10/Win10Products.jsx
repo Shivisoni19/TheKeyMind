@@ -1,65 +1,96 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 // import product from 'img/product/product-1.png'
 
 const Win10Products = () => {
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
+
+  const [windows10, setwindows10] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const win10products = [
-        {
-          name: "Upgrade To Windows 10 Professional - Product Key",
-          description: "$45.99",
-          delprice:"$155.99",
-          product_img: "img/subpages/windows10/upgrade-to-windows-10-professional-product-key.jpg",
-        },
-        {
-          name: "Windows 10 Professional 32/64 Bit - Product Key",
-          description: "$42.99",
-          delprice:"$160.99",
-          product_img: "img/subpages/windows10/windows-10-professional-32-64-bit-microsoft-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows 10 Home 32/64 Bit - Product Key",
-          description: "$37.99",
-          delprice:"$112.99",
-          product_img: "img/subpages/windows10/microsoft-windows-10-home-32-64-bit-product-key.jpg",
-        },
+     setLoading(true);
+     const unsub = onSnapshot(collection(db, "windows10db"), (snapshot) => {
+         let list = [];
+         snapshot.docs.forEach((doc) => {
+             list.push({id: doc.id, ...doc.data()})
+         });
+         setwindows10(list)
+         setLoading(false);
+     },
+      (error) => {
+        console.log(error);
+      } 
+     );
+     return () => {
+      unsub();
+     }
+  },[])
+
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     const win10products = [
+  //       {
+  //         name: "Upgrade To Windows 10 Professional - Product Key",
+  //         description: "$45.99",
+  //         delprice:"$155.99",
+  //         product_img: "img/subpages/windows10/upgrade-to-windows-10-professional-product-key.jpg",
+  //       },
+  //       {
+  //         name: "Windows 10 Professional 32/64 Bit - Product Key",
+  //         description: "$42.99",
+  //         delprice:"$160.99",
+  //         product_img: "img/subpages/windows10/windows-10-professional-32-64-bit-microsoft-product-key.jpg",
+  //       },
+  //       {
+  //         name: "Microsoft Windows 10 Home 32/64 Bit - Product Key",
+  //         description: "$37.99",
+  //         delprice:"$112.99",
+  //         product_img: "img/subpages/windows10/microsoft-windows-10-home-32-64-bit-product-key.jpg",
+  //       },
         
-      ];
+  //     ];
 
-      setProducts(win10products);
-    };
+  //     setProducts(win10products);
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   const renderProducts = () => {
-    return products.map((product, index) => (
-      <div key={index} className="col-lg-3 col-md-6 col-sm-6">
+    return windows10 && windows10.map((item) => (
+      <div key={item.id} className="col-lg-3 col-md-6 col-sm-6">
         <div className="container-fadeInTop mt30">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
+              </Link> */}
+              {/* <Button  href="#" className="wishlist go-to-product-btn">
                  Go to Product
-              </Link>
+              </Button > */}
+              <Button onClick={() => navigate(`/windows10data/${item.id}`,{
+                state:{windows10productId: item.id}
+              })} className="wishlist">
+                 Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">${item.rprice}</del>
+                  <span className="low-price">${item.nprice}</span>
                 </span>
               </li>
             </ul>
