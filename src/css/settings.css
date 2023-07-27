@@ -577,7 +577,7 @@ website:   	http://www.themepunch.com
 		background-color: #f16b34;
 		font-family: arial, sans-serif;
 		font-weight: bold;
-		letter-spacing: -1px;
+		letter-spacing: 0px;
 }
 
 .button.big {

@@ -18,6 +18,7 @@ const initialState = {
   name: "",
   nprice: "",
   rprice: "",
+  note: "" ,
   description: "",
   desc1heading: "",
   desc2heading: "",
@@ -98,6 +99,7 @@ const AddWindows7 = () => {
     name,
     nprice,
     rprice,
+    note,
     description,
     desc1heading,
     desc2heading,
@@ -331,6 +333,15 @@ const AddWindows7 = () => {
                 ) : null}
               </label>
               <label>
+                Note:
+                <input
+                  type="text"
+                  value={note}
+                  onChange={handleChange}
+                  name="note"
+                />
+              </label>
+              <label>
                 Description H1
                 <input
                   type="text"
@@ -367,15 +378,6 @@ const AddWindows7 = () => {
                 />
               </label>
               <label>
-                Description H5
-                <input
-                  type="text"
-                  value={desc5heading}
-                  onChange={handleChange}
-                  name="desc5heading"
-                />
-              </label>
-              <label>
                 Description H6
                 <input
                   type="text"
@@ -385,39 +387,12 @@ const AddWindows7 = () => {
                 />
               </label>
               <label>
-                Description H7
+                Description H5
                 <input
                   type="text"
-                  value={desc7heading}
+                  value={desc5heading}
                   onChange={handleChange}
-                  name="desc7heading"
-                />
-              </label>
-              <label>
-                Description H8
-                <input
-                  type="text"
-                  value={desc8heading}
-                  onChange={handleChange}
-                  name="desc8heading"
-                />
-              </label>
-              <label>
-                Description H9
-                <input
-                  type="text"
-                  value={desc9heading}
-                  onChange={handleChange}
-                  name="desc9heading"
-                />
-              </label>
-              <label>
-                Description H10
-                <input
-                  type="text"
-                  value={desc10heading}
-                  onChange={handleChange}
-                  name="desc10heading"
+                  name="desc5heading"
                 />
               </label>
               <label>
@@ -554,61 +529,7 @@ const AddWindows7 = () => {
                   onChange={handleChange}
                   name="detail15"
                 />
-              </label>
-              <label>
-                Detail-P16:
-                <input
-                  type="text"
-                  value={detail16}
-                  onChange={handleChange}
-                  name="detail16"
-                />
-              </label>
-              <label>
-                Detail-P17:
-                <input
-                  type="text"
-                  value={detail17}
-                  onChange={handleChange}
-                  name="detail17"
-                />
-              </label>
-              <label>
-                Detail-P18:
-                <input
-                  type="text"
-                  value={detail18}
-                  onChange={handleChange}
-                  name="detail18"
-                />
-              </label>
-              <label>
-                Detail-P19:
-                <input
-                  type="text"
-                  value={detail19}
-                  onChange={handleChange}
-                  name="detail19"
-                />
-              </label>
-              <label>
-                Detail-P20:
-                <input
-                  type="text"
-                  value={detail20}
-                  onChange={handleChange}
-                  name="detail20"
-                />
-              </label>
-              <label>
-                Detail-P21:
-                <input
-                  type="text"
-                  value={detail21}
-                  onChange={handleChange}
-                  name="detail21"
-                />
-              </label>
+                </label>
               {/*------------ Ul List 1 -------------------*/}
               <label>
                 Ul-Heading1
@@ -671,278 +592,6 @@ const AddWindows7 = () => {
                   value={list6}
                   onChange={handleChange}
                   name="list6"
-                />
-              </label>
-              <label>
-                list 23
-                <input
-                  type="text"
-                  value={list23}
-                  onChange={handleChange}
-                  name="list23"
-                />
-              </label>
-              <label>
-                list 24
-                <input
-                  type="text"
-                  value={list24}
-                  onChange={handleChange}
-                  name="list24"
-                />
-              </label>
-              <label>
-                list 25
-                <input
-                  type="text"
-                  value={list25}
-                  onChange={handleChange}
-                  name="list25"
-                />
-              </label>
-              <label>
-                list 26
-                <input
-                  type="text"
-                  value={list26}
-                  onChange={handleChange}
-                  name="list26"
-                />
-              </label>
-              <label>
-                list 27
-                <input
-                  type="text"
-                  value={list27}
-                  onChange={handleChange}
-                  name="list27"
-                />
-              </label>
-              <label>
-                list 28
-                <input
-                  type="text"
-                  value={list28}
-                  onChange={handleChange}
-                  name="list28"
-                />
-              </label>
-              <label>
-                list 29
-                <input
-                  type="text"
-                  value={list29}
-                  onChange={handleChange}
-                  name="list29"
-                />
-              </label>
-              <label>
-                list 30
-                <input
-                  type="text"
-                  value={list30}
-                  onChange={handleChange}
-                  name="list30"
-                />
-              </label>
-              <label>
-                list 31
-                <input
-                  type="text"
-                  value={list31}
-                  onChange={handleChange}
-                  name="list31"
-                />
-              </label>
-              <label>
-                list 32
-                <input
-                  type="text"
-                  value={list32}
-                  onChange={handleChange}
-                  name="list32"
-                />
-              </label>
-              {/*------------ Ul List 2 -------------------*/}
-              <label>
-                Ul-Heading2
-                <input
-                  type="text"
-                  value={ulheading2}
-                  onChange={handleChange}
-                  name="ulheading2"
-                />
-              </label>
-              <label>
-                list 7
-                <input
-                  type="text"
-                  value={list7}
-                  onChange={handleChange}
-                  name="list7"
-                />
-              </label>
-              <label>
-                list 8
-                <input
-                  type="text"
-                  value={list8}
-                  onChange={handleChange}
-                  name="list8"
-                />
-              </label>
-              <label>
-                list 9
-                <input
-                  type="text"
-                  value={list9}
-                  onChange={handleChange}
-                  name="list9"
-                />
-              </label>
-              <label>
-                list 10
-                <input
-                  type="text"
-                  value={list10}
-                  onChange={handleChange}
-                  name="list10"
-                />
-              </label>
-              {/*------------ Ul List 3 -------------------*/}
-              <label>
-                Ul-Heading3
-                <input
-                  type="text"
-                  value={ulheading3}
-                  onChange={handleChange}
-                  name="ulheading3"
-                />
-              </label>
-              <label>
-                list 11
-                <input
-                  type="text"
-                  value={list11}
-                  onChange={handleChange}
-                  name="list11"
-                />
-              </label>
-              {/* <label>
-                list 11
-                <input
-                  type="text"
-                  value={list11}
-                  onChange={handleChange}
-                  name="list11"
-                />
-              </label> */}
-              <label>
-                list 12
-                <input
-                  type="text"
-                  value={list12}
-                  onChange={handleChange}
-                  name="list12"
-                />
-              </label>
-              <label>
-                list 13
-                <input
-                  type="text"
-                  value={list13}
-                  onChange={handleChange}
-                  name="list13"
-                />
-              </label>
-              <label>
-                list 14
-                <input
-                  type="text"
-                  value={list14}
-                  onChange={handleChange}
-                  name="list14"
-                />
-              </label>
-              <label>
-                list 15
-                <input
-                  type="text"
-                  value={list15}
-                  onChange={handleChange}
-                  name="list15"
-                />
-              </label>
-              <label>
-                list 16
-                <input
-                  type="text"
-                  value={list16}
-                  onChange={handleChange}
-                  name="list16"
-                />
-              </label>
-              <label>
-                Ul-Heading4
-                <input
-                  type="text"
-                  value={ulheading4}
-                  onChange={handleChange}
-                  name="ulheading4"
-                />
-              </label>
-              <label>
-                list 17
-                <input
-                  type="text"
-                  value={list17}
-                  onChange={handleChange}
-                  name="list17"
-                />
-              </label>
-              <label>
-                list 18
-                <input
-                  type="text"
-                  value={list18}
-                  onChange={handleChange}
-                  name="list18"
-                />
-              </label>
-              <label>
-                list 19
-                <input
-                  type="text"
-                  value={list19}
-                  onChange={handleChange}
-                  name="list19"
-                />
-              </label>
-              <label>
-                list 20
-                <input
-                  type="text"
-                  value={list20}
-                  onChange={handleChange}
-                  name="list20"
-                />
-              </label>
-              <label>
-                list 21
-                <input
-                  type="text"
-                  value={list21}
-                  onChange={handleChange}
-                  name="list21"
-                />
-              </label>
-              <label>
-                list 22
-                <input
-                  type="text"
-                  value={list22}
-                  onChange={handleChange}
-                  name="list22"
                 />
               </label>
 

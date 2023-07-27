@@ -96,6 +96,8 @@ import AddWindows8 from './admin/AddWindows8'
 import Windows10Details from './pages/GetProductDetails/Windows10Details'
 import Windows7Details from './pages/GetProductDetails/Windows7Details'
 import Windows8Details from './pages/GetProductDetails/Windows8Details'
+import Office2021Details from './pages/GetProductDetails/Office2021Details'
+import AddOffice2021 from './admin/AddOffice2021'
 
 function App () {
 
@@ -120,6 +122,7 @@ function App () {
           <Route path="/windows10data/:id" element={<Windows10Details />} />
           <Route path="/windows7data/:id" element={<Windows7Details/>} />
           <Route path="/windows8data/:id" element={<Windows8Details/>} />
+          {/* <Route path="/office2021data/:id" element={<Office2021Details/>} /> */}
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />
           <Route exact path='/myaccount' element={<MyAccount />} />
@@ -178,6 +181,7 @@ function App () {
           <Route exact path="/addwindows10" element={<AddWindows10/>}/>
           <Route exact path="/addwindows7" element={<AddWindows7/>}/>
           <Route exact path="/addwindows8" element={<AddWindows8/>}/>
+          <Route exact path="/addoffice2021" element={<AddOffice2021/>}/>
 
         </Routes>
         <Footer />

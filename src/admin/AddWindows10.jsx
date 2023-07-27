@@ -29,6 +29,7 @@ const initialState = {
   desc8heading: "",
   desc9heading: "",
   desc10heading: "",
+  desc11heading: "",
   detail1: "",
   detail2: "",
   detail3: "",
@@ -50,14 +51,24 @@ const initialState = {
   detail19: "",
   detail20: "",
   detail21: "",
+  detail22: "",
+  detail23: "",
+  detail24: "",
+  detail25: "",
+  detail26: "",
+  detail27: "",
+  detail28: "",
+  detail29: "",
+  detail30: "",
   // detail15:"",
   // detail16:"",
-//   detail17: "",
+  //   detail17: "",
   ulheading1: "",
   ulheading2: "",
   ulheading3: "",
   ulheading4: "",
   ulheading5: "",
+  ulheading6: "",
   list1: "",
   list2: "",
   list3: "",
@@ -90,6 +101,20 @@ const initialState = {
   list30: "",
   list31: "",
   list32: "",
+  list33: "",
+  list34: "",
+  list35: "",
+  list36: "",
+  list37: "",
+  list38: "",
+  list39: "",
+  list40: "",
+  list41: "",
+  list42: "",
+  list43: "",
+  list44: "",
+  list45: "",
+  note: "",
 };
 
 const AddWindows10 = () => {
@@ -99,6 +124,7 @@ const AddWindows10 = () => {
     nprice,
     rprice,
     description,
+    note,
     desc1heading,
     desc2heading,
     desc3heading,
@@ -109,6 +135,7 @@ const AddWindows10 = () => {
     desc8heading,
     desc9heading,
     desc10heading,
+    desc11heading,
     detail1,
     detail2,
     detail3,
@@ -130,11 +157,21 @@ const AddWindows10 = () => {
     detail19,
     detail20,
     detail21,
+    detail22,
+    detail23,
+    detail24,
+    detail25,
+    detail26,
+    detail27,
+    detail28,
+    detail29,
+    detail30,
     ulheading1,
     ulheading2,
     ulheading3,
     ulheading4,
     ulheading5,
+    ulheading6,
     list1,
     list2,
     list3,
@@ -167,13 +204,25 @@ const AddWindows10 = () => {
     list30,
     list31,
     list32,
+    list33,
+    list34,
+    list35,
+    list36,
+    list37,
+    list38,
+    list39,
+    list40,
+    list41,
+    list42,
+    list43,
+    list44,
+    list45,
   } = windows10data;
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(null);
   const [errors, setErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
   const navigate = useNavigate();
-
 
   // For Navigate product details by id
   const { id } = useParams();
@@ -331,6 +380,15 @@ const AddWindows10 = () => {
                 ) : null}
               </label>
               <label>
+                Note:
+                <input
+                  type="text"
+                  value={note}
+                  onChange={handleChange}
+                  name="note"
+                />
+              </label>
+              <label>
                 Description H1
                 <input
                   type="text"
@@ -421,6 +479,15 @@ const AddWindows10 = () => {
                 />
               </label>
               <label>
+                Description H11
+                <input
+                  type="text"
+                  value={desc11heading}
+                  onChange={handleChange}
+                  name="desc11heading"
+                />
+              </label>
+              <label>
                 Detail-P1:
                 <input
                   type="text"
@@ -474,6 +541,7 @@ const AddWindows10 = () => {
                   name="detail6"
                 />
               </label>
+              
               <label>
                 Detail-P7:
                 <input
@@ -607,6 +675,87 @@ const AddWindows10 = () => {
                   value={detail21}
                   onChange={handleChange}
                   name="detail21"
+                />
+              </label>
+              <label>
+                Detail-P22:
+                <input
+                  type="text"
+                  value={detail22}
+                  onChange={handleChange}
+                  name="detail22"
+                />
+              </label>
+              <label>
+                Detail-P23:
+                <input
+                  type="text"
+                  value={detail23}
+                  onChange={handleChange}
+                  name="detail23"
+                />
+              </label>
+              <label>
+                Detail-P24:
+                <input
+                  type="text"
+                  value={detail24}
+                  onChange={handleChange}
+                  name="detail24"
+                />
+              </label>
+              <label>
+                Detail-P25:
+                <input
+                  type="text"
+                  value={detail25}
+                  onChange={handleChange}
+                  name="detail25"
+                />
+              </label>
+              <label>
+                Detail-P26:
+                <input
+                  type="text"
+                  value={detail26}
+                  onChange={handleChange}
+                  name="detail26"
+                />
+              </label>
+              <label>
+                Detail-P27:
+                <input
+                  type="text"
+                  value={detail27}
+                  onChange={handleChange}
+                  name="detail27"
+                />
+              </label>
+              <label>
+                Detail-P28:
+                <input
+                  type="text"
+                  value={detail28}
+                  onChange={handleChange}
+                  name="detail28"
+                />
+              </label>
+              <label>
+                Detail-P29:
+                <input
+                  type="text"
+                  value={detail29}
+                  onChange={handleChange}
+                  name="detail29"
+                />
+              </label>
+              <label>
+                Detail-P30:
+                <input
+                  type="text"
+                  value={detail30}
+                  onChange={handleChange}
+                  name="detail30"
                 />
               </label>
               {/*------------ Ul List 1 -------------------*/}
@@ -882,6 +1031,7 @@ const AddWindows10 = () => {
                   name="list16"
                 />
               </label>
+              {/* --------Ul 4 ---- */}
               <label>
                 Ul-Heading4
                 <input
@@ -946,6 +1096,145 @@ const AddWindows10 = () => {
                 />
               </label>
 
+              {/* --------Ul 5---- */}
+              <label>
+                Ul-Heading5
+                <input
+                  type="text"
+                  value={ulheading5}
+                  onChange={handleChange}
+                  name="ulheading5"
+                />
+              </label>
+              <label>
+                list 33
+                <input
+                  type="text"
+                  value={list33}
+                  onChange={handleChange}
+                  name="list33"
+                />
+              </label>
+              <label>
+                list 34
+                <input
+                  type="text"
+                  value={list34}
+                  onChange={handleChange}
+                  name="list34"
+                />
+              </label>
+              <label>
+                list 35
+                <input
+                  type="text"
+                  value={list35}
+                  onChange={handleChange}
+                  name="list35"
+                />
+              </label>
+              <label>
+                list 36
+                <input
+                  type="text"
+                  value={list36}
+                  onChange={handleChange}
+                  name="list36"
+                />
+              </label>
+              <label>
+                list 37
+                <input
+                  type="text"
+                  value={list37}
+                  onChange={handleChange}
+                  name="list37"
+                />
+              </label>
+              <label>
+                list 38
+                <input
+                  type="text"
+                  value={list38}
+                  onChange={handleChange}
+                  name="list38"
+                />
+              </label>
+
+              {/* --------Ul 6---- */}
+              <label>
+                Ul-Heading 6
+                <input
+                  type="text"
+                  value={ulheading6}
+                  onChange={handleChange}
+                  name="ulheading6"
+                />
+              </label>
+              <label>
+                list 39
+                <input
+                  type="text"
+                  value={list39}
+                  onChange={handleChange}
+                  name="list39"
+                />
+              </label>
+              <label>
+                list 40
+                <input
+                  type="text"
+                  value={list40}
+                  onChange={handleChange}
+                  name="list40"
+                />
+              </label>
+              <label>
+                list 41
+                <input
+                  type="text"
+                  value={list41}
+                  onChange={handleChange}
+                  name="list41"
+                />
+              </label>
+              <label>
+                list 42
+                <input
+                  type="text"
+                  value={list42}
+                  onChange={handleChange}
+                  name="list42"
+                />
+              </label>
+              <label>
+                list 43
+                <input
+                  type="text"
+                  value={list43}
+                  onChange={handleChange}
+                  name="list43"
+                />
+              </label>
+              <label>
+                list 44
+                <input
+                  type="text"
+                  value={list44}
+                  onChange={handleChange}
+                  name="list44"
+                />
+              </label>
+              <label>
+                list 45
+                <input
+                  type="text"
+                  value={list45}
+                  onChange={handleChange}
+                  name="list45"
+                />
+              </label>
+
               {/* <h4>------------------------------------Product Stock Details--------------------------------</h4>
               <label>
               Availability :
@@ -992,12 +1281,7 @@ const AddWindows10 = () => {
                   name="Shipping"
                 />
               </label> */}
-              <button
-                type="submit"
-               
-              >
-                Add Windows-10 Product
-              </button>
+              <button type="submit">Add Windows-10 Product</button>
             </form>
           </>
         )}

@@ -14,6 +14,7 @@ const Windows10Description = ({
   desc8heading,
   desc9heading,
   desc10heading,
+  desc11heading,
   detail1,
   detail2,
   detail3,
@@ -35,11 +36,21 @@ const Windows10Description = ({
   detail19,
   detail20,
   detail21,
+  detail22,
+  detail23,
+  detail24,
+  detail25,
+  detail26,
+  detail27,
+  detail28,
+  detail29,
+  detail30,
   ulheading1,
   ulheading2,
   ulheading3,
   ulheading4,
   ulheading5,
+  ulheading6,
   list1,
   list2,
   list3,
@@ -72,6 +83,21 @@ const Windows10Description = ({
   list30,
   list31,
   list32,
+  list33,
+  list34,
+  list35,
+  list36,
+  list37,
+  list38,
+  list39,
+  list40,
+  list41,
+  list42,
+  list43,
+  list44,
+  list45,
+  
+  note,
 }) => {
   return (
     <>
@@ -80,6 +106,8 @@ const Windows10Description = ({
           <div class="text-to-action">
             <h2 class="text-uppercase-none mb30">Description</h2>
             <h4 className="text-uppercase-none">{description}</h4>
+            <p>{detail30}</p>
+            <h5>{note}</h5>
             <p>{detail1}</p>
             <p>{desc1heading}</p>
             <p>{detail2}</p>
@@ -91,7 +119,7 @@ const Windows10Description = ({
               <li>{list4}</li>
               <li>{list5}</li>
               <li>{list6}</li>
-              <li>{list22}</li>
+              {/* <li>{list22}</li> */}
               <li>{list23}</li>
               <li>{list24}</li>
               <li>{list25}</li>
@@ -115,11 +143,13 @@ const Windows10Description = ({
             <h4 className="text-uppercase-none">{desc2heading}</h4>
             <p>{detail5}</p>
             <p>{detail6}</p>
+            <p>{detail22}</p>
             <h4 className="text-uppercase-none">{desc3heading}</h4>
             <p>{detail7}</p>
             <p>{detail8}</p>
             <p>{detail9}</p>
             <h4 className="text-uppercase-none">{desc4heading}</h4>
+            <p>{detail23}</p>
             <p>{ulheading3}</p>
             <ul className="mb20">
               <li>{list11}</li>
@@ -130,13 +160,6 @@ const Windows10Description = ({
               <li>{list16}</li>
             </ul>
             <h4 className="text-uppercase-none">{desc5heading}</h4>
-            <p>{detail10}</p>
-            <h4 className="text-uppercase-none">{desc6heading}</h4>
-            <p>{detail11}</p>
-            <h4 className="text-uppercase-none">{desc7heading}</h4>
-            <p>{detail12}</p>
-            <h4 className="text-uppercase-none">{desc8heading}</h4>
-            <p>{detail13}</p>
             <p>{ulheading4}</p>
             <ul>
               <li>{list17}</li>
@@ -145,12 +168,46 @@ const Windows10Description = ({
               <li>{list20}</li>
               <li>{list21}</li>
             </ul>
+            <p>{detail10}</p>
+            <p>{detail24}</p>
+            <p>{detail25}</p>
+            <p>{detail26}</p>
+            <h4 className="text-uppercase-none">{desc6heading}</h4>
+            <p>{detail11}</p>
+            <p>{detail27}</p>
+            <h4 className="text-uppercase-none">{desc7heading}</h4>
             <p>{detail12}</p>
+            <p>{detail28}</p>
+            <h4 className="text-uppercase-none">{desc8heading}</h4>
+            <p>{detail13}</p>
+            <p>{detail29}</p>
+            <p>{ulheading5}</p>
+            <ul>
+              <li>{list33}</li>
+              <li>{list34}</li>
+              <li>{list35}</li>
+              <li>{list36}</li>
+              <li>{list37}</li>
+              <li>{list38}</li>
+            </ul>
+            <p>{detail21}</p>
             <h4 className="text-uppercase-none">{desc9heading}</h4>
             <p>{detail14}</p>
             <p>{detail15}</p>
             <p>{detail16}</p>
             <h4 className="text-uppercase-none">{desc10heading}</h4>
+
+            <p>{ulheading6}</p>
+            <ul>
+              <li>{list39}</li>
+              <li>{list40}</li>
+              <li>{list41}</li>
+              <li>{list42}</li>
+              <li>{list43}</li>
+              <li>{list44}</li>
+            </ul>
+
+            <h4 className="text-uppercase-none">{desc11heading}</h4>
             <p>{detail17}</p>
             <p>{detail18}</p>
             <p>{detail19}</p>

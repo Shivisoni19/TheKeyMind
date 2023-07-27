@@ -18,7 +18,7 @@ const initialState = {
   name: "",
   nprice: "",
   rprice: "",
-  note:"",
+  note: "" ,
   description: "",
   desc1heading: "",
   desc2heading: "",
@@ -93,8 +93,8 @@ const initialState = {
   list32: "",
 };
 
-const AddWindows8 = () => {
-  const [windows8data, setWindows8Data] = useState(initialState);
+const AddOffice2021 = () => {
+  const [office2021data, setOffice2021Data] = useState(initialState);
   const {
     name,
     nprice,
@@ -169,7 +169,7 @@ const AddWindows8 = () => {
     list30,
     list31,
     list32,
-  } = windows8data;
+  } = office2021data;
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(null);
   const [errors, setErrors] = useState({});
@@ -178,19 +178,19 @@ const AddWindows8 = () => {
 
 
   // For Navigate product details by id
-  const { id } = useParams();
+  // const { id } = useParams();
 
-  useEffect(() => {
-    id && getSingleUser();
-  }, [id]);
+  // useEffect(() => {
+  //   id && getSingleUser();
+  // }, [id]);
 
-  const getSingleUser = async () => {
-    const docRef = doc(db, "windows8db", id);
-    const snapshot = await getDoc(docRef);
-    if (snapshot.exists()) {
-      setWindows8Data({ ...snapshot.setWindows8Data() });
-    }
-  };
+  // const getSingleUser = async () => {
+  //   const docRef = doc(db, "office2021", id);
+  //   const snapshot = await getDoc(docRef);
+  //   if (snapshot.exists()) {
+  //     setOffice2021Data({ ...snapshot.setOffice2021Data() });
+  //   }
+  // };
 
   // For Navigate Product Details by id End
 
@@ -222,7 +222,7 @@ const AddWindows8 = () => {
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            setWindows8Data((prev) => ({ ...prev, img: downloadURL }));
+            setOffice2021Data((prev) => ({ ...prev, img: downloadURL }));
           });
         }
       );
@@ -231,7 +231,7 @@ const AddWindows8 = () => {
   }, [file]);
 
   const handleChange = (e) => {
-    setWindows8Data({ ...windows8data, [e.target.name]: e.target.value });
+    setOffice2021Data({ ...office2021data, [e.target.name]: e.target.value });
   };
 
   const validate = () => {
@@ -257,11 +257,11 @@ const AddWindows8 = () => {
     if (Object.keys(errors).length) return setErrors(errors);
 
     setIsSubmit(true);
-    await addDoc(collection(db, "windows8db"), {
-      ...windows8data,
+    await addDoc(collection(db, "office2021db"), {
+      ...office2021data,
       timestamp: serverTimestamp(),
     });
-    navigate("/windows8");
+    navigate("/microsoftoffice2021");
   };
 
   return (
@@ -271,9 +271,9 @@ const AddWindows8 = () => {
           <Loader active inline="centered" size="huge" />
         ) : (
           <>
-            <h2 className="text-center mt30 mb20">Add Windows-8 Products</h2>
+            <h2 className="text-center mt30 mb20">Add Office 2021 Products</h2>
             <form onSubmit={handleSubmit}>
-            <label>
+              <label>
                 Product Image:
                 <input
                   type="file"
@@ -645,7 +645,7 @@ const AddWindows8 = () => {
                 type="submit"
                
               >
-                Add Windows-8 Product
+                Add Office 2021 Product
               </button>
             </form>
           </>
@@ -655,4 +655,4 @@ const AddWindows8 = () => {
   );
 };
 
-export default AddWindows8;
+export default AddOffice2021;

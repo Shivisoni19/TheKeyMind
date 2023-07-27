@@ -2,7 +2,7 @@ import React from "react";
 import ProductCatalog from "../ProductCatalog";
 // import SystemRequirements from "./SystemRequirements";
 
-const Windows8Description = ({
+const Office2021Description = ({
   note,
   description,
   desc1heading,
@@ -81,7 +81,7 @@ const Windows8Description = ({
           <div class="text-to-action">
             <h2 class="text-uppercase-none mb30">Description</h2>
             <h4 className="text-uppercase-none">{description}</h4>
-            <h6 className="text-uppercase-none">{note}</h6>
+            <h5 className="text-uppercase-none">{note}</h5>
             <h4 className="text-uppercase-none">{desc5heading}</h4>
             <p>{detail1}</p>
             <p>{detail2}</p>
@@ -95,8 +95,6 @@ const Windows8Description = ({
             <h4 className="text-uppercase-none">{desc2heading}</h4>
             <p>{detail9}</p>
             <p>{detail10}</p>
-
-            
 
             <h4 className="text-uppercase-none">{desc3heading}</h4>
             <p>{detail11}</p>
@@ -116,6 +114,7 @@ const Windows8Description = ({
               <li>{list5}</li>
               <li>{list6}</li>
             </ul>
+
             <p>{detail14}</p>
             <ProductCatalog />
           </div>
@@ -125,4 +124,4 @@ const Windows8Description = ({
   );
 };
 
-export default Windows8Description;
+export default Office2021Description;

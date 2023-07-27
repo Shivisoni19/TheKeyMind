@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const Windows7Header = ({name}) => {
+const Office2021Header = ({name}) => {
   return (
     <>
       <div class="lateralnav">
 			<Link href=""><u> Home </u></Link>
 			<span><i>|</i></span>
-            <Link href=""><u> Operating Systems </u></Link>
+            <Link href=""><u> Microsoft Office </u></Link>
 			<span><i>|</i></span>
-			<Link class="active" href=""><u> Windows 7</u></Link>
+			<Link class="active" href=""><u>Microsoft Office 2021</u></Link>
       <span><i>|</i></span>
 			<Link class="active" href=""><u>{name}</u></Link>
 		</div>
@@ -17,4 +17,4 @@ const Windows7Header = ({name}) => {
   )
 }
 
-export default Windows7Header ;
+export default Office2021Header ;
