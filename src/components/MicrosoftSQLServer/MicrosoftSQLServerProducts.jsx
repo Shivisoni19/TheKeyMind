@@ -1,76 +1,58 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const MicrosoftSQLServerProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [microsoftsqlserver, setMicrosoftSqlServer] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const MicrosoftSQLServerProducts = [
-        {
-          name: "Microsoft SQL Server 2012 Standard - Product Key",
-          description: "$301.99",
-          delprice:"$1,607.99",
-          product_img: "img/subpages/MicrosoftSQLServer/microsoft-sql-server-2012-standard-product-key.jpg",
-        },
-        {
-          name: "Microsoft SQL Server 2014 Standard - Product Key",
-          description: "$321.99",
-          delprice:"$1,715.99",
-          product_img: "img/subpages/MicrosoftSQLServer/microsoft-sql-server-2014-standard-product-key.jpg",
-        },
-        {
-          name: "Microsoft SQL Server 2016 Standard - Product Key",
-          description: "$375.99",
-          delprice:"$1,822.99",
-          product_img: "img/subpages/MicrosoftSQLServer/microsoft-sql-server-2016-standard-product-key.jpg",
-        },
-        {
-          name: "Microsoft SQL Server 2017 Standard - Product Key",
-          description: "$482.99",
-          delprice:"$2,036.99",
-          product_img: "img/subpages/MicrosoftSQLServer/microsoft-sql-server-2017-standard-product-key.jpg",
-        },
-        {
-          name: "Microsoft SQL Server 2019 Standard - Product Key",
-          description: "$525.99",
-          delprice:"$2,143.99",
-          product_img: "img/subpages/MicrosoftSQLServer/microsoft-sql-server-2019-standard-product-key.jpg",
-        },
-      ];
-
-      setProducts(MicrosoftSQLServerProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "MicrosoftSqlServerdb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setMicrosoftSqlServer(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return microsoftsqlserver && microsoftsqlserver.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
-                <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+               <span className="d-flex">
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

@@ -1,76 +1,58 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const AVASTProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [avast, setAvast] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const AVASTProducts = [
-        {
-          name: "AVAST Driver Update 2023 - PC",
-          description: "$21.99",
-          delprice:"$42.99",
-          product_img: "img/subpages/AVAST/buy-avast-driver-update-pc.jpg",
-        },
-        {
-          name: "AVAST Premium Security 2023 - PC",
-          description: "$16.99",
-          delprice:"$48.99",
-          product_img: "img/subpages/AVAST/buy-avast-premium-security-pc-mac-android-ios.jpg",
-        },
-        {
-          name: "AVAST Premium Security 2023 - PC / MAC / ANDROID / IOS",
-          description: "$21.99",
-          delprice:"$64.99",
-          product_img: "img/subpages/AVAST/buy-avast-premium-security-pc.jpg",
-        },
-        {
-          name: "AVAST SecureLine VPN 2023 - PC / MAC / ANDROID / IOS",
-          description: "$16.99",
-          delprice:"$53.99",
-          product_img: "img/subpages/AVAST/buy-avast-secureline-vpn-pc-mac-android-ios.jpg",
-        },
-        {
-          name: "AVAST Ultimate 2023 - PC",
-          description: "$26.99",
-          delprice:"$53.99",
-          product_img: "img/subpages/AVAST/buy-avast-ultimate-pc.jpg",
-        },
-      ];
-
-      setProducts(AVASTProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "avastdb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setAvast(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return avast.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

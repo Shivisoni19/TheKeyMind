@@ -1,58 +1,59 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const McAfeeProducts = () => {
-  const [products, setProducts] = useState([]);
+  
+  const [McAfee, setMcAfee] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const McAfeeProducts = [
-        {
-          name: "McAfee Internet Security 2023 - PC / MAC / ANDROID",
-          description: "$16.99",
-          delprice:"$26.99",
-          product_img: "img/subpages/McAfee/buy-mcafee-internet-security-pc-mac-android.jpg",
-        },
-        {
-          name: "McAfee Total Protection 2023 - PC / MAC / ANDROID / IOS",
-          description: "$21.99",
-          delprice:"$42.99",
-          product_img: "img/subpages/McAfee/buy-mcafee-total-protection-pc-mac-android-ios.jpg",
-        },
-      ];
-
-      setProducts(McAfeeProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "McAfeedb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setMcAfee(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return McAfee && McAfee.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

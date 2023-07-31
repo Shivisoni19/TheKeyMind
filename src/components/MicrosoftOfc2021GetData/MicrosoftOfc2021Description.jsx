@@ -2,7 +2,7 @@ import React from "react";
 import ProductCatalog from "../ProductCatalog";
 // import SystemRequirements from "./SystemRequirements";
 
-const Office2021Description = ({
+const MicrosoftOfc2021Description = ({
   note,
   description,
   desc1heading,
@@ -124,4 +124,4 @@ const Office2021Description = ({
   );
 };
 
-export default Office2021Description;
+export default MicrosoftOfc2021Description;

@@ -1,76 +1,58 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const BitdefenderProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [bitdefender, setBitdefender] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const BitdefenderProducts = [
-        {
-          name: "Bitdefender Antivirus For Mac 2023",
-          description: "$32.99",
-          delprice:"$53.99",
-          product_img: "img/subpages/Bitdefender/buy-bitdefender-antivirus-for-mac.jpg",
-        },
-        {
-          name: "Bitdefender Antivirus Plus 2023 - PC",
-          description: "$21.99",
-          delprice:"$32.99",
-          product_img: "img/subpages/Bitdefender/buy-bitdefender-antivirus-plus-pc.jpg",
-        },
-        {
-          name: "Bitdefender Internet Security 2023 - PC",
-          description: "$28.99",
-          delprice:"$42.99",
-          product_img: "img/subpages/Bitdefender/buy-bitdefender-internet-security-pc.jpg",
-        },
-        {
-          name: "Bitdefender Mobile Security For Android 2023",
-          description: "$13.99",
-          delprice:"$16.99",
-          product_img: "img/subpages/Bitdefender/buy-bitdefender-mobile-security-for-android.jpg",
-        },
-        {
-          name: "Bitdefender Total Security 2023 - PC / MAC",
-          description: "$53.99",
-          delprice:"$85.99",
-          product_img: "img/subpages/Bitdefender/buy-bitdefender-total-security-pc-mac.jpg",
-        },
-      ];
-
-      setProducts(BitdefenderProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "bitdefenderdb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setBitdefender(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return bitdefender && bitdefender.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

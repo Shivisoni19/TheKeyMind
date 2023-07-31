@@ -2,14 +2,7 @@ import React from "react";
 import { Link , useParams } from "react-router-dom";
 // import ProductDetailLeft from "./ProductDetailLeft";
 
-const Office2021DetailsMain = ({ name, img, rprice, nprice, id }) => {
-
-  const [activeTab, setActiveTab] = React.useState(0);
-
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
-
+const MicrosoftOfc2021DetailsMain = ({ name, img, rprice, nprice, id }) => {
   return (
     <div className="product-page container">
       <div className="row">
@@ -81,4 +74,4 @@ const Office2021DetailsMain = ({ name, img, rprice, nprice, id }) => {
   );
 };
 
-export default Office2021DetailsMain;
+export default MicrosoftOfc2021DetailsMain;

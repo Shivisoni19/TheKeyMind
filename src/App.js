@@ -96,8 +96,33 @@ import AddWindows8 from './admin/AddWindows8'
 import Windows10Details from './pages/GetProductDetails/Windows10Details'
 import Windows7Details from './pages/GetProductDetails/Windows7Details'
 import Windows8Details from './pages/GetProductDetails/Windows8Details'
-import Office2021Details from './pages/GetProductDetails/Office2021Details'
+import MicrosoftOfc2021Details from './pages/GetProductDetails/MicrosoftOfc2021Details'
 import AddOffice2021 from './admin/AddOffice2021'
+import AddOffice2019 from './admin/AddOffice2019'
+import AddOffice2016 from './admin/AddOffice2016'
+import AddOffice2013 from './admin/AddOffice2013'
+import AddOffice2010 from './admin/AddOffice2010'
+import AddOffice365 from './admin/AddOffice365'
+import AddOfficeMac from './admin/AddOfficeMac'
+import AddOfficeApp from './admin/AddOfficeApp'
+import AddKaspersky from './admin/AddKaspersky'
+import AddESET from './admin/AddESET'
+import AddMcAfee from './admin/AddMcAfee'
+import AddBitdefender from './admin/AddBitdefender'
+import AddAvast from './admin/AddAvast'
+import AddNorton from './admin/AddNorton'
+import AddAvastVpn from './admin/AddAvastVpn'
+import AddHmaVpn from './admin/AddHmaVpn'
+import AddVpnPc from './admin/AddVpnPc'
+import AddVpnMobile from './admin/AddVpnMobile'
+import AddVpnMac from './admin/AddVpnMac'
+import AddWindowsServer from './admin/AddWindowsServer'
+import AddWindowsServerCal from './admin/AddWindowsServerCal'
+import AddWindowsServerRdsCal from './admin/AddWindowsServerRdsCal'
+import AddMicrosoftSqlServer from './admin/AddMicrosoftSqlServer'
+import AddEaseUs from './admin/AddEaseUs'
+import AddAOMEI from './admin/AddAOMEI'
+
 
 function App () {
 
@@ -122,7 +147,7 @@ function App () {
           <Route path="/windows10data/:id" element={<Windows10Details />} />
           <Route path="/windows7data/:id" element={<Windows7Details/>} />
           <Route path="/windows8data/:id" element={<Windows8Details/>} />
-          {/* <Route path="/office2021data/:id" element={<Office2021Details/>} /> */}
+          {/* <Route path="/microsoftoffice2021data/:id" element={<MicrosoftOfc2021/>} /> */}
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />
           <Route exact path='/myaccount' element={<MyAccount />} />
@@ -182,6 +207,31 @@ function App () {
           <Route exact path="/addwindows7" element={<AddWindows7/>}/>
           <Route exact path="/addwindows8" element={<AddWindows8/>}/>
           <Route exact path="/addoffice2021" element={<AddOffice2021/>}/>
+          <Route exact path="/addoffice2019" element={<AddOffice2019/>}/>
+          <Route exact path="/addoffice2016" element={<AddOffice2016/>}/>
+          <Route exact path="/addoffice2013" element={<AddOffice2013/>}/>
+          <Route exact path="/addoffice2010" element={<AddOffice2010/>}/>
+          <Route exact path="/addoffice365" element={<AddOffice365/>}/>
+          <Route exact path="/addofficemac" element={<AddOfficeMac/>}/>
+          <Route exact path="/addofficeapp" element={<AddOfficeApp/>}/>
+          <Route exact path="/addkaspersky" element={<AddKaspersky/>}/>
+          <Route exact path="/addeset" element={<AddESET/>}/>
+          <Route exact path="/addmcafee" element={<AddMcAfee/>}/>
+          <Route exact path="/addbitdefender" element={<AddBitdefender/>}/>
+          <Route exact path="/addbitdefender" element={<AddBitdefender/>}/>
+          <Route exact path="/addnorton" element={<AddNorton/>}/>
+          <Route exact path="/addavast" element={<AddAvast/>}/>
+          <Route exact path="/addvpnpc" element={<AddVpnPc/>}/>
+          <Route exact path="/addvpnmobile" element={<AddVpnMobile/>}/>
+          <Route exact path="/addvpnmac" element={<AddVpnMac/>}/>
+          <Route exact path="/addhmavpn" element={<AddHmaVpn/>}/>
+          <Route exact path="/addavastvpn" element={<AddAvastVpn/>}/>
+          <Route exact path="/addwindowsserver" element={<AddWindowsServer/>}/>
+          <Route exact path="/addwindowsservercal" element={<AddWindowsServerCal/>}/>
+          <Route exact path="/addwindowsserverrdscal" element={<AddWindowsServerRdsCal/>}/>
+          <Route exact path="/addmicrosoftsqlserver" element={<AddMicrosoftSqlServer/>}/>
+          <Route exact path="/addeaseus" element={<AddEaseUs/>}/>
+          <Route exact path="/addaomei" element={<AddAOMEI/>}/>
 
         </Routes>
         <Footer />

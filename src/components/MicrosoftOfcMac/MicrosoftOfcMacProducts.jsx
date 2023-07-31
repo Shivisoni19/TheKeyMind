@@ -1,70 +1,59 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const MicrosoftOfcMacProducts = () => {
-  const [products, setProducts] = useState([]);
+  
+  const [officemac, setOfficeMac] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const MicrosoftOfcMacProducts = [
-        {
-          name: "Office 2021 Home & Business For Mac - Product Key",
-          description: "$107.99",
-          delprice:"$321.99",
-          product_img: "img/subpages/officeformac/microsoft-office-2021-home-business-for-mac-product-key.jpg",
-        },
-        {
-          name: "Office 2021 Home & Student For Mac - Product Key",
-          description: "$107.99",
-          delprice:"$160.99",
-          product_img: "img/subpages/officeformac/microsoft-office-2021-home-student-for-mac-product-key.jpg",
-        },
-        {
-          name: "Office 2016 Home & Business For MAC - Product Key",
-          description: "$75.99",
-          delprice:"$267.99",
-          product_img: "img/subpages/officeformac/office-2016-home-business-for-mac-microsoft-license.jpg",
-        },
-        {
-          name: "Office 2019 Home & Business For MAC - Product Key",
-          description: "$85.99",
-          delprice:"$310.99",
-          product_img: "img/subpages/officeformac/office-2019-home-business-for-mac-microsoft-license.jpg",
-        },
-      ];
-
-      setProducts(MicrosoftOfcMacProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "officemacdb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setOfficeMac(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return officemac.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

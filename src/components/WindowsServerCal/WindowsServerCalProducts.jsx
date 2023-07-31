@@ -1,109 +1,75 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const WindowsServerCalProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [windowsservercal, setWindowsServerCal] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const WindowsServerCalProducts = [
-        {
-          name: "Microsoft Windows Server 2012 DEVICE CAL - Product Key",
-          description: "$64.99",
-          delprice:"$269.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2012-device-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2012 USER CAL - Product Key",
-          description: "$64.99",
-          delprice:"$269.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2012-user-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2016 DEVICE CAL - Product Key",
-          description: "$107.99",
-          delprice:"$428.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2016-device-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2016 USER CAL - Product Key",
-          description: "$107.99",
-          delprice:"$428.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2016-user-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2019 DEVICE CAL - Product Key",
-          description: "$107.99",
-          delprice:"$428.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2019-device-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2019 USER CAL - Product Key",
-          description: "$107.99",
-          delprice:"$428.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2019-user-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2022 DEVICE CAL - Product Key",
-          description: "$160.99",
-          delprice:"$535.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2022-device-cal-product-key.jpg",
-        },
-        {
-          name: "Microsoft Windows Server 2022 USER CAL - Product Key",
-          description: "$160.99",
-          delprice:"$535.99",
-          product_img: "img/subpages/WindowsServerCal/microsoft-windows-server-2022-user-cal-product-key.jpg",
-        },
-        
-      ];
-
-      setProducts(WindowsServerCalProducts);
+    setLoading(true);
+    const unsub = onSnapshot(
+      collection(db, "windowsservercaldb"),
+      (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+          list.push({ id: doc.id, ...doc.data() });
+        });
+        setWindowsServerCal(list);
+        setLoading(false);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+    return () => {
+      unsub();
     };
-
-    fetchData();
   }, []);
 
   const renderProducts = () => {
-    return products.map((product, index) => (
-      <div key={index} className="col-md-3">
-        <div className="container-fadeInTop">
-          <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
-            <div className="office-content-overlay"></div>
-            <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+    return (
+      windowsservercal &&
+      windowsservercal.map((item, index) => (
+        <div key={index} className="col-md-3">
+          <div className="container-fadeInTop">
+            <div className="office-content">
+              <img src={item.img} alt={item.name} style={{ width: "100%" }} />
+              <div className="office-content-overlay"></div>
+              <div className="office-content-details fadeIn-top">
+                {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
+              </Link> */}
+                <Button href="#" className="go-to-product-btn">
+                  Go To Product
+                </Button>
+              </div>
+            </div>
+            <div className="arr-content">
+              <Link href="#">
+                <p>{item.name}</p>
               </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              <ul>
+                <li>
+                  <span className="d-flex">
+                    <del className="delete-price">{item.rprice}</del>
+                    <span className="low-price">{item.nprice}</span>
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="arr-content">
-            <Link href="#">
-              <p>{product.name}</p>
-            </Link>
-            <ul>
-              <li>
-                <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
-                </span>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    ));
+      ))
+    );
   };
 
   return (
     <div className="container mt-50 mb-50">
-      <div className="row">
-        {renderProducts()}
-      </div>
+      <div className="row">{renderProducts()}</div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const Office2021Header = ({name}) => {
+const MicrosoftOfc2021Header = ({name}) => {
   return (
     <>
       <div class="lateralnav">
@@ -17,4 +17,4 @@ const Office2021Header = ({name}) => {
   )
 }
 
-export default Office2021Header ;
+export default MicrosoftOfc2021Header ;

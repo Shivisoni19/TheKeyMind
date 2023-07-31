@@ -1,70 +1,58 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import product from 'img/product/product-1.png'
+import { Link, useNavigate } from "react-router-dom";
+import { db } from "../../firebase";
+import { collection, onSnapshot } from "firebase/firestore";
+import { Button } from "semantic-ui-react";
 
 const KasperskyProducts = () => {
-  const [products, setProducts] = useState([]);
+  const [kaspersky, setKaspersky] = useState([]);
+  const [loading, setLoading] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = () => {
-      const KasperskyProducts = [
-        {
-          name: "Kaspersky Anti-Virus 2023 - PC",
-          description: "$21.99",
-          delprice:"$42.99",
-          product_img: "img/subpages/Kaspersky/buy-kaspersky-antivirus-pc.jpg",
-        },
-        {
-          name: "Kaspersky Internet Security For Android 2023",
-          description: "$12.99",
-          delprice:"$32.99",
-          product_img: "img/subpages/Kaspersky/buy-kaspersky-internet-security-for-android.jpg",
-        },
-        {
-          name: "Kaspersky Internet Security 2023 (Kaspersky Standard) - PC / MAC / ANDROID / IOS",
-          description: "$21.99",
-          delprice:"$48.99",
-          product_img: "img/subpages/Kaspersky/buy-kaspersky-internet-security-pc-mac-android.jpg",
-        },
-        {
-          name: "Kaspersky Total Security 2023 (Kaspersky Plus) - PC / MAC / ANDROID / IOS",
-          description: "$32.99",
-          delprice:"$58.99",
-          product_img: "img/subpages/Kaspersky/buy-kaspersky-total-security-pc-mac-android-ios.jpg",
-        },
-      ];
-
-      setProducts(KasperskyProducts);
-    };
-
-    fetchData();
-  }, []);
+    setLoading(true);
+    const unsub = onSnapshot(collection(db, "kasperskydb"), (snapshot) => {
+        let list = [];
+        snapshot.docs.forEach((doc) => {
+            list.push({id: doc.id, ...doc.data()})
+        });
+        setKaspersky(list)
+        setLoading(false);
+    },
+     (error) => {
+       console.log(error);
+     } 
+    );
+    return () => {
+     unsub();
+    }
+ },[])
 
   const renderProducts = () => {
-    return products.map((product, index) => (
+    return kaspersky.map((item, index) => (
       <div key={index} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
-            <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
+            <img src={item.img} alt={item.name} style={{width:"100%"}}/>
             <div className="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
-              </Link>
-              <Link href="#" className="wishlist">
-                 Go to Product
-              </Link>
+              </Link> */}
+              <Button href="#" className="go-to-product-btn">
+                Go To Product
+              </Button>
             </div>
           </div>
           <div className="arr-content">
             <Link href="#">
-              <p>{product.name}</p>
+              <p>{item.name}</p>
             </Link>
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{product.delprice}</del>
-                  <span className="low-price">{product.description}</span>
+                  <del className="delete-price">{item.rprice}</del>
+                  <span className="low-price">{item.nprice}</span>
                 </span>
               </li>
             </ul>

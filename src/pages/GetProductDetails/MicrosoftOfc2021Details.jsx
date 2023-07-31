@@ -5,11 +5,11 @@ import { Helmet } from "react-helmet";
 import { db } from "../../firebase"; // Import your Firebase instance
 import { useParams } from "react-router-dom";
 import SoftwareInstallSteps from "../../components/Home/SoftwareInstallSteps";
-import Office2021Description from '../../components/Office2021GetData/Office2021Description'
-import Office2021Header from '../../components/Office2021GetData/Office2021Header'
-import Office2021DetailsMain from '../../components/Office2021GetData/Office2021DetailsMain'
+import MicrosoftOfc2021Description from '../../components/MicrosoftOfc2021GetData/MicrosoftOfc2021Description'
+import MicrosoftOfc2021Header from '../../components/MicrosoftOfc2021GetData/MicrosoftOfc2021Header'
+import MicrosoftOfc2021DetailsMain from '../../components/MicrosoftOfc2021GetData/MicrosoftOfc2021DetailsMain'
 
-const Office2021Details = () => {
+const MicrosoftOfc2021Details = () => {
   // ------------------
   const [office2021productData, setOffice2021ProductData] = useState({});
   const { id } = useParams(); // Import the useParams hook from react-router-dom
@@ -53,13 +53,13 @@ const Office2021Details = () => {
         <meta name="googlebot" content={meta.meta.googlebot} />
         {/* Add googlebot meta tag */}
       </Helmet>
-      <Office2021Header/>
-      <Office2021DetailsMain/>
-      <Office2021Description/>
+      <MicrosoftOfc2021Header/>
+      <MicrosoftOfc2021DetailsMain/>
+      <MicrosoftOfc2021Description/>
       <SoftwareInstallSteps/>
       {/* {...office2021productData} */}
     </>
   );
 };
 
-export default Office2021Details;
+export default MicrosoftOfc2021Details;
