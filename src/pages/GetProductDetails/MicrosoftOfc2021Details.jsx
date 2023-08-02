@@ -27,7 +27,7 @@ const MicrosoftOfc2021Details = () => {
   }
 
   const meta = {
-    title: "Windows 7 Products",
+    title: "Microsoft Office 2021 Products",
     description: "I am a description, and I can create multiple tags",
     canonical: "http://example.com/path/to/page",
     meta: {
@@ -53,9 +53,9 @@ const MicrosoftOfc2021Details = () => {
         <meta name="googlebot" content={meta.meta.googlebot} />
         {/* Add googlebot meta tag */}
       </Helmet>
-      <MicrosoftOfc2021Header/>
-      <MicrosoftOfc2021DetailsMain/>
-      <MicrosoftOfc2021Description/>
+      <MicrosoftOfc2021Header {...office2021productData}/>
+      <MicrosoftOfc2021DetailsMain {...office2021productData}/>
+      <MicrosoftOfc2021Description {...office2021productData}/>
       <SoftwareInstallSteps/>
       {/* {...office2021productData} */}
     </>

@@ -29,8 +29,8 @@ const AvastVPNProducts = () => {
  },[])
 
   const renderProducts = () => {
-    return avastvpn.map((item, index) => (
-      <div key={index} className="col-md-3">
+    return avastvpn && avastvpn.map((item) => (
+      <div key={item.id} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>
@@ -39,8 +39,10 @@ const AvastVPNProducts = () => {
               {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
               </Link> */}
-              <Button href="#" className="go-to-product-btn">
-                Go To Product
+              <Button onClick={() => navigate(`/avastvpndata/${item.id}`,{
+                state:{avastvpndataId: item.id}
+              })} className="wishlist">
+                 Go To Product  
               </Button>
             </div>
           </div>

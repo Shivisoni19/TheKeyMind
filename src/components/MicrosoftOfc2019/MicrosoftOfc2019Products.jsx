@@ -31,8 +31,8 @@ const MicrosoftOfc2019Products = () => {
  
 
   const renderProducts = () => {
-    return office2019 && office2019.map((item, index) => (
-      <div key={index} className="col-md-3">
+    return office2019 && office2019.map((item) => (
+      <div key={item.id} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>
@@ -41,8 +41,13 @@ const MicrosoftOfc2019Products = () => {
               {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
               </Link> */}
-              <Button href="#" className="go-to-product-btn">
+              {/* <Button href="#" className="go-to-product-btn">
                 Go To Product
+              </Button> */}
+              <Button onClick={() => navigate(`/microsoftoffice2019data/${item.id}`,{
+                state:{microsoftoffice2019Id: item.id}
+              })} className="wishlist">
+                 Go To Product
               </Button>
             </div>
           </div>

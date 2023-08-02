@@ -178,19 +178,19 @@ const AddOffice2021 = () => {
 
 
   // For Navigate product details by id
-  // const { id } = useParams();
+  const { id } = useParams();
 
-  // useEffect(() => {
-  //   id && getSingleUser();
-  // }, [id]);
+  useEffect(() => {
+    id && getSingleUser();
+  }, [id]);
 
-  // const getSingleUser = async () => {
-  //   const docRef = doc(db, "office2021", id);
-  //   const snapshot = await getDoc(docRef);
-  //   if (snapshot.exists()) {
-  //     setOffice2021Data({ ...snapshot.setOffice2021Data() });
-  //   }
-  // };
+  const getSingleUser = async () => {
+    const docRef = doc(db, "office2021db", id);
+    const snapshot = await getDoc(docRef);
+    if (snapshot.exists()) {
+      setOffice2021Data({ ...snapshot.setOffice2021Data() });
+    }
+  };
 
   // For Navigate Product Details by id End
 
@@ -341,6 +341,8 @@ const AddOffice2021 = () => {
                   name="note"
                 />
               </label>
+
+              {/* ----------Headings--------- */}
               <label>
                 Description H1
                 <input
@@ -378,6 +380,15 @@ const AddOffice2021 = () => {
                 />
               </label>
               <label>
+                Description H5
+                <input
+                  type="text"
+                  value={desc5heading}
+                  onChange={handleChange}
+                  name="desc5heading"
+                />
+              </label>
+              <label>
                 Description H6
                 <input
                   type="text"
@@ -387,14 +398,25 @@ const AddOffice2021 = () => {
                 />
               </label>
               <label>
-                Description H5
+                Description H7
                 <input
                   type="text"
-                  value={desc5heading}
+                  value={desc7heading}
                   onChange={handleChange}
-                  name="desc5heading"
+                  name="desc7heading"
                 />
               </label>
+              <label>
+                Description H8
+                <input
+                  type="text"
+                  value={desc8heading}
+                  onChange={handleChange}
+                  name="desc8heading"
+                />
+              </label>
+              
+            {/* ----------- Paragraphs Details------------ */}             
               <label>
                 Detail-P1:
                 <input
@@ -494,42 +516,7 @@ const AddOffice2021 = () => {
                   name="detail11"
                 />
               </label>
-              <label>
-                Detail-P12:
-                <input
-                  type="text"
-                  value={detail12}
-                  onChange={handleChange}
-                  name="detail12"
-                />
-              </label>
-              <label>
-                Detail-P13:
-                <input
-                  type="text"
-                  value={detail13}
-                  onChange={handleChange}
-                  name="detail13"
-                />
-              </label>
-              <label>
-                Detail-P14:
-                <input
-                  type="text"
-                  value={detail14}
-                  onChange={handleChange}
-                  name="detail14"
-                />
-              </label>
-              <label>
-                Detail-P15:
-                <input
-                  type="text"
-                  value={detail15}
-                  onChange={handleChange}
-                  name="detail15"
-                />
-                </label>
+
               {/*------------ Ul List 1 -------------------*/}
               <label>
                 Ul-Heading1
@@ -594,53 +581,126 @@ const AddOffice2021 = () => {
                   name="list6"
                 />
               </label>
+              <label>
+                list 7
+                <input
+                  type="text"
+                  value={list7}
+                  onChange={handleChange}
+                  name="list7"
+                />
+              </label>
+              <label>
+                list 8
+                <input
+                  type="text"
+                  value={list8}
+                  onChange={handleChange}
+                  name="list8"
+                />
+              </label>
+              <label>
+                list 9
+                <input
+                  type="text"
+                  value={list9}
+                  onChange={handleChange}
+                  name="list9"
+                />
+              </label>
+              <label>
+                list 10
+                <input
+                  type="text"
+                  value={list10}
+                  onChange={handleChange}
+                  name="list10"
+                />
+              </label>
+              <label>
+                list 11
+                <input
+                  type="text"
+                  value={list11}
+                  onChange={handleChange}
+                  name="list11"
+                />
+              </label>
 
-              {/* <h4>------------------------------------Product Stock Details--------------------------------</h4>
+              {/*--------- Ul List 2 --------- */}
               <label>
-              Availability :
+                Ul-Heading 2:
                 <input
                   type="text"
-                  value={Availability}
+                  value={ulheading2}
                   onChange={handleChange}
-                  name="Availability"
+                  name="ulheading2"
                 />
               </label>
               <label>
-              Multilingual :
+                list 12
                 <input
                   type="text"
-                  value={Multilingual}
+                  value={list12}
                   onChange={handleChange}
-                  name="Multilingual"
+                  name="list12"
                 />
               </label>
               <label>
-              Support:
+                list 13
                 <input
                   type="text"
-                  value={Support}
+                  value={list13}
                   onChange={handleChange}
-                  name="Support"
+                  name="list13"
                 />
               </label>
               <label>
-              Payment: 
+                list 14
                 <input
                   type="text"
-                  value={Payment}
+                  value={list14}
                   onChange={handleChange}
-                  name="Payment"
+                  name="list14"
                 />
               </label>
               <label>
-              Shipping: 
+                list 15
                 <input
                   type="text"
-                  value={Shipping}
+                  value={list15}
                   onChange={handleChange}
-                  name="Shipping"
+                  name="list15"
                 />
-              </label> */}
+              </label>
+              <label>
+                list 16
+                <input
+                  type="text"
+                  value={list16}
+                  onChange={handleChange}
+                  name="list16"
+                />
+              </label>
+              <label>
+                list 17
+                <input
+                  type="text"
+                  value={list17}
+                  onChange={handleChange}
+                  name="list17"
+                />
+              </label>
+              <label>
+                list 18
+                <input
+                  type="text"
+                  value={list18}
+                  onChange={handleChange}
+                  name="list18"
+                />
+              </label>
+
               <button
                 type="submit"
                

@@ -29,89 +29,9 @@ const MicrosoftOfc2021Products = () => {
     }
  },[])
 
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   const fetchData = () => {
-  //     const MicrosoftOfc2021Products = [
-  //       {
-  //         name: "Access 2021 - Product Key",
-  //         description: "$64.99",
-  //         delprice:"$160.99",
-  //         product_img: "img/subpages/office2021/access-2021-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Excel 2021 - Product Key",
-  //         description: "$64.99",
-  //         delprice:"$160.99",
-  //         product_img: "img/subpages/office2021/excel-2021-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Office 2021 Home & Business For Mac - Product Key",
-  //         description: "$107.99",
-  //         delprice:"$321.99",
-  //         product_img: "img/subpages/office2021/microsoft-office-2021-home-business-for-mac-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Office 2021 Home & Student For Mac - Product Key",
-  //         description: "$107.99",
-  //         delprice:"$160.99",
-  //         product_img: "img/subpages/office2021/microsoft-office-2021-home-student-for-mac-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Office 2021 Home & Student-Product Key",
-  //         description: "$96.99",
-  //         delprice:"$160.99",
-  //         product_img: "img/subpages/office2021/microsoft-office-2021-home-student-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Office 2021 Home & Business-Product Key",
-  //         description: "$117.99",
-  //         delprice:"$321.99",
-  //         product_img: "img/subpages/office2021/office-2021-home-business-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Office 2021 Professional Plus - Product Key",
-  //         description: " $117.99",
-  //         delprice:"$546.99",
-  //         product_img: "img/subpages/office2021/office-2021-professional-plus-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Visio Professional 2021 - Product Keyt",
-  //         description: "$321.99",
-  //         delprice:"$953.99",
-  //         product_img: "img/subpages/office2021/visio-professional-2021-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Visio Standard 2021 - Product Key",
-  //         description: "$235.99",
-  //         delprice:"$514.99",
-  //         product_img: "img/subpages/office2021/visio-standard-2021-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Word 2021 For Mac - Product Key",
-  //         description: "$85.99",
-  //         delprice:"$150.99",
-  //         product_img: "img/subpages/office2021/word-2021-for-mac-product-key.jpg",
-  //       },
-  //       {
-  //         name: "Word 2021 - Product Key",
-  //         description: "$64.99",
-  //         delprice:"$160.99",
-  //         product_img: "img/subpages/office2021/word-2021-product-key.jpg",
-  //       },
-        
-        
-  //     ];
-
-  //     setProducts(MicrosoftOfc2021Products);
-  //   };
-
-  //   fetchData();
-  // }, []);
-
   const renderProducts = () => {
-    return office2021 && office2021.map((item, index) => (
-      <div key={index} className="col-md-3">
+    return office2021 && office2021.map((item) => (
+      <div key={item.id} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>
@@ -120,8 +40,13 @@ const MicrosoftOfc2021Products = () => {
               {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
               </Link> */}
-              <Button href="#" className="go-to-product-btn">
+              {/* <Button href="#" className="go-to-product-btn">
                 Go To Product
+              </Button> */}
+              <Button onClick={() => navigate(`/microsoftoffice2021data/${item.id}`,{
+                state:{microsoftoffice2021Id: item.id}
+              })} className="wishlist">
+                 Go To Product
               </Button>
             </div>
           </div>

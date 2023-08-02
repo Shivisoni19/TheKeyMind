@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Login from '../../pages/Login';
 
-const Header = () => {
+const Header = ({id}) => {
   return (
     <>
       <div id='container'>
@@ -184,16 +184,16 @@ const Header = () => {
                             <header className='mega-box-heading'><Link to="/windows11">Windows 11</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link to="/windows11">Windows 11 Professional</Link>
+                                <Link to="/productdetails/ColcQ4myR4DzXuQvj65H">Windows 11 Professional</Link>
                               </li>
                               <li>
-                                <Link to="/windows11">Windows 11 Home</Link>
+                                <Link to="/productdetails/VCpUqTovq6BDCeFIsgwl">Windows 11 Home</Link>
                               </li>
                               <li>
-                                <Link to="/windows11">Windows 11 Enterprise</Link>
+                                <Link to="/productdetails/6eVzRHsPvcAgimsAA4ft">Windows 11 Enterprise</Link>
                               </li>
                               <li>
-                                <Link to="/windows11">Upgrade to Windows 11 Professional</Link>
+                                <Link to="/productdetails/VnvuVMy4kv4eGHoHczv9">Upgrade to Windows 11 Professional</Link>
                               </li>
                             </ul>
                           </div>

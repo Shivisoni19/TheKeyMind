@@ -30,8 +30,8 @@ const MicrosoftOfcMacProducts = () => {
  },[])
 
   const renderProducts = () => {
-    return officemac.map((item, index) => (
-      <div key={index} className="col-md-3">
+    return officemac && officemac.map((item) => (
+      <div key={item.id} className="col-md-3">
         <div className="container-fadeInTop">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>
@@ -40,8 +40,13 @@ const MicrosoftOfcMacProducts = () => {
               {/* <Link href="#" className="medium-button button-red add-cart">
                 Add to Cart
               </Link> */}
-              <Button href="#" className="go-to-product-btn">
+              {/* <Button href="#" className="go-to-product-btn">
                 Go To Product
+              </Button> */}
+              <Button onClick={() => navigate(`/microsoftofficemacdata/${item.id}`,{
+                state:{microsoftofficemacId: item.id}
+              })} className="wishlist">
+                 Go To Product
               </Button>
             </div>
           </div>

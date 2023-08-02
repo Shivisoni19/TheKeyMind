@@ -96,7 +96,6 @@ import AddWindows8 from './admin/AddWindows8'
 import Windows10Details from './pages/GetProductDetails/Windows10Details'
 import Windows7Details from './pages/GetProductDetails/Windows7Details'
 import Windows8Details from './pages/GetProductDetails/Windows8Details'
-import MicrosoftOfc2021Details from './pages/GetProductDetails/MicrosoftOfc2021Details'
 import AddOffice2021 from './admin/AddOffice2021'
 import AddOffice2019 from './admin/AddOffice2019'
 import AddOffice2016 from './admin/AddOffice2016'
@@ -122,6 +121,31 @@ import AddWindowsServerRdsCal from './admin/AddWindowsServerRdsCal'
 import AddMicrosoftSqlServer from './admin/AddMicrosoftSqlServer'
 import AddEaseUs from './admin/AddEaseUs'
 import AddAOMEI from './admin/AddAOMEI'
+import MicrosoftOfc2021Details from './pages/GetProductDetails/MicrosoftOfc2021Details'
+import MicrosoftOfc2019Details from './pages/GetProductDetails/MicrosoftOfc2019Details'
+import MicrosoftOfc2016Details from './pages/GetProductDetails/MicrosoftOfc2016Details'
+import MicrosoftOfc2013Details from './pages/GetProductDetails/MicrosoftOfc2013Details'
+import MicrosoftOfc2010Details from './pages/GetProductDetails/MicrosoftOfc2010Details'
+import MicrosoftOfc365Details from './pages/GetProductDetails/MicrosoftOfc365Details'
+import MicrosoftOfcMacDetails from './pages/GetProductDetails/MicrosoftOfcMacDetails'
+import MicrosoftOfcAppDetails from './pages/GetProductDetails/MicrosoftOfcAppDetails'
+import KasperskyDetails from './pages/GetProductDetails/KasperskyDetails'
+import ESETDetails from './pages/GetProductDetails/ESETDetails';
+import McAfeeDetails from './pages/GetProductDetails/McAfeeDetails';
+import BitdefenderDetails from './pages/GetProductDetails/BitdefenderDetails';
+import AvastDetails from './pages/GetProductDetails/AvastDetails';
+import NortonDetails from './pages/GetProductDetails/NortonDetails';
+import VPNforPCDetails from './pages/GetProductDetails/VPNforPCDetails';
+import VPNforMacDetails from './pages/GetProductDetails/VPNforMacDetails';
+import VPNforMobileDetails from './pages/GetProductDetails/VPNforMobileDetails';
+import HMAVPNDetails from './pages/GetProductDetails/HMAVPNDetails';
+import AvastVPNDetails from './pages/GetProductDetails/AvastVPNDetails';
+// import WindowsServerDetails from './pages/GetProductDetails/WindowsServerDetails';
+// import WindowsServerCalDetails from './pages/GetProductDetails/WindowsServerCalDetails';
+// import WindowsServerRdsCalDetails from './pages/GetProductDetails/WindowsServerRdsCalDetails';
+// import MicrosoftSqlServerDetails from './pages/GetProductDetails/MicrosoftSqlServerDetails';
+// import AOMEIDetails from './pages/GetProductDetails/AOMEIDetails'
+// import EaseUsDetails from './pages/GetProductDetails/EaseUsDetails'
 
 
 function App () {
@@ -142,12 +166,37 @@ function App () {
           <Route exact path='/vpn' element={<VPN />} />
           <Route exact path='/antivirus' element={<Antivirus />} />
           <Route exact path='/backuprecovery' element={<BackupRecovery />} />
-          {/* <Route exact path='/productdetails' element={<ProductDetails />} /> */}
+          {/* -------------Product Details Fetching Route -----------------------*/}
           <Route path="/productdetails/:id" element={<ProductDetails />} />
           <Route path="/windows10data/:id" element={<Windows10Details />} />
           <Route path="/windows7data/:id" element={<Windows7Details/>} />
           <Route path="/windows8data/:id" element={<Windows8Details/>} />
-          {/* <Route path="/microsoftoffice2021data/:id" element={<MicrosoftOfc2021/>} /> */}
+          <Route path="/microsoftoffice2021data/:id" element={<MicrosoftOfc2021Details/>} />
+          <Route path="/microsoftoffice2019data/:id" element={<MicrosoftOfc2019Details/>} />
+          <Route path="/microsoftoffice2016data/:id" element={<MicrosoftOfc2016Details/>} />
+          <Route path="/microsoftoffice2013data/:id" element={<MicrosoftOfc2013Details/>} />
+          <Route path="/microsoftoffice2010data/:id" element={<MicrosoftOfc2010Details/>} />
+          <Route path="/microsoftoffice365data/:id" element={<MicrosoftOfc365Details/>} />
+          <Route path="/microsoftofficemacdata/:id" element={<MicrosoftOfcMacDetails/>} />
+          <Route path="/microsoftofficeappdata/:id" element={<MicrosoftOfcAppDetails/>} />
+          <Route path="/kasperskydata/:id" element={<KasperskyDetails/>} />
+          <Route path="/esetdata/:id" element={<ESETDetails/>} />
+          <Route path="/mcafeedata/:id" element={<McAfeeDetails/>} />
+          <Route path="/bitdefenderdata/:id" element={<BitdefenderDetails/>} />
+          <Route path="/avastdata/:id" element={<AvastDetails/>} />
+          <Route path="/nortondata/:id" element={<NortonDetails/>} />
+          <Route path="/vpnpcdata/:id" element={<VPNforPCDetails/>} />
+          <Route path="/vpnmacdata/:id" element={<VPNforMacDetails/>} />
+          <Route path="/vpnmobiledata/:id" element={<VPNforMobileDetails/>} />
+          <Route path="/hmavpndata/:id" element={<HMAVPNDetails/>} />
+          <Route path="/avastvpndata/:id" element={<AvastVPNDetails/>} />
+          {/* <Route path="/windowsserverdata/:id" element={<WindowsServerDetails/>} /> */}
+          {/* <Route path="/windowsservercaldata/:id" element={<WindowsServerCalDetails/>} /> */}
+          {/* <Route path="/windowsserverrdscaldata/:id" element={<WindowsServerRdsCalDetails/>} /> */}
+          {/* <Route path="microsoftsqlserverdata/:id" element={<MicrosoftsqlServerDetails/>} /> */}
+          {/* <Route exact path='/aomeidata/:id' element={<AOMEIDetails/>} /> */}
+          {/* <Route exact path='/easeusdata/:id' element={<EaseUsDetails />} /> */}
+          
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />
           <Route exact path='/myaccount' element={<MyAccount />} />
