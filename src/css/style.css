@@ -2751,6 +2751,16 @@ outline: 0 !important;
 .footer2 a:hover {
   color: #fff;
 }
+.f-about p {
+  color: #6b6b6b !important;
+  font-size: 15px;
+  font-family: "Poppins";
+}
+.gettouch p{
+  color: #6b6b6b !important;
+  font-size: 15px;
+  font-family: "Poppins";
+}
 
 /*Full Width Banners Home*/
 
@@ -5974,11 +5984,11 @@ footer h1 {
 }
 
 .infos a {
-  font-size: 13px;
+  font-size: 15px;
   color: #6b6b6b;
   margin: 0;
   display: block;
-  font-family: 'Merriweather';
+  font-family: 'Poppins';
   margin-bottom: 17px;
 }
 
@@ -5987,11 +5997,11 @@ footer h1 {
 }
 
 .account a {
-  font-size: 13px;
+  font-size: 15px;
   color: #6b6b6b;
   margin: 0;
   display: block;
-  font-family: 'Merriweather';
+  font-family: 'Poppins';
   margin-bottom: 17px;
 }
 

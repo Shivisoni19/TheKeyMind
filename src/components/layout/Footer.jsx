@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 // import '../../js/chatbox'
 import ChatBox from '../Home/ChatBox';
 import Partners from '../Partners';
+import NewsLetter from './NewsLetter';
 
 const Footer = () => {
   return (
@@ -19,28 +20,24 @@ const Footer = () => {
               <div class="col-md-3">
                 <div class="f-about">
                   <h1>ABOUT KEY MIIND</h1>
-                  <p class="mb20">
+                  <p class="mb20" style={{color:"#6b6b6b;"}}>
                     We possess within us two minds. So far I have written only
                     of the conscious mind.We further know that the subconscious
                     has recorded every event. This is just perfect theme.
                   </p>
-                  <h1>NEWSLETTER</h1>
-                  <form action="#">
-                    <input type="text" placeholder="Your e-mail" />
-                    <input type="submit" value="" />
-                  </form>
+                  <NewsLetter/>
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="infos">
                   <h1>Services</h1>
                   <ul>
-                    <li><Link to="/operatingsystem">• Operating System</Link></li>
-                    <li><Link to="/microsoftoffice">• Microsoft Office</Link></li>
-                    <li><Link to="/antivirus">• Antivirus</Link></li>
-                    <li><Link to="/vpn">• VPN</Link></li>
-                    <li><Link to="/server">• Server</Link></li>
-                    <li><Link to="/backuprecovery">• Backup & Recovery</Link></li>
+                    <li><Link to="/operatingsystem">Operating System</Link></li>
+                    <li><Link to="/microsoftoffice">Microsoft Office</Link></li>
+                    <li><Link to="/antivirus">Antivirus</Link></li>
+                    <li><Link to="/vpn">VPN</Link></li>
+                    <li><Link to="/server">Server</Link></li>
+                    <li><Link to="/backuprecovery">Backup & Recovery</Link></li>
                   </ul>
                 </div>
               </div>
@@ -48,14 +45,14 @@ const Footer = () => {
                 <div class="account">
                   <h1>USEFUL LINKS</h1>
                   <ul>
-                    <li><Link to="/about">• About Us</Link></li>
-                    <li><Link to="/blog">• Blog</Link></li>
-                    <li><Link to="/termsconditions">• Terms And Conditions</Link></li>
-                    <li><Link to="/returnrefund">• Return Refund</Link></li>
-                    <li><Link to="/shipping">• Shipping</Link></li>
-                    {/* <!-- <li><Link href="#">• Contact Us</Link></li> --> */}
-                    <li><Link to="/privacypolicy">• Privacy Policy</Link></li>
-                    <li><Link to="/cookiepolicy">• Cookie Policy</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/termsconditions">Terms And Conditions</Link></li>
+                    <li><Link to="/returnrefund">Return Refund</Link></li>
+                    <li><Link to="/shipping">Shipping</Link></li>
+                    {/* <!-- <li><Link href="#">Contact Us</Link></li> --> */}
+                    <li><Link to="/privacypolicy">Privacy Policy</Link></li>
+                    <li><Link to="/cookiepolicy">Cookie Policy</Link></li>
                   </ul>
                 </div>
               </div>

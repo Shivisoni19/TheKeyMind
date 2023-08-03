@@ -51,48 +51,7 @@ const BlogLeftSide = () => {
                 </div>
               </div>
             </div>
-
-            <div className="blog-post mb50">
-              <div className="blog-item">
-                <div className="blog-img">
-                  <div className="calendar">
-                    <p>02</p>
-                    <span>dec</span>
-                  </div>
-                  <div className="blog-content">
-                    <div className="post-meta quote">
-                      <Link href="#"><i className="fa fa-user"></i> Joeby Ragpa</Link>
-                      <Link href="#"><i className="fa fa-bookmark"></i> Design</Link>
-                      <Link href="#"><i className="fa fa-comment"></i> 15 Comments</Link>
-                    </div>
-                    <blockquote>“Sometimes life knocks you on your ass... get up, get up, get up!!! Happiness is not the absence of problems, it's the ability to deal with them.”</blockquote>
-                    <span className="block-user">— Steve Maraboli</span>
-                    <Link href="#" className="small-button button-red mb10">Read More</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="blog-post mb20">
-              <div className="blog-item">
-                <div className="blog-img">
-                  <div className="calendar">
-                    <p>02</p>
-                    <span>dec</span>
-                  </div>
-                  <div className="blog-content">
-                    <div className="post-meta quote">
-                      <Link href="#"><i className="fa fa-user"></i> Joeby Ragpa</Link>
-                      <Link href="#"><i className="fa fa-bookmark"></i> Design</Link>
-                      <Link href="#"><i className="fa fa-comment"></i> 15 Comments</Link>
-                    </div>
-                    <h1>This is text post example</h1>
-                    <p>We possess within us two minds. So far I have written only of the conscious mind. I would now like to introduce you to your second mind, the hidden and mysterious subconscious. Our subconscious mind contains such power and complexity that it literally staggers the imagination.</p>
-                    <Link href="#" className="small-button button-red mb10">Read More</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
             <div className="clear"></div>
           </div>
     </>
