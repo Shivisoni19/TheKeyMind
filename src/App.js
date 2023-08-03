@@ -140,12 +140,12 @@ import VPNforMacDetails from './pages/GetProductDetails/VPNforMacDetails';
 import VPNforMobileDetails from './pages/GetProductDetails/VPNforMobileDetails';
 import HMAVPNDetails from './pages/GetProductDetails/HMAVPNDetails';
 import AvastVPNDetails from './pages/GetProductDetails/AvastVPNDetails';
-// import WindowsServerDetails from './pages/GetProductDetails/WindowsServerDetails';
-// import WindowsServerCalDetails from './pages/GetProductDetails/WindowsServerCalDetails';
-// import WindowsServerRdsCalDetails from './pages/GetProductDetails/WindowsServerRdsCalDetails';
-// import MicrosoftSqlServerDetails from './pages/GetProductDetails/MicrosoftSqlServerDetails';
-// import AOMEIDetails from './pages/GetProductDetails/AOMEIDetails'
-// import EaseUsDetails from './pages/GetProductDetails/EaseUsDetails'
+import WindowsServerDetails from './pages/GetProductDetails/WindowsServerDetails';
+import WindowsServerCalDetails from './pages/GetProductDetails/WindowsServerCalDetails';
+import WindowsServerRdsCalDetails from './pages/GetProductDetails/WindowsServerRdsCalDetails';
+import MicrosoftSqlServerDetails from './pages/GetProductDetails/MicrosoftSqlServerDetails';
+import AOMEIDetails from './pages/GetProductDetails/AOMEIDetails'
+import EaseUsDetails from './pages/GetProductDetails/EaseUsDetails'
 
 
 function App () {
@@ -190,12 +190,12 @@ function App () {
           <Route path="/vpnmobiledata/:id" element={<VPNforMobileDetails/>} />
           <Route path="/hmavpndata/:id" element={<HMAVPNDetails/>} />
           <Route path="/avastvpndata/:id" element={<AvastVPNDetails/>} />
-          {/* <Route path="/windowsserverdata/:id" element={<WindowsServerDetails/>} /> */}
-          {/* <Route path="/windowsservercaldata/:id" element={<WindowsServerCalDetails/>} /> */}
-          {/* <Route path="/windowsserverrdscaldata/:id" element={<WindowsServerRdsCalDetails/>} /> */}
-          {/* <Route path="microsoftsqlserverdata/:id" element={<MicrosoftsqlServerDetails/>} /> */}
-          {/* <Route exact path='/aomeidata/:id' element={<AOMEIDetails/>} /> */}
-          {/* <Route exact path='/easeusdata/:id' element={<EaseUsDetails />} /> */}
+          <Route path="/windowsserverdata/:id" element={<WindowsServerDetails/>} />
+          <Route path="/windowsservercaldata/:id" element={<WindowsServerCalDetails/>} />
+          <Route path="/windowsserverrdscaldata/:id" element={<WindowsServerRdsCalDetails/>} />
+          <Route path="microsoftsqlserverdata/:id" element={<MicrosoftSqlServerDetails/>} />
+          <Route exact path='/aomeidata/:id' element={<AOMEIDetails/>} />
+          <Route exact path='/easeusdata/:id' element={<EaseUsDetails />} />
           
           <Route exact path='/cart' element={<Cart />} />
           <Route exact path='/checkout' element={<Checkout />} />

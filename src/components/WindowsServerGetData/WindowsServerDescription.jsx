@@ -2,7 +2,7 @@ import React from "react";
 import ProductCatalog from "../ProductCatalog";
 // import SystemRequirements from "./SystemRequirements";
 
-const VPNforMacDescription = ({
+const WindowsServerDescription = ({
   note,
   description,
   desc1heading,
@@ -80,40 +80,42 @@ const VPNforMacDescription = ({
         <div className="container description">
           <div class="text-to-action">
             <h2 class="text-uppercase-none mb30">Description</h2>
-            <p className="text-uppercase-none">{description}</p>
-
-            <h4 className="text-uppercase-none">{desc1heading}</h4>
+            <h4 className="text-uppercase-none">{description}</h4>
+            <h5 className="text-uppercase-none">{note}</h5>
+            <h4 className="text-uppercase-none">{desc5heading}</h4>
             <p>{detail1}</p>
             <p>{detail2}</p>
             <p>{detail3}</p>
             <p>{detail4}</p>
-
-            <h4 className="text-uppercase-none">{desc2heading}</h4>
             <p>{detail5}</p>
+            <h4 className="text-uppercase-none">{desc1heading}</h4>
             <p>{detail6}</p>
             <p>{detail7}</p>
             <p>{detail8}</p>
-            
-            
-            
-            <h4 className="text-uppercase-none">{desc3heading}</h4>
+            <h4 className="text-uppercase-none">{desc2heading}</h4>
             <p>{detail9}</p>
-           
-            
-             
+            <p>{detail10}</p>
+
+            <h4 className="text-uppercase-none">{desc3heading}</h4>
+            <p>{detail11}</p>
+            <p>{detail12}</p>
             <h4 className="text-uppercase-none">{desc4heading}</h4>
-            <p className="text-uppercase-none">{ulheading1}</p>
+            <p>{detail13}</p>
+            <p>{detail14}</p>
+            <p>{detail15}</p>
+            <h4 className="text-uppercase-none">{desc6heading}</h4>
+
+            <h4 className="text-uppercase-none">{ulheading1}</h4>
             <ul className="mb20">
               <li>{list1}</li>
               <li>{list2}</li>
               <li>{list3}</li>
               <li>{list4}</li>
               <li>{list5}</li>
+              <li>{list6}</li>
             </ul>
-            
-            <p>{detail10}</p>
-            
-            
+
+            <p>{detail14}</p>
             <ProductCatalog />
           </div>
         </div>
@@ -122,4 +124,4 @@ const VPNforMacDescription = ({
   );
 };
 
-export default VPNforMacDescription;
+export default WindowsServerDescription;

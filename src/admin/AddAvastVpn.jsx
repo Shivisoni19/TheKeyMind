@@ -333,15 +333,6 @@ const AddAvastVpn = () => {
                 ) : null}
               </label>
               <label>
-                Note:
-                <input
-                  type="text"
-                  value={note}
-                  onChange={handleChange}
-                  name="note"
-                />
-              </label>
-              <label>
                 Description H1
                 <input
                   type="text"
@@ -377,24 +368,7 @@ const AddAvastVpn = () => {
                   name="desc4heading"
                 />
               </label>
-              <label>
-                Description H6
-                <input
-                  type="text"
-                  value={desc6heading}
-                  onChange={handleChange}
-                  name="desc6heading"
-                />
-              </label>
-              <label>
-                Description H5
-                <input
-                  type="text"
-                  value={desc5heading}
-                  onChange={handleChange}
-                  name="desc5heading"
-                />
-              </label>
+              
               <label>
                 Detail-P1:
                 <input
@@ -485,51 +459,7 @@ const AddAvastVpn = () => {
                   name="detail10"
                 />
               </label>
-              <label>
-                Detail-P11:
-                <input
-                  type="text"
-                  value={detail11}
-                  onChange={handleChange}
-                  name="detail11"
-                />
-              </label>
-              <label>
-                Detail-P12:
-                <input
-                  type="text"
-                  value={detail12}
-                  onChange={handleChange}
-                  name="detail12"
-                />
-              </label>
-              <label>
-                Detail-P13:
-                <input
-                  type="text"
-                  value={detail13}
-                  onChange={handleChange}
-                  name="detail13"
-                />
-              </label>
-              <label>
-                Detail-P14:
-                <input
-                  type="text"
-                  value={detail14}
-                  onChange={handleChange}
-                  name="detail14"
-                />
-              </label>
-              <label>
-                Detail-P15:
-                <input
-                  type="text"
-                  value={detail15}
-                  onChange={handleChange}
-                  name="detail15"
-                />
-                </label>
+              
               {/*------------ Ul List 1 -------------------*/}
               <label>
                 Ul-Heading1
@@ -583,15 +513,6 @@ const AddAvastVpn = () => {
                   value={list5}
                   onChange={handleChange}
                   name="list5"
-                />
-              </label>
-              <label>
-                list 6
-                <input
-                  type="text"
-                  value={list6}
-                  onChange={handleChange}
-                  name="list6"
                 />
               </label>
 

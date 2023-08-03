@@ -2,7 +2,7 @@ import React from "react";
 import ProductCatalog from "../ProductCatalog";
 // import SystemRequirements from "./SystemRequirements";
 
-const VPNforMacDescription = ({
+const AOMEIDescription = ({
   note,
   description,
   desc1heading,
@@ -81,27 +81,18 @@ const VPNforMacDescription = ({
           <div class="text-to-action">
             <h2 class="text-uppercase-none mb30">Description</h2>
             <p className="text-uppercase-none">{description}</p>
+            {/* <h5 className="text-uppercase-none">{note}</h5> */}
 
             <h4 className="text-uppercase-none">{desc1heading}</h4>
             <p>{detail1}</p>
+
+            <h4 className="text-uppercase-none">{desc2heading}</h4>
             <p>{detail2}</p>
             <p>{detail3}</p>
             <p>{detail4}</p>
-
-            <h4 className="text-uppercase-none">{desc2heading}</h4>
-            <p>{detail5}</p>
-            <p>{detail6}</p>
-            <p>{detail7}</p>
-            <p>{detail8}</p>
-            
-            
             
             <h4 className="text-uppercase-none">{desc3heading}</h4>
-            <p>{detail9}</p>
-           
-            
-             
-            <h4 className="text-uppercase-none">{desc4heading}</h4>
+
             <p className="text-uppercase-none">{ulheading1}</p>
             <ul className="mb20">
               <li>{list1}</li>
@@ -109,10 +100,41 @@ const VPNforMacDescription = ({
               <li>{list3}</li>
               <li>{list4}</li>
               <li>{list5}</li>
+              <li>{list6}</li>
+              <li>{list7}</li>
+              <li>{list8}</li>
+              <li>{list9}</li>
+              <li>{list10}</li>
+              <li>{list11}</li>
             </ul>
             
-            <p>{detail10}</p>
+            <p>{detail5}</p>
+            <p>{detail6}</p>
+
+            <h4 className="text-uppercase-none">{desc4heading}</h4>
+            <p>{detail7}</p>
             
+            <h4 className="text-uppercase-none">{desc5heading}</h4>
+            <p>{detail8}</p>
+            
+            <h4 className="text-uppercase-none">{desc6heading}</h4>
+            <p>{detail9}</p>
+
+            <h4 className="text-uppercase-none">{desc7heading}</h4>
+            <p>{detail10}</p>
+
+            <h4 className="text-uppercase-none">{desc8heading}</h4>
+            <p>{detail11}</p>
+
+            <h4 className="text-uppercase-none">{ulheading2}</h4>
+            <ul className="mb20">
+              
+              <li>{list12}</li>
+              <li>{list13}</li>
+              <li>{list14}</li>
+              <li>{list16}</li>
+              <li>{list17}</li>
+            </ul>
             
             <ProductCatalog />
           </div>
@@ -122,4 +144,4 @@ const VPNforMacDescription = ({
   );
 };
 
-export default VPNforMacDescription;
+export default AOMEIDescription;

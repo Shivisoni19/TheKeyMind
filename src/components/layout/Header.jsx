@@ -484,51 +484,51 @@ const Header = ({id}) => {
                       <div className='mega-box'>
                         <div className='content'>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>VPN for PC</Link></header>
+                          <header className='mega-box-heading'><Link to="/vpnforpc">VPN for PC</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>HMA VPN - PC</Link>
+                                <Link to="/vpnforpc">HMA VPN - PC</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST SecureLine VPN - PC</Link>
+                                <Link to="/vpnforpc">AVAST SecureLine VPN - PC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>VPN for MAC</Link></header>
+                          <header className='mega-box-heading'><Link to="/vpnformac">VPN for MAC</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>HMA VPN - MAC</Link>
+                                <Link to="/vpnformac">HMA VPN - MAC</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST SecureLine VPN - MAC</Link>
+                                <Link to="/vpnformac">AVAST SecureLine VPN - MAC</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>VPN for MOBILE</Link></header>
+                          <header className='mega-box-heading'><Link to="/vpnformobile">VPN for MOBILE</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>HMA VPN - ANDROID / IOS</Link>
+                                <Link to="/vpnformobile">HMA VPN - ANDROID / IOS</Link>
                               </li>
                               <li>
-                                <Link href='#'>AVAST SecureLine VPN - ANDROID / IOS</Link>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className='row'>
-                          <header className='mega-box-heading'><Link>HMA VPN </Link></header>
-                            <ul className='mega-links'>
-                              <li>
-                                <Link href='#'>HMA VPNl</Link>
+                                <Link to="/vpnformobile">AVAST SecureLine VPN - ANDROID / IOS</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Avast VPN</Link></header>
+                          <header className='mega-box-heading'><Link to="/hmavpn">HMA VPN </Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>AVAST SecureLine VPN</Link>
+                                <Link to="/hmavpn">HMA VPN</Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className='row'>
+                          <header className='mega-box-heading'><Link to="/avastvpn">Avast VPN</Link></header>
+                            <ul className='mega-links'>
+                              <li>
+                                <Link to="/avastvpn">AVAST SecureLine VPN</Link>
                               </li>
                             </ul>
                           </div>
@@ -546,79 +546,79 @@ const Header = ({id}) => {
                       <div className='mega-box'>
                         <div className='content'>
                            <div className='row'>
-                           <header className='mega-box-heading'><Link>Windows Server</Link></header>
+                           <header className='mega-box-heading'><Link to="/windowsserver">Windows Server</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link to="/productsubpage">Windows Server 2022</Link>
+                                <Link to="/windowsserver">Windows Server 2022</Link>
                               </li>
                               <li>
-                                <Link to="/productsubpage">Windows Server 2019</Link>
+                                <Link to="/windowsserver">Windows Server 2019</Link>
                               </li>
                               <li>
-                                <Link to="/productsubpage">Windows Server 2016</Link>
+                                <Link to="/windowsserver">Windows Server 2016</Link>
                               </li>
                               <li>
-                                <Link to="/productsubpage">Windows Server 2012</Link>
+                                <Link to="/windowsserver">Windows Server 2012</Link>
                               </li>
                               <li>
-                                <Link to="/productsubpage">Windows Storage Server 2016</Link>
+                                <Link to="/windowsserver">Windows Storage Server 2016</Link>
                               </li>
                               <li>
-                                <Link to="/productsubpage">Windows Storage Server 2012</Link>
+                                <Link to="/windowsserver">Windows Storage Server 2012</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Windows Server CAL</Link></header>
+                          <header className='mega-box-heading'><Link to="/windowsservercal">Windows Server CAL</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows Server 2022 CAL</Link>
+                                <Link to="/windowsservercal">Windows Server 2022 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2019 CAL</Link>
+                                <Link to="/windowsservercal">Windows Server 2019 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2016 CAL</Link>
+                                <Link to="/windowsservercal">Windows Server 2016 CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2012 CAL</Link>
+                                <Link to="/windowsservercal">Windows Server 2012 CAL</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Windows Server RDS CAL</Link></header>
+                          <header className='mega-box-heading'><Link to="/windowsserverrdscal">Windows Server RDS CAL</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Windows Server 2022 RDS CAL</Link>
+                                <Link to="/windowsserverrdscal">Windows Server 2022 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2019 RDS CAL</Link>
+                                <Link to="/windowsserverrdscal">Windows Server 2019 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2016 RDS CAL</Link>
+                                <Link to="/windowsserverrdscal">Windows Server 2016 RDS CAL</Link>
                               </li>
                               <li>
-                                <Link href='#'>Windows Server 2012 RDS CAL</Link>
+                                <Link to="/windowsserverrdscal">Windows Server 2012 RDS CAL</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>Microsoft SQL Server</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoftsqlserver">Microsoft SQL Server</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>Microsoft SQL Server 2019 Standard</Link>
+                                <Link to="/microsoftsqlserver">Microsoft SQL Server 2019 Standard</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft SQL Server 2017 Standard</Link>
+                                <Link to="/microsoftsqlserver">Microsoft SQL Server 2017 Standard</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft SQL Server 2016 Standard</Link>
+                                <Link to="/microsoftsqlserver">Microsoft SQL Server 2016 Standard</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft SQL Server 2014 Standard</Link>
+                                <Link to="/microsoftsqlserver">Microsoft SQL Server 2014 Standard</Link>
                               </li>
                               <li>
-                                <Link href='#'>Microsoft SQL Server 2012 Standard</Link>
+                                <Link to="/microsoftsqlserver">Microsoft SQL Server 2012 Standard</Link>
                               </li>
                             </ul>
                           </div>
@@ -626,7 +626,7 @@ const Header = ({id}) => {
                       </div>
                     </li>
                     <li>
-                      <Link to="backuprecovery" className='desktop-item'>
+                      <Link to="/backuprecovery" className='desktop-item'>
                         Backup & Recovery
                       </Link>
                       <input type='checkbox' id='showMega5' />
@@ -641,36 +641,36 @@ const Header = ({id}) => {
                             </div>
                           </div>
                          <div className='row'>
-                         <header className='mega-box-heading'><Link>AOMEI</Link></header>
+                         <header className='mega-box-heading'><Link to="/aomei">AOMEI</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>AOMEI Backupper</Link>
+                                <Link to="/aomei">AOMEI Backupper</Link>
                               </li>
                               <li>
-                                <Link href='#'>AOMEI Partition Assistant</Link>
+                                <Link to="/aomei">AOMEI Partition Assistant</Link>
                               </li>
                               <li>
-                                <Link href='#'>AOMEI OneKey Recovery</Link>
+                                <Link to="/aomei">AOMEI OneKey Recovery</Link>
                               </li>
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link>EaseUS</Link></header>
+                          <header className='mega-box-heading'><Link to="/easeus">EaseUS</Link></header>
                             <ul className='mega-links'>
                               <li>
-                                <Link href='#'>EaseUS Data Recovery</Link>
+                                <Link to="/easeus">EaseUS Data Recovery</Link>
                               </li>
                               <li>
-                                <Link href='#'>EaseUS Todo Backup</Link>
+                                <Link to="/easeus">EaseUS Todo Backup</Link>
                               </li>
                               <li>
-                                <Link href='#'>EaseUS Partition Master</Link>
+                                <Link to="/easeus">EaseUS Partition Master</Link>
                               </li>
                               <li>
-                                <Link href='#'>EaseUS MobiSaver</Link>
+                                <Link to="/easeus">EaseUS MobiSaver</Link>
                               </li>
                               <li>
-                                <Link href='#'>EaseUS Deploy Manager</Link>
+                                <Link to="/easeus">EaseUS Deploy Manager</Link>
                               </li>
                             </ul>
                           </div>
@@ -678,7 +678,7 @@ const Header = ({id}) => {
                       </div>
                     </li>
                     <li>
-                      <Link to="contact">Contact Us</Link>
+                      <Link to="/contact">Contact Us</Link>
                     </li>
                   </ul>
                   <label for='menu-btn' className='btn menu-btn'>

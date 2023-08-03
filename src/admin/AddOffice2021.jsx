@@ -178,19 +178,19 @@ const AddOffice2021 = () => {
 
 
   // For Navigate product details by id
-  const { id } = useParams();
+  // const { id } = useParams();
 
-  useEffect(() => {
-    id && getSingleUser();
-  }, [id]);
+  // useEffect(() => {
+  //   id && getSingleUser();
+  // }, [id]);
 
-  const getSingleUser = async () => {
-    const docRef = doc(db, "office2021db", id);
-    const snapshot = await getDoc(docRef);
-    if (snapshot.exists()) {
-      setOffice2021Data({ ...snapshot.setOffice2021Data() });
-    }
-  };
+  // const getSingleUser = async () => {
+  //   const docRef = doc(db, "office2021db", id);
+  //   const snapshot = await getDoc(docRef);
+  //   if (snapshot.exists()) {
+  //     setOffice2021Data({ ...snapshot.setOffice2021Data() });
+  //   }
+  // };
 
   // For Navigate Product Details by id End
 

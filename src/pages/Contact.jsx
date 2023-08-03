@@ -17,7 +17,7 @@ const Contact = () => {
     }
   };
 
-  const [user, setUser] = useState({
+  const [contactData, setContactData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -26,21 +26,22 @@ const Contact = () => {
 
   let name, value;
 
-  const getUserData = (event) => {
+  const postContactData = (event) => {
     name = event.target.name;
     value = event.target.value;
 
-    setUser({ ...user, [name]: value });
+    setContactData({ ...contactData, [name]: value });
   };
 
   // connection with firebase
   const submitData = async (event) => {
     event.preventDefault();
-    const { name, email, phone, message } = user;
+    const { name, email, phone, message } = contactData;
 
     if(name && email && phone && message ){
     const res = fetch(
-      "https://thekeymind-d8d3e-default-rtdb.firebaseio.com/userDataRecords.json",
+      "https://thekeymind2023-f4c36-default-rtdb.firebaseio.com/contactDataRecords.json",
+
       {
         method: "POST",
         headers: {
@@ -56,7 +57,7 @@ const Contact = () => {
     );
 
     if (res) {
-      setUser({
+      setContactData({
         name: "",
         email: "",
         phone: "",
@@ -74,7 +75,7 @@ const Contact = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={meta.canonical} />
@@ -110,8 +111,8 @@ const Contact = () => {
                     id="name"
                     type="text"
                     placeholder="Name*"
-                    value={user.name}
-                    onChange={getUserData}
+                    value={contactData.name}
+                    onChange={postContactData}
                   />
 
                   <input
@@ -119,8 +120,8 @@ const Contact = () => {
                     id="email"
                     type="text"
                     placeholder="Email*"
-                    value={user.email}
-                    onChange={getUserData}
+                    value={contactData.email}
+                    onChange={postContactData}
                   />
 
                   <input
@@ -128,16 +129,16 @@ const Contact = () => {
                     id="phone"
                     type="text"
                     placeholder="Phone"
-                    value={user.phone}
-                    onChange={getUserData}
+                    value={contactData.phone}
+                    onChange={postContactData}
                   />
 
                   <textarea
                     name="message"
                     id="message"
                     placeholder="Your Message*"
-                    value={user.message}
-                    onChange={getUserData}
+                    value={contactData.message}
+                    onChange={postContactData}
                   ></textarea>
 
                   <input
