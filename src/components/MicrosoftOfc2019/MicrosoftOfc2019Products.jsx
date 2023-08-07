@@ -32,7 +32,7 @@ const MicrosoftOfc2019Products = () => {
 
   const renderProducts = () => {
     return office2019 && office2019.map((item) => (
-      <div key={item.id} className="col-md-3">
+      <div key={item.id} className="col-md-3 columns-height mt30">
         <div className="container-fadeInTop">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>

@@ -63,7 +63,7 @@ const Win10Products = () => {
 
   const renderProducts = () => {
     return windows10 && windows10.map((item) => (
-      <div key={item.id} className="col-lg-3 col-md-6 col-sm-6">
+      <div key={item.id} className="col-md-3 columns-height mt30">
         <div className="container-fadeInTop mt30">
           <div className="office-content">
             <img src={item.img} alt={item.name} style={{width:"100%"}}/>

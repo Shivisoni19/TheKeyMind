@@ -126,7 +126,7 @@ const MicrosoftOfc2021Description = ({
             <h4 className="text-uppercase-none">{desc8heading}</h4>
             <p>{detail11}</p>
 
-            <h4 className="text-uppercase-none">{ulheading2}</h4>
+            <p className="text-uppercase-none">{ulheading2}</p>
             <ul className="mb20">
               
               <li>{list12}</li>

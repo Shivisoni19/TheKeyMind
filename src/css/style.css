@@ -1319,7 +1319,7 @@ margin-top: -30px;
 }
 
 .arr-content {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -5862,6 +5862,10 @@ padding: 0;
 
 .columns .row {
   margin-top: 45px;
+}
+
+.columns-height {
+  height: 350px;
 }
 
 
