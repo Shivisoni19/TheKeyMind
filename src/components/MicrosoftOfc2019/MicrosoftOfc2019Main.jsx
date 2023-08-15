@@ -7,7 +7,7 @@ const MicrosoftOfc2019Main = () => {
   return (
     <>
       {/* <!--about content --> */}
-      <div className="blog">
+      <div className="blog 2019">
         <div className="container">
           <div className="title mt0">
             <h1>

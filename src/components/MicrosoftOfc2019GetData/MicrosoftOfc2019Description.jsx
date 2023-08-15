@@ -81,7 +81,7 @@ const MicrosoftOfc2019Description = ({
           <div class="text-to-action">
             <h2 class="text-uppercase-none mb30">Description</h2>
             <p className="text-uppercase-none">{description}</p>
-            {/* <h5 className="text-uppercase-none">{note}</h5> */}
+            <h5 className="text-uppercase-none">{note}</h5>
 
             <h4 className="text-uppercase-none">{desc1heading}</h4>
             <p>{detail1}</p>
