@@ -10,16 +10,16 @@ import { Helmet } from "react-helmet";
 const Antivirus = () => {
 
   const meta = {
-    title: 'Antivirus',
-    description: 'I am a description, and I can create multiple tags',
-    canonical: 'http://example.com/path/to/page',
+    title: 'Antivirus Software 2023 - Antivirus For All Your Devices',
+    description: 'Stay Safe Online & Protect Your Devices. Next-gen Antivirus for All Devices. Antivirus Software in 2023: Windows, Android, iOS.',
+    // canonical: 'http://example.com/path/to/page',
     meta: {
       charset: 'utf-8',
       name: {
         keywords: 'react,meta,document,html,tags'
       },
-      robots: 'index,follow', // Add the robots meta tag
-      googlebot: 'index,follow' // Add the googlebot meta tag
+      robots: 'noindex, nofollow', // Add the robots meta tag
+      googlebot: 'noindex, nofollow' // Add the googlebot meta tag
     }
   };
 
@@ -28,7 +28,7 @@ const Antivirus = () => {
     <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <link rel="canonical" href={meta.canonical} />
+        {/* <link rel="canonical" href={meta.canonical} /> */}
         <meta charSet={meta.meta.charset} />
         <meta name="keywords" content={meta.meta.name.keywords} />
         <meta name="robots" content={meta.meta.robots} /> {/* Add robots meta tag */}

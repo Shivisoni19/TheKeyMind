@@ -1,11 +1,11 @@
 import React from "react";
-import about from "../../images/about/about-head-img.jpg";
+// import about from "/img/about/about-banner.jpg";
 
 const AboutContent = () => {
   return (
     <>
       <div className="container">
-        <img src={about} alt="" style={{ width: "100%" }} />
+        <img src="img/about/about-banner.avif" alt="" style={{ width: "100%" }} />
         {/* Content  */}
         <div class="call-to-action1 mt40">
           <p>

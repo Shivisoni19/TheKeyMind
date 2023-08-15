@@ -4,16 +4,16 @@ import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const meta = {
-    title: 'Contact',
-    description: 'I am a description, and I can create multiple tags',
-    canonical: 'http://example.com/path/to/page',
+    title: 'Contact Us | The Keymind',
+    description: 'If you have any queries or need any suggestions!! Why not get in touch with us?',
+    // canonical: 'http://example.com/path/to/page',
     meta: {
       charset: 'utf-8',
       name: {
         keywords: 'react,meta,document,html,tags'
       },
-      robots: 'index,follow', // Add the robots meta tag
-      googlebot: 'index,follow' // Add the googlebot meta tag
+      robots: 'noindex, nofollow', // Add the robots meta tag
+      googlebot: 'noindex, nofollow' // Add the googlebot meta tag
     }
   };
 
@@ -78,7 +78,7 @@ const Contact = () => {
       <Helmet>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <link rel="canonical" href={meta.canonical} />
+        {/* <link rel="canonical" href={meta.canonical} /> */}
         <meta charSet={meta.meta.charset} />
         <meta name="keywords" content={meta.meta.name.keywords} />
         <meta name="robots" content={meta.meta.robots} /> {/* Add robots meta tag */}
@@ -95,11 +95,11 @@ const Contact = () => {
               <div className="title-border"></div>
             </div>
 
-            <p className="subtitle">
-              But unfortunately for most of us our role as gardener has never
-              been explained to us. And in misunderstanding our role, we have
-              allowed seeds of all types, both good and bad, to enter our inner
-              garden.
+            <p className="subtitle1">
+              If you have any queries or need any suggestions!! Why not get in touch with us?
+            </p>
+            <p className="subtitle1" >
+               For more details follow us on our Social media
             </p>
 
             <div className="row">

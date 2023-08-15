@@ -332,16 +332,6 @@ const AddOffice2019 = () => {
                   <span className="error">{errors.description}</span>
                 ) : null}
               </label>
-              <label>
-                Note:
-                <input
-                  type="text"
-                  value={note}
-                  onChange={handleChange}
-                  name="note"
-                />
-              </label>
-              
               {/* ----------Headings--------- */}
               <label>
                 Description H1
