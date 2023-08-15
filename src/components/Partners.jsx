@@ -14,32 +14,32 @@ const Partners = () => {
           <div className="container">
             <div className="row">
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/microsoftoffice">
                   <img src={partner1} alt="" />
                 </Link>
               </div>
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/operatingsystem">
                   <img src={partner2} alt="" />
                 </Link>
               </div>
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/server">
                   <img src={partner3} alt="" />
                 </Link>
               </div>
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/antivirus">
                   <img src={partner4} alt="" />
                 </Link>
               </div>
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/backuprecovery">
                   <img src={partner5} alt="" />
                 </Link>
               </div>
               <div className="col-sm-2">
-                <Link href="#">
+                <Link to="/vpn">
                   <img src={partner6} alt="" />
                 </Link>
               </div>

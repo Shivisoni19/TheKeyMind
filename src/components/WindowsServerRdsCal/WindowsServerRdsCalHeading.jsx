@@ -8,7 +8,7 @@ const WindowsServerRdsCalHeading = () => {
         <div class="container">
           <div class="title block-category-top">
             <h1 className="text-uppercase">
-              <i class="fa fa-star"></i>Microsoft WindowsServer RDS CAL
+              <i class="fa fa-star"></i>Microsoft Windows Server RDS CAL
               <i class="fa fa-star"></i>
             </h1>
             <div class="title-border"></div>

@@ -18,7 +18,7 @@ const WindowsServerRdsCalHeader = () => {
           <i>|</i>
         </span>
         <Link class="active" href="">
-          <u>Microsoft WindowsServer RDS CAL</u>
+          <u>Microsoft Windows Server RDS CAL</u>
         </Link>
       </div>
     </div>
