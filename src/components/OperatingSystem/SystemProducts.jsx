@@ -66,12 +66,12 @@ const SystemProducts = () => {
             <img src={product.product_img} alt={product.name} style={{width:"100%"}}/>
             <div class="office-content-overlay"></div>
             <div className="office-content-details fadeIn-top">
-              <Link href="#" className="medium-button button-red add-cart">
+              <Link to="/cart" className="medium-button button-red add-cart">
                 Add to Cart
               </Link>
-              <Link href="#" className="wishlist">
+              {/* <Link href="#" className="wishlist">
                 <i className="fa fa-heart"></i> Add to Wishlist
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="arr-content">

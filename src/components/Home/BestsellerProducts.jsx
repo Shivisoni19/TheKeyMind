@@ -134,9 +134,9 @@ const BestsellerProducts = () => {
                     {/* <Link href="#" className="medium-button button-red add-cart">
                       Add to Cart
                     </Link> */}
-                    <Button href="#" className="wishlist go-to-product-btn">
+                    <Link to="/cart" className="wishlist go-to-product-btn">
                       Go to Product
-                    </Button>
+                    </Link>
                   </div>
                 </div>
                 <div className="arr-content">
