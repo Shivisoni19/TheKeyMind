@@ -306,6 +306,7 @@ p{
   font-size: 12px;
   font-family: 'Raleway';
   color: #a1a1a1;
+  font-weight: 700;
   }
 
 .curr li a{
@@ -343,6 +344,7 @@ p{
   color:#f16b34;
   font-size: 12px;
   font-family: 'Raleway';
+  font-weight: 700;
 }
 
 .right-line a:after {
@@ -1109,7 +1111,7 @@ ul#navlist > li:last-child a{
 .coll-item-1 .coll-img-1{
   /* padding: 20px 10px; */
   width: 30%;
-  margin-left: 8.5em;
+  /* margin-left: 8.5em; */
 }
 .coll-text-2{
 text-align: center;
@@ -6731,7 +6733,7 @@ nav .wrapper{
 }
 .mega-box .content .row{
   width: calc(25% - 30px);
-  line-height: 45px;
+  line-height: 30px;
 }
 .content .row img{
   width: 100%;

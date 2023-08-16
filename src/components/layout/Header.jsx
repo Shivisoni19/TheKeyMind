@@ -34,7 +34,7 @@ const Header = ({id}) => {
                 <ul className='curr clearfix'>
                   <li>
                     <span>Currency: </span>
-                    <Link to="/">Dollar $</Link>
+                    <Link to="/">$</Link>
                   </li>
                 </ul>
               </div>
@@ -95,30 +95,13 @@ const Header = ({id}) => {
               {/* <!-- cart  --> */}
               <div className='cart'>
                 <div className='card-icon'>
-                  <i
+                  <Link to="/cart"><i
                     className='fa fa-shopping-cart fa-2x font-color'
                     aria-hidden='true'
-                  ></i>
+                  ></i></Link>
                   {/* <div className='shop-items'>10</div> */}
                 </div>
-                <div className='hover-cart'>
-                  <div className='hover-box'>
-                    <Link to="/cart">
-                      <img src='images/hover1.png' alt='' className='left-hover' />
-                    </Link>
-                    <div className='hover-details'>
-                      <p>Grey California Dress</p>
-                      <span>$ 3 199.00</span>
-                      <div className='quantity'>Quantity: 1</div>
-                    </div>
-
-                    <Link to="/cart" className='right-hover'>
-                      <img src='images/delete.png' alt='' />
-                    </Link>
-
-                    <div className='clear'></div>
-                  </div>
-
+                {/* <div className='hover-cart'>
                   <div className='hover-box bd0'>
                     <img src='images/hover2.png' alt='' className='left-hover' />
                     <div className='hover-details'>
@@ -140,7 +123,7 @@ const Header = ({id}) => {
 
                   <Link to="/cart"><button className='viewcard'>View Cart</button></Link>
                   <Link to="/checkout"><button className='proceedcard'>Proceed</button></Link>
-                </div>
+                </div> */}
               </div>
             </div>
             {/* <!-- End container --> */}
@@ -302,7 +285,7 @@ const Header = ({id}) => {
                             </ul>
                           </div>
                           <div className='row'>
-                          <header className='mega-box-heading'><Link to="/microsoft365">Microsoft 365</Link></header>
+                          <header className='mega-box-heading'><Link to="/microsoft365">Microsoft<br/>365</Link></header>
                             <ul className='mega-links'>
                               <li>
                                 <Link to="/microsoft365">Microsoft 365 Business</Link>

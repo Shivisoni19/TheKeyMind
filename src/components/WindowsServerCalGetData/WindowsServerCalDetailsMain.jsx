@@ -48,7 +48,7 @@ const WindowsServerCalDetailsMain = ({ name, img, rprice, nprice, id }) => {
             </div>
 
             <div className="prod-end">
-              <Link to="#" className="medium-button button-red add-cart">
+              <Link to="/cart" className="medium-button button-red add-cart">
                 Add to Cart
               </Link>
               <input

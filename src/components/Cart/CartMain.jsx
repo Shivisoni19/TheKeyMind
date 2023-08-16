@@ -2,29 +2,29 @@ import React , { useState} from 'react'
 import { Link } from "react-router-dom";
 
 const CartMain = () => {
-    const [products, setProducts] = useState([
-        {
-          id: 1,
-          name: "Grey California Dress",
-          size: "XL",
-          color: "Black",
-          price: 3199.0,
-          quantity: 1,
-        },
-        {
-          id: 2,
-          name: "Grey California Dress",
-          size: "XL",
-          color: "Black",
-          price: 3199.0,
-          quantity: 1,
-        },
-      ]);
+    // const [products, setProducts] = useState([
+    //     {
+    //       id: 1,
+    //       name: "Grey California Dress",
+    //       size: "XL",
+    //       color: "Black",
+    //       price: 3199.0,
+    //       quantity: 1,
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "Grey California Dress",
+    //       size: "XL",
+    //       color: "Black",
+    //       price: 3199.0,
+    //       quantity: 1,
+    //     },
+    //   ]);
     
-      const removeProduct = (id) => {
-        const updatedProducts = products.filter((product) => product.id !== id);
-        setProducts(updatedProducts);
-      };
+    //   const removeProduct = (id) => {
+    //     const updatedProducts = products.filter((product) => product.id !== id);
+    //     setProducts(updatedProducts);
+    //   };
   return (
     <div>
       <div className="check-infos">
@@ -42,7 +42,7 @@ const CartMain = () => {
                       <th></th>
                     </tr>
                   </thead>
-                  <tbody>
+                  {/* <tbody>
                     {products.map((product) => (
                       <tr key={product.id}>
                         <td>
@@ -91,7 +91,7 @@ const CartMain = () => {
                         </td>
                       </tr>
                     ))}
-                  </tbody>
+                  </tbody> */}
                 </table>
               </div>
             </div>

@@ -131,7 +131,7 @@ const Footer = () => {
             <div class="row">
               <div class="copyright">
                 © 2023 - All rights reserved |
-                <Link to="/"> UK Soft LTD VAT: GB364289273</Link>
+                <Link to="/"> The Key Mind</Link>
               </div>
               <div class="payment">
                 <Link to="/"><img src="upload/payments.png" alt="" /></Link>
