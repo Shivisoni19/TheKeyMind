@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const meta = {
@@ -63,13 +65,19 @@ const Contact = () => {
         phone: "",
         message: "",
       });
-      alert("Data Stored");
+      // alert("Data Stored");
+      // Use toast.success to display a success message
+      toast.success("Your Data Stored Successfully");
     } else {
-      alert("Plz fill the Data");
+      // alert("Plz fill the Data");
+      // Use toast.error to display an error message
+      toast.error("Failed to store data");
      }
     }
     else {
-      alert("Plz fill the Data");
+      // alert("Plz fill the Data");
+      // alert("Plz fill the Data");
+      toast.error("Please fill in all the fields");
      }
   };
 
@@ -148,7 +156,8 @@ const Contact = () => {
                     className="medium-button button-red"
                     onClick={submitData}
                   />
-                  <div id="msg" className="message"></div>
+                  {/* Add the ToastContainer component here */}
+                  <ToastContainer />
                 </form>
               </div>
               {/* <!-- end contactfort --> */}
