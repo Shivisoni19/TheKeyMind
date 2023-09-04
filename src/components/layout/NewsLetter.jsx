@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const NewsLetter = () => {
   const [newsletterData, setNewsLetterData] = useState({
@@ -38,12 +42,13 @@ const NewsLetter = () => {
         setNewsLetterData({
           email: "",
         });
-        alert("Email Id Submitted");
+        // alert("Email Id Submitted");
+        toast.success("Email Id Submitted");
       } else {
-        alert("Plz fill the Email Id");
+        toast.error("Plz fill the Email Id");
       }
     } else {
-      alert("Plz fill the Email Id");
+      toast.error("Plz fill the Email Id");
     }
   };
 
@@ -65,6 +70,8 @@ const NewsLetter = () => {
           id="submit_newsletter"
           onClick={submitEmail}
         />
+        {/* Add the ToastContainer component here */}
+        <ToastContainer />
       </form>
     </div>
   );
