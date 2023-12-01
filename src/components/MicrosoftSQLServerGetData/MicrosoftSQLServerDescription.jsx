@@ -85,13 +85,9 @@ const MicrosoftSQLServerDescription = ({
 
             <h4 className="text-uppercase-none">{desc1heading}</h4>
             <p>{detail1}</p>
+            <p>{detail2}</p>
 
             <h4 className="text-uppercase-none">{desc2heading}</h4>
-            <p>{detail2}</p>
-            <p>{detail3}</p>
-            <p>{detail4}</p>
-            
-            <h4 className="text-uppercase-none">{desc3heading}</h4>
 
             <p className="text-uppercase-none">{ulheading1}</p>
             <ul className="mb20">
@@ -108,25 +104,35 @@ const MicrosoftSQLServerDescription = ({
               <li>{list11}</li>
             </ul>
             
+            <p>{detail3}</p>
+
+            <h4 className="text-uppercase-none">{desc3heading}</h4>
+            <p>{detail4}</p>
+            
+            <h4 className="text-uppercase-none">{desc4heading}</h4>
             <p>{detail5}</p>
+
+            <h4 className="text-uppercase-none">{desc5heading}</h4>
             <p>{detail6}</p>
 
-            <h4 className="text-uppercase-none">{desc4heading}</h4>
-            <p>{detail7}</p>
+           
+            {/* <p>{detail7}</p>
             
-            <h4 className="text-uppercase-none">{desc5heading}</h4>
+            
             <p>{detail8}</p>
             
-            <h4 className="text-uppercase-none">{desc6heading}</h4>
+           
             <p>{detail9}</p>
 
             <h4 className="text-uppercase-none">{desc7heading}</h4>
             <p>{detail10}</p>
 
             <h4 className="text-uppercase-none">{desc8heading}</h4>
-            <p>{detail11}</p>
+            <p>{detail11}</p> */}
 
-            <h4 className="text-uppercase-none">{ulheading2}</h4>
+            <h4 className="text-uppercase-none">{desc6heading}</h4>
+
+            <p className="text-uppercase-none">{ulheading2}</p>
             <ul className="mb20">
               
               <li>{list12}</li>

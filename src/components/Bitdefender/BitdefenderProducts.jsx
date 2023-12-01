@@ -53,8 +53,8 @@ const BitdefenderProducts = () => {
             <ul>
               <li>
                 <span className="d-flex">
-                  <del className="delete-price">{item.rprice}</del>
-                  <span className="low-price">{item.nprice}</span>
+                  <del className="delete-price">${item.rprice}</del>
+                  <span className="low-price">${item.nprice}</span>
                 </span>
               </li>
             </ul>

@@ -250,6 +250,7 @@ function App () {
           <Route exact path="/windowsserver" element={<WindowsServer/>}/>
           <Route exact path="/windowsservercal" element={<WindowsServerCal/>}/>
           <Route exact path="/windowsserverrdscal" element={<WindowsServerRdsCal/>}/>
+          {/* ----------------Add Products by Admin Panel---------------  */}
           <Route exact path="/addproducts" element={<AddProducts/>}/>
           <Route exact path="/addbestsellers" element={<AddBestSellers/>}/>
           <Route exact path="/addwindows10" element={<AddWindows10/>}/>

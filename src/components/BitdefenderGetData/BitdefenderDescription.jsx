@@ -110,7 +110,7 @@ const BitdefenderDescription = ({
             
             <p>{detail5}</p>
             <p>{detail6}</p>
-
+            
             <h4 className="text-uppercase-none">{desc4heading}</h4>
             <p>{detail7}</p>
             

@@ -126,6 +126,11 @@ const MicrosoftOfcMacDescription = ({
             <h4 className="text-uppercase-none">{desc8heading}</h4>
             <p>{detail11}</p>
 
+            <h4 className="text-uppercase-none">{desc9heading}</h4>
+            {/* <p>{detail11}</p> */}
+
+            {/* <h4 className="text-uppercase-none">{desc10heading}</h4> */}
+
             <h4 className="text-uppercase-none">{ulheading2}</h4>
             <ul className="mb20">
               
