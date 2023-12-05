@@ -77,7 +77,7 @@ const Header = ({id}) => {
               {/* <!-- Login/Registration & My Account form  --> */}
               <div className='register-login d-block d-sm-none'>
                 <Link to={`tel:${98562125212}`} className='login-window'>
-                  {98562125212}
+                +1 (800) 5260 52 63
                 </Link>
                 {/* <Link to="/signup" className='login-window'>
                   Register
@@ -295,52 +295,6 @@ const Header = ({id}) => {
                               </li>
                               <li>
                                 <Link to="/microsoft365">Microsoft 365 Family</Link>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className='row'>
-                          <header className='mega-box-heading'><Link to="/microsoftofficemac">Office for MAC</Link></header>
-                            <ul className='mega-links'>
-                              <li>
-                                <Link to="/microsoftofficemac">Office 2021 Home & Student for Mac</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficemac">Office 2021 Home & Business for Mac</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficemac">Office 2019 Home & Business for MAC</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficemac">Office 2016 Home & Business for MAC</Link>
-                              </li>
-                            </ul>
-                          </div>
-                          <div className='row'>
-                          <header className='mega-box-heading'><Link to="/microsoftofficeapp">Microsoft Office App</Link></header>
-                            <ul className='mega-links'>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Access</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Project</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Visio</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Visual Studio</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Outlook</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft OneNote</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Word</Link>
-                              </li>
-                              <li>
-                                <Link to="/microsoftofficeapp">Microsoft Excel</Link>
                               </li>
                             </ul>
                           </div>

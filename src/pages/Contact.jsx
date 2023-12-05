@@ -173,7 +173,7 @@ const Contact = () => {
                 </p>
                 <Link href="#">
                   <p className="mb40">
-                    <i className="fa fa-envelope"></i> samokhinteam@gmail.com
+                    <i className="fa fa-envelope"></i> thekeymind3@gmail.com
                   </p>
                 </Link>
 
