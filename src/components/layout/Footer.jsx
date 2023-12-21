@@ -65,7 +65,7 @@ const Footer = () => {
                   </p>
                   <p><i class="fa fa-phone"></i> +63 918 4084 694</p>
                   <p class="mb20">
-                    <i class="fa fa-envelope"></i> samokhinteam@gmail.com
+                    <i class="fa fa-envelope"></i> support@thekeymind.com
                   </p>
                   <h1>FIND US ON</h1>
                   <ul class="footer-socials">
