@@ -9,8 +9,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { Button } from "semantic-ui-react";
 
 const BestsellerProducts = () => {
-  const [products, setProducts] = useState([]);
-
+  
   const [users1, setUsers1] = useState([]);
   const [loading, setLoading] = useState([]);
   const navigate = useNavigate();
@@ -120,8 +119,8 @@ const BestsellerProducts = () => {
           <div className="title-border"></div>
         </div>
         <Slider {...settings}>
-          {users1 && users1.map((product, index) => (
-            <div key={index} className="col-lg-3 col-md-6 col-sm-6">
+          {users1 && users1.map((product) => (
+            <div key={product.id} className="col-lg-3 col-md-6 col-sm-6">
               <div className="container-fadeInTop mt30">
                 <div className="office-content">
                   <img
@@ -131,16 +130,26 @@ const BestsellerProducts = () => {
                   />
                   <div className="office-content-overlay"></div>
                   <div className="office-content-details fadeIn-top">
-                    {/* <Link href="#" className="medium-button button-red add-cart">
-                      Add to Cart
-                    </Link> */}
-                    <Link to="/cart" className="wishlist go-to-product-btn">
+                    {/* <Link to={`/product/${product.id}`} className="wishlist go-to-product-btn">
                       Go to Product
-                    </Link>
+                    </Link> */}
+                    {/* <Button onClick={() => navigate(`/bestsellerdata/${product.id}`,{
+                      state:{bestsellerdataId: product.id}
+                    })} className="wishlist">
+                      Go To Product  
+                    </Button> */}
+                     <Button
+                      onClick={() => navigate(`/bestsellerdata/${product.id}`, {
+                        state: { bestsellerdataId: product.id }
+                      })}
+                      className="wishlist"
+                    >
+                      Go To Product
+                    </Button>
                   </div>
                 </div>
                 <div className="arr-content">
-                  <Link href="#">
+                  <Link to={`/bestsellerdata/${product.id}`}>
                     <p>{product.name}</p>
                   </Link>
                   <ul>

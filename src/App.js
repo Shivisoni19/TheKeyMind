@@ -146,6 +146,7 @@ import WindowsServerRdsCalDetails from './pages/GetProductDetails/WindowsServerR
 import MicrosoftSqlServerDetails from './pages/GetProductDetails/MicrosoftSqlServerDetails';
 import AOMEIDetails from './pages/GetProductDetails/AOMEIDetails'
 import EaseUsDetails from './pages/GetProductDetails/EaseUsDetails'
+import BestSellersDetails from './pages/GetProductDetails/BestSellersDetails.jsx'
 
 
 function App () {
@@ -167,6 +168,7 @@ function App () {
           <Route exact path='/antivirus' element={<Antivirus />} />
           <Route exact path='/backuprecovery' element={<BackupRecovery />} />
           {/* -------------Product Details Fetching Route -----------------------*/}
+          <Route path="/bestsellerdata/:id" element={<BestSellersDetails/>} />
           <Route path="/productdetails/:id" element={<ProductDetails />} />
           <Route path="/windows10data/:id" element={<Windows10Details />} />
           <Route path="/windows7data/:id" element={<Windows7Details/>} />
