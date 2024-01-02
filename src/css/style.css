@@ -5086,6 +5086,9 @@ padding: 0;
   .touch  i:hover {
     color: #f16b34;
   }
+  .touch p a{
+    color: black;
+  }
 
 /*Shortcodes*/
 
@@ -6033,6 +6036,9 @@ footer h1 {
 .gettouch li {
   display: inline;
   margin-right: 5px;
+}
+.gettouch p a {
+  color: #6b6b6b !important;
 }
 
 .footer-socials i {

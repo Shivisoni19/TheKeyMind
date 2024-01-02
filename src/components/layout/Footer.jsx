@@ -63,7 +63,7 @@ const Footer = () => {
                     <i class="fa fa-home"></i> Philippines, PO Box 6200 Talay
                     st. 65, SweetPick inc.
                   </p>
-                  <p><i class="fa fa-phone"></i> +63 918 4084 694</p>
+                  <p><i class="fa fa-phone"></i> <Link to="tel:+12063953276" className='login-window'>(206) 395-3276</Link></p>
                   <p class="mb20">
                     <i class="fa fa-envelope"></i> support@thekeymind.com
                   </p>

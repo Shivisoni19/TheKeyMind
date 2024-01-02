@@ -76,9 +76,7 @@ const Header = ({id}) => {
               </div>
               {/* <!-- Login/Registration & My Account form  --> */}
               <div className='register-login d-block d-sm-none'>
-                <Link to={`tel:${98562125212}`} className='login-window'>
-                +1 (800) 5260 52 63
-                </Link>
+                <Link to="tel:+12063953276" className='login-window'>(206) 395-3276</Link>
                 {/* <Link to="/signup" className='login-window'>
                   Register
                 </Link>

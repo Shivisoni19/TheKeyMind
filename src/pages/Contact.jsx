@@ -169,13 +169,14 @@ const Contact = () => {
                   Victoria 8011 Philippines
                 </p>
                 <p>
-                  <i className="fa fa-phone"></i> +1 (800) 888 5260 52 63
+                  <i className="fa fa-phone"></i> 
+                  <Link to="tel:+12063953276">(206) 395-3276</Link>
                 </p>
-                <Link href="#">
-                  <p className="mb40">
-                    <i className="fa fa-envelope"></i> support@thekeymind.com
-                  </p>
-                </Link>
+                <p className="mb40">
+                    <i className="fa fa-envelope"></i> 
+                    <Link to="mailto:support@thekeymind.com">support@thekeymind.com</Link>
+                </p>
+                
 
                 <h2>Business hours</h2>
 
