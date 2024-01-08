@@ -9,7 +9,7 @@ const Header = ({id}) => {
         {/* <!-- Header
 		    ================================================== --> */}
         <header className='clearfix'>
-          <div className='top-line'>
+          {/* <div className='top-line'>
             <div className='container'>
               <div className='left-line'>
                 <div className='mobile-a'>
@@ -54,7 +54,7 @@ const Header = ({id}) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <!-- end top line --> */}
 
           <div className='upper-header'>
