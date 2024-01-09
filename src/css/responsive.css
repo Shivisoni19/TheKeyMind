@@ -108,10 +108,12 @@
 }
 
 @media (max-width: 1050px) {
-
 	.carousel-root {
 		outline: none;
-		margin-top: -20em !important;
+		margin-top: -23em !important;
+	}
+	.shipping-margin-top {
+		margin-top: -150px;
 	}
 	.carousel .control-dots {
 		bottom: 23vw !important;
@@ -178,8 +180,11 @@
 	/* Home Slider css  */
 	.carousel-root {
 		outline: none;
-		margin-top: -15em;
+		margin-top: -17em !important;
 	}
+	/* .slider, .slide {
+		height: 38vh !important;
+	} */
 
 	.carousel .control-dots {
 		bottom: -0.5vw !important;
@@ -309,8 +314,21 @@
 
 @media (max-width: 768px) {
 
-	.shipping-margin-top{
+	/* .shipping-margin-top{
 		margin-top: 65px !important;
+	} */
+	.shipping-margin-top {
+		margin-top: 90px !important;
+	}
+	.carousel-root {
+		outline: none;
+		margin-top: -16em !important;
+	}
+	.main-logo {
+		margin-left: 240px;
+		width: 180px;
+		/* padding-top: 0px;
+		padding-bottom: 10px; */
 	}
 
 	.logo {
@@ -709,9 +727,23 @@
 		font-family: 'Noticia Text' !important;
 		font-weight: 700 !important;
 	}
-    .bottom-header {
+    /* .bottom-header {
 		background-color: #fff !important;
-	  }
+	  } */
+	  .fa-bars {
+		color: #fff !important;
+	}
+	.register-login {
+		position: absolute;
+		margin-left: 1em;
+		font-size: 16px;
+		margin-top: 22px;
+		font-weight: 700;
+		color: #ffffff;
+	}
+	.login-window {
+		color: #ffffff;
+	}
 	  .upper-header {
 		padding: 0px;
 	}
@@ -727,9 +759,9 @@
 	/* .logo{
 		padding: 20px;
 	} */
-	.register-login { 
+	/* .register-login { 
     display: none;
-   }
+   } */
    .search-mobile-input form.example button {
     float: left;
     width: 18%;
@@ -871,4 +903,90 @@
   .search-mobile-input{
 	display: none;
   }
+}
+
+@media (max-width: 420px){
+	.carousel-root {
+		outline: none;
+		margin-top: -16em !important;
+	}
+	.shipping-margin-top {
+		margin-top: 20px !important;
+	}
+	.main-logo {
+		margin-left: 80px;
+		width: 180px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 500px) and (min-width: 421px){
+	.carousel-root {
+		outline: none;
+		margin-top: -18em !important;
+	}
+	.shipping-margin-top {
+		margin-top: 20px !important;
+	}
+	.main-logo {
+		margin-left: 90px;
+		width: 180px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 550px) and (min-width: 501px){
+	.carousel-root {
+		outline: none;
+		margin-top: -22em !important;
+	}
+	.shipping-margin-top {
+		margin-top: 20px !important;
+	}
+	.main-logo {
+		margin-left: 140px;
+		width: 164px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+}
+@media only screen and (max-width: 300px) and (min-width: 250px){
+	.carousel-root {
+		outline: none;
+		margin-top: -12em !important;
+	}
+	.shipping-margin-top {
+		margin-top: 20px !important;
+	}
+	nav .wrapper {
+		padding: 0px 0px;
+	}
+	.main-logo {
+		margin-left: 24px;
+		width: 164px;
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+}
+@media (max-width: 1024px) {
+    .slider .slide {
+		height: 38vh !important;
+	}
+}
+@media only screen and (max-width: 820px) and (min-width: 769px){
+	.main-logo {
+		margin-left: 235px;
+		width: 164px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+@media only screen and (max-width: 992px) and (min-width: 820px){
+	.main-logo {
+		margin-left: 235px;
+		width: 164px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 }

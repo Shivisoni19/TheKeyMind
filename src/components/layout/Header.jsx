@@ -64,18 +64,17 @@ const Header = ({id}) => {
                   <img src="img/logo/logo.png" alt=''style={{width:"100%"}}/>
                 </Link>
               </div>
-
-              <div className='search-input'>
-                {/* <!-- The form --> */}
+              {/* <!-- The Search form --> */}
+              {/* <div className='search-input'>
                 <form className='example search-form'>
                   <input type='text' placeholder='Search..' name='search' />
                   <button type='submit'>
                     <i className='fa fa-search'></i>
                   </button>
                 </form>
-              </div>
+              </div> */}
               {/* <!-- Login/Registration & My Account form  --> */}
-              <div className='register-login d-block d-sm-none'>
+              <div className='register-login'>
                 <Link to="tel:+12063953276" className='login-window'>(206) 395-3276</Link>
                 {/* <Link to="/signup" className='login-window'>
                   Register
@@ -91,38 +90,15 @@ const Header = ({id}) => {
               </div>
 
               {/* <!-- cart  --> */}
-              <div className='cart'>
+              {/* <div className='cart'>
                 <div className='card-icon'>
                   <Link to="/cart"><i
                     className='fa fa-shopping-cart fa-2x font-color'
                     aria-hidden='true'
                   ></i></Link>
-                  {/* <div className='shop-items'>10</div> */}
+                  <div className='shop-items'>10</div>
                 </div>
-                {/* <div className='hover-cart'>
-                  <div className='hover-box bd0'>
-                    <img src='images/hover2.png' alt='' className='left-hover' />
-                    <div className='hover-details'>
-                      <p>Grey California Dress</p>
-                      <span>$ 3 199.00</span>
-                      <div className='quantity'>Quantity: 1</div>
-                    </div>
-
-                    <Link to="/cart" className='right-hover'>
-                      <img src='images/delete.png' alt='' />
-                    </Link>
-
-                    <div className='clear'></div>
-                  </div>
-
-                  <div className='subtotal'>
-                    Cart Subtotal: <span>$ 4 372</span>
-                  </div>
-
-                  <Link to="/cart"><button className='viewcard'>View Cart</button></Link>
-                  <Link to="/checkout"><button className='proceedcard'>Proceed</button></Link>
-                </div> */}
-              </div>
+              </div> */}
             </div>
             {/* <!-- End container --> */}
           </div>
@@ -621,15 +597,15 @@ const Header = ({id}) => {
                   </label>
                 </div>
               </nav>
-              <div className='search-mobile-input'>
-                {/* <!-- The form --> */}
+              {/* <!-- Search Mobile form --> */}
+              {/* <div className='search-mobile-input'>
                 <form className='example search-form'>
                   <input type='text' placeholder='Search..' name='search' />
                   <button type='submit'>
                     <i className='fa fa-search'></i>
                   </button>
                 </form>
-              </div>
+              </div> */}
               {/* <!-- <nav id="nav">
                     <ul id="navlist" className="sf-menu clearfix">
                     <li className="current">

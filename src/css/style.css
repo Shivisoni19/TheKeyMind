@@ -685,7 +685,7 @@ form.example::after {
 }
 
 .main-logo {
-  position: absolute;
+  /* position: absolute; */
   /* left: 50%; */
   /* margin-left: -60px; */
   width: 200px !important;
@@ -6947,7 +6947,10 @@ nav input{
 } */
 
 /* ------------Home Slider css-----------------  */
-
+.slider,
+  .slide {
+    height: 80vh !important;
+  }
 .carousel .thumbs-wrapper {
   margin: 20px;
   overflow: hidden;
@@ -7058,7 +7061,7 @@ nav input{
 @media (min-width: 992px) {
   .slider,
   .slide {
-    height: 80vh;
+    height: 38vh
   }
 }
 .slide {
